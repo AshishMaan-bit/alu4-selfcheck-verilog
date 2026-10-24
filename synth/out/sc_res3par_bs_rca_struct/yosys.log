@@ -1,0 +1,1917 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Executing script file `synth/out/sc_res3par_bs_rca_struct/synth.ys' --
+
+1. Executing Verilog-2005 frontend: rtl/adder4.v
+Parsing Verilog input from `rtl/adder4.v' to AST representation.
+Generating RTLIL representation for module `\adder4_rca'.
+Generating RTLIL representation for module `\adder4_cla'.
+Generating RTLIL representation for module `\adder4_ks'.
+Generating RTLIL representation for module `\adder4'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/alu4_datapath.v
+Parsing Verilog input from `rtl/alu4_datapath.v' to AST representation.
+Generating RTLIL representation for module `\alu4_datapath'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/alu4_checker.v
+Parsing Verilog input from `rtl/alu4_checker.v' to AST representation.
+Generating RTLIL representation for module `\alu4_checker'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: rtl/alu4_datapath_bs.v
+Parsing Verilog input from `rtl/alu4_datapath_bs.v' to AST representation.
+Generating RTLIL representation for module `\alu4_rslice'.
+Generating RTLIL representation for module `\alu4_cslice'.
+Generating RTLIL representation for module `\alu4_vslice'.
+Generating RTLIL representation for module `\alu4_datapath_bs'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: rtl/alu4_sc_core.v
+Parsing Verilog input from `rtl/alu4_sc_core.v' to AST representation.
+Generating RTLIL representation for module `\alu4_sc_core'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: rtl/alu4_dmr_core.v
+Parsing Verilog input from `rtl/alu4_dmr_core.v' to AST representation.
+Generating RTLIL representation for module `\alu4_dmr_core'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: rtl/alu4_base_core.v
+Parsing Verilog input from `rtl/alu4_base_core.v' to AST representation.
+Generating RTLIL representation for module `\alu4_base_core'.
+Successfully finished Verilog frontend.
+Parameter \ADDER_ARCH = 0
+
+8. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_sc_core'.
+Parameter \ADDER_ARCH = 0
+Generating RTLIL representation for module `$paramod\alu4_sc_core\ADDER_ARCH=32'00000000000000000000000000000000'.
+Parameter \DP_STYLE = 1
+
+9. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_sc_core'.
+Parameter \DP_STYLE = 1
+Generating RTLIL representation for module `$paramod\alu4_sc_core\DP_STYLE=32'00000000000000000000000000000001'.
+Parameter \ARITH_CHK = 0
+Parameter \LOGIC_CHK = 1
+
+10. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_sc_core'.
+Parameter \ARITH_CHK = 0
+Parameter \LOGIC_CHK = 1
+Generating RTLIL representation for module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_sc_core'.
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+
+11.1. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     \alu4_checker
+Used module:     \alu4_datapath_bs
+Used module:         \alu4_vslice
+Used module:         \alu4_cslice
+Used module:         \alu4_rslice
+Used module:         \adder4
+Used module:             \adder4_cla
+Parameter \BIT = 3
+
+11.2. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_rslice'.
+Parameter \BIT = 3
+Generating RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Parameter \BIT = 2
+
+11.3. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_rslice'.
+Parameter \BIT = 2
+Generating RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Parameter \BIT = 1
+
+11.4. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_rslice'.
+Parameter \BIT = 1
+Generating RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Parameter \BIT = 0
+
+11.5. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_rslice'.
+Parameter \BIT = 0
+Generating RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Parameter \ADDER_ARCH = 1
+
+11.6. Executing AST frontend in derive mode using pre-parsed AST for module `\adder4'.
+Parameter \ADDER_ARCH = 1
+Generating RTLIL representation for module `$paramod\adder4\ADDER_ARCH=s32'00000000000000000000000000000001'.
+Parameter \ARITH_CHK = 0
+Parameter \LOGIC_CHK = 1
+
+11.7. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_checker'.
+Parameter \ARITH_CHK = 0
+Parameter \LOGIC_CHK = 1
+Generating RTLIL representation for module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Parameter \ADDER_ARCH = 0
+
+11.8. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_datapath_bs'.
+Parameter \ADDER_ARCH = 0
+Generating RTLIL representation for module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+
+11.9. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker
+Used module:     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \alu4_vslice
+Used module:         \alu4_cslice
+Used module:         \alu4_rslice
+Used module:         \adder4
+Used module:             \adder4_cla
+Parameter \BIT = 3
+Found cached RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Parameter \BIT = 2
+Found cached RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Parameter \BIT = 1
+Found cached RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Parameter \BIT = 0
+Found cached RTLIL representation for module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Parameter \ADDER_ARCH = 0
+
+11.10. Executing AST frontend in derive mode using pre-parsed AST for module `\adder4'.
+Parameter \ADDER_ARCH = 0
+Generating RTLIL representation for module `$paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000'.
+
+11.11. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker
+Used module:     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \alu4_vslice
+Used module:         \alu4_cslice
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+
+11.12. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker
+Used module:     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \alu4_vslice
+Used module:         \alu4_cslice
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+Removing unused module `$paramod\adder4\ADDER_ARCH=s32'00000000000000000000000000000001'.
+Removing unused module `\alu4_base_core'.
+Removing unused module `\alu4_dmr_core'.
+Removing unused module `\alu4_datapath_bs'.
+Removing unused module `\alu4_rslice'.
+Removing unused module `\alu4_checker'.
+Removing unused module `\alu4_datapath'.
+Removing unused module `\adder4'.
+Removing unused module `\adder4_ks'.
+Removing unused module `\adder4_cla'.
+Removed 10 unused modules.
+
+12. Executing SYNTH pass.
+
+12.1. Executing HIERARCHY pass (managing design hierarchy).
+
+12.1.1. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker
+Used module:     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \alu4_vslice
+Used module:         \alu4_cslice
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+
+12.1.2. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker
+Used module:     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \alu4_vslice
+Used module:         \alu4_cslice
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+Removed 0 unused modules.
+
+12.2. Executing PROC pass (convert processes to netlists).
+
+12.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+12.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath_bs.v:69$189 in module alu4_cslice.
+Removed 1 dead cases from process $proc$rtl/alu4_datapath_bs.v:42$233 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath_bs.v:42$233 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Removed 1 dead cases from process $proc$rtl/alu4_datapath_bs.v:42$226 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath_bs.v:42$226 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Removed 1 dead cases from process $proc$rtl/alu4_datapath_bs.v:42$219 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath_bs.v:42$219 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Removed 1 dead cases from process $proc$rtl/alu4_datapath_bs.v:42$212 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath_bs.v:42$212 in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath_bs.v:110$417 in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Removed 3 dead cases from process $proc$rtl/alu4_checker.v:0$410 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_checker.v:0$410 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_checker.v:0$394 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Removed 3 dead cases from process $proc$rtl/alu4_checker.v:0$388 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_checker.v:0$388 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_checker.v:0$382 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_checker.v:0$366 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_checker.v:0$350 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Removed a total of 10 dead cases.
+
+12.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 49 assignments to connections.
+
+12.2.4. Executing PROC_INIT pass (extract init attributes).
+
+12.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+12.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 4 switches.
+<suppressed ~8 debug messages>
+
+12.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\alu4_cslice.$proc$rtl/alu4_datapath_bs.v:69$189'.
+     1/1: $1\c[0:0]
+Creating decoders for process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:42$233'.
+     1/1: $1\ri[0:0]
+Creating decoders for process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$proc$rtl/alu4_datapath_bs.v:42$226'.
+     1/1: $1\ri[0:0]
+Creating decoders for process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$proc$rtl/alu4_datapath_bs.v:42$219'.
+     1/1: $1\ri[0:0]
+Creating decoders for process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$proc$rtl/alu4_datapath_bs.v:42$212'.
+     1/1: $1\ri[0:0]
+Creating decoders for process `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:110$417'.
+     1/2: $1\ci[0:0]
+     2/2: $1\y[3:0]
+Creating decoders for process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$410'.
+     1/1: $1\add3$func$rtl/alu4_checker.v:102$260.$result[1:0]$415
+Creating decoders for process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+     1/1: $1\add3$func$rtl/alu4_checker.v:65$259.$result[1:0]$409
+Creating decoders for process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$388'.
+     1/1: $1\add3$func$rtl/alu4_checker.v:101$255.$result[1:0]$393
+Creating decoders for process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$382'.
+     1/1: $1\add3$func$rtl/alu4_checker.v:101$254.$result[1:0]$387
+Creating decoders for process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+     1/1: $1\add3$func$rtl/alu4_checker.v:65$253.$result[1:0]$381
+Creating decoders for process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+     1/1: $1\add3$func$rtl/alu4_checker.v:65$249.$result[1:0]$365
+
+12.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\alu4_cslice.\c' from process `\alu4_cslice.$proc$rtl/alu4_datapath_bs.v:69$189'.
+No latch inferred for signal `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.\ri' from process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:42$233'.
+No latch inferred for signal `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.\ri' from process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$proc$rtl/alu4_datapath_bs.v:42$226'.
+No latch inferred for signal `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.\ri' from process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$proc$rtl/alu4_datapath_bs.v:42$219'.
+No latch inferred for signal `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.\ri' from process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$proc$rtl/alu4_datapath_bs.v:42$212'.
+No latch inferred for signal `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.\y' from process `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:110$417'.
+No latch inferred for signal `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.\ci' from process `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:110$417'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:102$245.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$410'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:102$260.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$410'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:102$260.p' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$410'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:102$260.q' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$410'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:102$244.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:102$256.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:102$256.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$257.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$257.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$258.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$258.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$259.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$259.p' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$259.q' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$243.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$388'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$255.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$388'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$255.p' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$388'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$255.q' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$388'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$242.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$382'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$254.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$382'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$254.p' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$382'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:101$254.q' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$382'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:101$241.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:101$250.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:101$250.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$251.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$251.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$252.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$252.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$253.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$253.p' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$253.q' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:101$240.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:101$246.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res4$func$rtl/alu4_checker.v:101$246.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$247.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$247.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$248.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\res2$func$rtl/alu4_checker.v:65$248.x' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$249.$result' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$249.p' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+No latch inferred for signal `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.\add3$func$rtl/alu4_checker.v:65$249.q' from process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+
+12.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+12.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+12.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\alu4_cslice.$proc$rtl/alu4_datapath_bs.v:69$189'.
+Removing empty process `alu4_cslice.$proc$rtl/alu4_datapath_bs.v:69$189'.
+Found and cleaned up 1 empty switch in `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:42$233'.
+Removing empty process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:42$233'.
+Found and cleaned up 1 empty switch in `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$proc$rtl/alu4_datapath_bs.v:42$226'.
+Removing empty process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$proc$rtl/alu4_datapath_bs.v:42$226'.
+Found and cleaned up 1 empty switch in `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$proc$rtl/alu4_datapath_bs.v:42$219'.
+Removing empty process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$proc$rtl/alu4_datapath_bs.v:42$219'.
+Found and cleaned up 1 empty switch in `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$proc$rtl/alu4_datapath_bs.v:42$212'.
+Removing empty process `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$proc$rtl/alu4_datapath_bs.v:42$212'.
+Found and cleaned up 1 empty switch in `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:110$417'.
+Removing empty process `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath_bs.v:110$417'.
+Found and cleaned up 1 empty switch in `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$410'.
+Removing empty process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$410'.
+Found and cleaned up 1 empty switch in `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+Removing empty process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$394'.
+Found and cleaned up 1 empty switch in `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$388'.
+Removing empty process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$388'.
+Found and cleaned up 1 empty switch in `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$382'.
+Removing empty process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$382'.
+Found and cleaned up 1 empty switch in `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+Removing empty process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$366'.
+Found and cleaned up 1 empty switch in `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+Removing empty process `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$proc$rtl/alu4_checker.v:0$350'.
+Cleaned up 12 empty switches.
+
+12.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alu4_sc_core.
+Optimizing module $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_vslice.
+<suppressed ~1 debug messages>
+Optimizing module alu4_cslice.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+<suppressed ~3 debug messages>
+Optimizing module adder4_rca.
+
+12.3. Executing FLATTEN pass (flatten design).
+Keeping $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.u_r0 (found keep_hierarchy attribute).
+Keeping $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.u_r1 (found keep_hierarchy attribute).
+Keeping $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.u_r2 (found keep_hierarchy attribute).
+Keeping $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.u_r3 (found keep_hierarchy attribute).
+Keeping $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.u_c (found keep_hierarchy attribute).
+Keeping $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.u_v (found keep_hierarchy attribute).
+Keeping alu4_sc_core.g_bs.u_dp (found keep_hierarchy attribute).
+Keeping alu4_sc_core.u_chk (found keep_hierarchy attribute).
+Deleting now unused module $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000.
+Deleting now unused module adder4_rca.
+<suppressed ~2 debug messages>
+
+12.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alu4_vslice.
+Optimizing module alu4_cslice.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module alu4_sc_core.
+
+12.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu4_vslice..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module \alu4_sc_core..
+Removed 0 unused cells and 148 unused wires.
+<suppressed ~8 debug messages>
+
+12.6. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker...
+Checking module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011...
+Checking module alu4_cslice...
+Checking module alu4_sc_core...
+Checking module alu4_vslice...
+Found and reported 0 problems.
+
+12.7. Executing OPT pass (performing simple optimizations).
+
+12.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 11 cells.
+
+12.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_cslice..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_sc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \alu4_vslice..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+12.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+    New ctrl vector for $pmux cell $procmux$507: { $auto$opt_reduce.cc:134:opt_pmux$526 $auto$opt_reduce.cc:134:opt_pmux$524 }
+    New ctrl vector for $pmux cell $procmux$515: { $auto$opt_reduce.cc:134:opt_pmux$530 $auto$opt_reduce.cc:134:opt_pmux$528 }
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+    New ctrl vector for $pmux cell $procmux$494: { $procmux$498_CMP $procmux$496_CMP $auto$opt_reduce.cc:134:opt_pmux$532 }
+    New ctrl vector for $pmux cell $procmux$500: { $auto$opt_reduce.cc:134:opt_pmux$534 $procmux$495_CMP $procmux$501_CMP }
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+    New ctrl vector for $pmux cell $procmux$444: { $procmux$455_CTRL $procmux$454_CMP $procmux$453_CMP $procmux$452_CMP $procmux$451_CMP $procmux$450_CMP $procmux$449_CMP $procmux$446_CMP $auto$opt_reduce.cc:134:opt_pmux$536 }
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+    New ctrl vector for $pmux cell $procmux$456: { $procmux$467_CTRL $procmux$466_CMP $procmux$465_CMP $procmux$464_CMP $procmux$463_CMP $procmux$462_CMP $auto$opt_reduce.cc:134:opt_pmux$540 $auto$opt_reduce.cc:134:opt_pmux$538 }
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+    New ctrl vector for $pmux cell $procmux$468: { $procmux$479_CTRL $procmux$478_CMP $procmux$477_CMP $procmux$476_CMP $procmux$475_CMP $procmux$474_CMP $auto$opt_reduce.cc:134:opt_pmux$544 $auto$opt_reduce.cc:134:opt_pmux$542 }
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+    New ctrl vector for $pmux cell $procmux$480: { $procmux$491_CTRL $procmux$490_CMP $procmux$489_CMP $procmux$488_CMP $procmux$487_CMP $procmux$486_CMP $procmux$484_CMP $procmux$483_CMP $auto$opt_reduce.cc:134:opt_pmux$546 $procmux$481_CMP }
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+  Optimizing cells in module \alu4_cslice.
+  Optimizing cells in module \alu4_sc_core.
+  Optimizing cells in module \alu4_vslice.
+Performed a total of 8 changes.
+
+12.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+Removed 0 unused cells and 11 unused wires.
+<suppressed ~6 debug messages>
+
+12.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+12.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_cslice..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_sc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \alu4_vslice..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+12.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+  Optimizing cells in module \alu4_cslice.
+  Optimizing cells in module \alu4_sc_core.
+  Optimizing cells in module \alu4_vslice.
+Performed a total of 0 changes.
+
+12.7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.7.16. Finished OPT passes. (There is nothing left to do.)
+
+12.8. Executing FSM pass (extract and optimize FSM).
+
+12.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+12.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+12.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+12.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+12.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+12.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+12.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+12.9. Executing OPT pass (performing simple optimizations).
+
+12.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_cslice..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_sc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \alu4_vslice..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+12.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+  Optimizing cells in module \alu4_cslice.
+  Optimizing cells in module \alu4_sc_core.
+  Optimizing cells in module \alu4_vslice.
+Performed a total of 0 changes.
+
+12.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.9.9. Finished OPT passes. (There is nothing left to do.)
+
+12.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 28 address bits (of 32) from memory init port $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$auto$mem.cc:319:emit$426 ($auto$proc_rom.cc:150:do_switch$424).
+Removed top 28 address bits (of 32) from memory init port $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$auto$mem.cc:319:emit$430 ($auto$proc_rom.cc:150:do_switch$428).
+Removed top 28 address bits (of 32) from memory init port $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$auto$mem.cc:319:emit$434 ($auto$proc_rom.cc:150:do_switch$432).
+Removed top 28 address bits (of 32) from memory init port $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$auto$mem.cc:319:emit$438 ($auto$proc_rom.cc:150:do_switch$436).
+Removed top 2 bits (of 3) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$procmux$519_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$procmux$518_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$procmux$517_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$procmux$511_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$procmux$510_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$procmux$509_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$eq$rtl/alu4_checker.v:70$262 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$eq$rtl/alu4_checker.v:71$263 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$eq$rtl/alu4_checker.v:72$264 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$eq$rtl/alu4_checker.v:73$265 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$eq$rtl/alu4_checker.v:74$266 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$eq$rtl/alu4_checker.v:75$267 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.$eq$rtl/alu4_checker.v:76$268 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$501_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$498_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$497_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$496_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$495_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$procmux$455_CMP5 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$procmux$455_CMP4 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$procmux$455_CMP3 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$procmux$455_CMP2 ($eq).
+Removed top 3 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$procmux$455_CMP1 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$procmux$454_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.$procmux$453_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$procmux$467_CMP1 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$procmux$466_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$procmux$465_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$procmux$467_CMP5 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$procmux$467_CMP4 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$procmux$467_CMP3 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.$procmux$467_CMP2 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$procmux$479_CMP5 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$procmux$479_CMP4 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$procmux$479_CMP3 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$procmux$479_CMP2 ($eq).
+Removed top 3 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$procmux$479_CMP1 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$procmux$478_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.$procmux$477_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$procmux$490_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$procmux$489_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$procmux$491_CMP5 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$procmux$491_CMP4 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$procmux$491_CMP3 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$procmux$491_CMP2 ($eq).
+Removed top 3 bits (of 4) from port B of cell $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.$procmux$491_CMP1 ($eq).
+Removed top 1 bits (of 4) from port B of cell alu4_cslice.$procmux$443_CMP5 ($eq).
+Removed top 1 bits (of 4) from port B of cell alu4_cslice.$procmux$443_CMP4 ($eq).
+Removed top 2 bits (of 4) from port B of cell alu4_cslice.$procmux$443_CMP3 ($eq).
+Removed top 2 bits (of 4) from port B of cell alu4_cslice.$procmux$443_CMP2 ($eq).
+Removed top 3 bits (of 4) from port B of cell alu4_cslice.$procmux$443_CMP1 ($eq).
+Removed top 3 bits (of 4) from port B of cell alu4_vslice.$eq$rtl/alu4_datapath_bs.v:88$191 ($eq).
+Removed top 2 bits (of 4) from port B of cell alu4_vslice.$eq$rtl/alu4_datapath_bs.v:88$193 ($eq).
+Removed top 2 bits (of 4) from port B of cell alu4_vslice.$eq$rtl/alu4_datapath_bs.v:89$195 ($eq).
+Removed top 1 bits (of 4) from port B of cell alu4_vslice.$eq$rtl/alu4_datapath_bs.v:89$197 ($eq).
+Removed top 1 bits (of 4) from port B of cell alu4_vslice.$eq$rtl/alu4_datapath_bs.v:89$199 ($eq).
+
+12.11. Executing PEEPOPT pass (run peephole optimizers).
+
+12.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module alu4_cslice:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module alu4_sc_core:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module alu4_vslice:
+  created 0 $alu and 0 $macc cells.
+
+12.14. Executing SHARE pass (SAT-based resource sharing).
+
+12.15. Executing OPT pass (performing simple optimizations).
+
+12.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_cslice..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_sc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \alu4_vslice..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+12.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+  Optimizing cells in module \alu4_cslice.
+  Optimizing cells in module \alu4_sc_core.
+  Optimizing cells in module \alu4_vslice.
+Performed a total of 0 changes.
+
+12.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.15.9. Finished OPT passes. (There is nothing left to do.)
+
+12.16. Executing MEMORY pass.
+
+12.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+12.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+12.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+12.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+12.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$auto$proc_rom.cc:150:do_switch$424'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no output FF found.
+Checking read port `$auto$proc_rom.cc:150:do_switch$428'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no output FF found.
+Checking read port `$auto$proc_rom.cc:150:do_switch$432'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no output FF found.
+Checking read port `$auto$proc_rom.cc:150:do_switch$436'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no output FF found.
+Checking read port address `$auto$proc_rom.cc:150:do_switch$424'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no address FF found.
+Checking read port address `$auto$proc_rom.cc:150:do_switch$428'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no address FF found.
+Checking read port address `$auto$proc_rom.cc:150:do_switch$432'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no address FF found.
+Checking read port address `$auto$proc_rom.cc:150:do_switch$436'[0] in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker': no address FF found.
+
+12.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+12.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+12.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+12.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.18. Executing OPT pass (performing simple optimizations).
+
+12.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+<suppressed ~1 debug messages>
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+Removed 28 unused cells and 8 unused wires.
+<suppressed ~32 debug messages>
+
+12.18.5. Finished fast OPT passes.
+
+12.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory $auto$proc_rom.cc:150:do_switch$424 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker:
+  created 16 $dff cells and 0 static cells of width 2.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory $auto$proc_rom.cc:150:do_switch$428 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker:
+  created 16 $dff cells and 0 static cells of width 2.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory $auto$proc_rom.cc:150:do_switch$432 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker:
+  created 16 $dff cells and 0 static cells of width 2.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory $auto$proc_rom.cc:150:do_switch$436 in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker:
+  created 16 $dff cells and 0 static cells of width 2.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 0 write mux blocks.
+
+12.20. Executing OPT pass (performing simple optimizations).
+
+12.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+<suppressed ~16 debug messages>
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_cslice..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_sc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \alu4_vslice..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+12.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][3][4]$678:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][2]$a$661
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][2]$a$661 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][2]$a$661 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][3][1]$669:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][0]$b$656
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][0]$b$656 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][0]$b$656 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][3][0]$666:
+      Old ports: A=2'00, B=2'01, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][0]$a$655
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][0]$a$655 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][0]$a$655 [1] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][3][5]$636:
+      Old ports: A=2'01, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][2]$b$617
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][2]$b$617 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][2]$b$617 [1] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][3][4]$633:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][2]$a$616
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][2]$a$616 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][2]$a$616 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][3][5]$681:
+      Old ports: A=2'01, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][2]$b$662
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][2]$b$662 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$432$rdmux[0][2][2]$b$662 [1] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][3][1]$624:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][0]$b$611
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][0]$b$611 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][0]$b$611 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][3][0]$621:
+      Old ports: A=2'00, B=2'01, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][0]$a$610
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][0]$a$610 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$428$rdmux[0][2][0]$a$610 [1] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][3][5]$726:
+      Old ports: A=2'01, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][2]$b$707
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][2]$b$707 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][2]$b$707 [1] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][3][5]$591:
+      Old ports: A=2'01, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][2]$b$572
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][2]$b$572 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][2]$b$572 [1] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][3][4]$588:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][2]$a$571
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][2]$a$571 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][2]$a$571 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][3][1]$714:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][0]$b$701
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][0]$b$701 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][0]$b$701 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][3][1]$579:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][0]$b$566
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][0]$b$566 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][0]$b$566 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][3][0]$576:
+      Old ports: A=2'00, B=2'01, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][0]$a$565
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][0]$a$565 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][0]$a$565 [1] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][3][4]$723:
+      Old ports: A=2'10, B=2'00, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][2]$a$706
+      New ports: A=1'1, B=1'0, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][2]$a$706 [1]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][2]$a$706 [0] = 1'0
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][3][0]$711:
+      Old ports: A=2'00, B=2'01, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][0]$a$700
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][0]$a$700 [0]
+      New connections: $memory$auto$proc_rom.cc:150:do_switch$436$rdmux[0][2][0]$a$700 [1] = 1'0
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+  Optimizing cells in module \alu4_cslice.
+  Optimizing cells in module \alu4_sc_core.
+  Optimizing cells in module \alu4_vslice.
+Performed a total of 16 changes.
+
+12.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+<suppressed ~24 debug messages>
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 8 cells.
+
+12.20.6. Executing OPT_SHARE pass.
+
+12.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+Removed 0 unused cells and 88 unused wires.
+<suppressed ~1 debug messages>
+
+12.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+<suppressed ~8 debug messages>
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.20.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+12.20.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_cslice..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_sc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \alu4_vslice..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+12.20.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+  Optimizing cells in module \alu4_cslice.
+  Optimizing cells in module \alu4_sc_core.
+  Optimizing cells in module \alu4_vslice.
+Performed a total of 0 changes.
+
+12.20.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.20.14. Executing OPT_SHARE pass.
+
+12.20.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.20.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+12.20.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.20.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+12.20.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_cslice..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_sc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \alu4_vslice..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+12.20.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+  Optimizing cells in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+  Optimizing cells in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+  Optimizing cells in module \alu4_cslice.
+  Optimizing cells in module \alu4_sc_core.
+  Optimizing cells in module \alu4_vslice.
+Performed a total of 0 changes.
+
+12.20.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+Finding identical cells in module `\alu4_cslice'.
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+Removed a total of 0 cells.
+
+12.20.22. Executing OPT_SHARE pass.
+
+12.20.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.20.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+
+12.20.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Optimizing module alu4_cslice.
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+
+12.20.26. Finished OPT passes. (There is nothing left to do.)
+
+12.21. Executing TECHMAP pass (map to technology primitives).
+
+12.21.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+12.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $xnor.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$d629d85c8826a74239b9178d1930215a43b0ceb0\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $mux.
+Using template $paramod$eb7b5fa594d21f32e2ff3bd05b81752f0f326d5f\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$bf541dd3c0ba8228982b61e7bfbc350a2c253f4c\_90_pmux for cells of type $pmux.
+Using template $paramod$aa21a8cfcdb2d038c61c16c25c37cdf209d597be\_90_pmux for cells of type $pmux.
+Using template $paramod$c2e415ef15bc3ccd2723772353a6b450d3d76206\_90_pmux for cells of type $pmux.
+Using template $paramod$521ce43182eecb9f60c72393a788160d2c356bf5\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_xor.
+No more expansions possible.
+<suppressed ~503 debug messages>
+
+12.22. Executing OPT pass (performing simple optimizations).
+
+12.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+<suppressed ~127 debug messages>
+Optimizing module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+<suppressed ~33 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+<suppressed ~42 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+<suppressed ~40 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+<suppressed ~40 debug messages>
+Optimizing module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+<suppressed ~42 debug messages>
+Optimizing module alu4_cslice.
+<suppressed ~40 debug messages>
+Optimizing module alu4_sc_core.
+Optimizing module alu4_vslice.
+<suppressed ~20 debug messages>
+
+12.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker'.
+<suppressed ~216 debug messages>
+Finding identical cells in module `$paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000'.
+<suppressed ~24 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000'.
+<suppressed ~102 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001'.
+<suppressed ~102 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010'.
+<suppressed ~102 debug messages>
+Finding identical cells in module `$paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011'.
+<suppressed ~102 debug messages>
+Finding identical cells in module `\alu4_cslice'.
+<suppressed ~96 debug messages>
+Finding identical cells in module `\alu4_sc_core'.
+Finding identical cells in module `\alu4_vslice'.
+<suppressed ~30 debug messages>
+Removed a total of 258 cells.
+
+12.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker..
+Finding unused cells or wires in module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010..
+Finding unused cells or wires in module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011..
+Finding unused cells or wires in module \alu4_cslice..
+Finding unused cells or wires in module \alu4_sc_core..
+Finding unused cells or wires in module \alu4_vslice..
+Removed 6 unused cells and 600 unused wires.
+<suppressed ~14 debug messages>
+
+12.22.5. Finished fast OPT passes.
+
+12.23. Executing HIERARCHY pass (managing design hierarchy).
+
+12.23.1. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \alu4_cslice
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011
+Used module:         \alu4_vslice
+Used module:     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker
+
+12.23.2. Analyzing design hierarchy..
+Top module:  \alu4_sc_core
+Used module:     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \alu4_cslice
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010
+Used module:         $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011
+Used module:         \alu4_vslice
+Used module:     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker
+Removed 0 unused modules.
+
+12.24. Printing statistics.
+
+=== $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker ===
+
+   Number of wires:                234
+   Number of wire bits:            345
+   Number of public wires:          77
+   Number of public wire bits:     128
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                255
+     $_AND_                         22
+     $_MUX_                         56
+     $_NOT_                         56
+     $_OR_                          95
+     $_XNOR_                         1
+     $_XOR_                         25
+
+=== $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000 ===
+
+   Number of wires:                 65
+   Number of wire bits:            144
+   Number of public wires:          28
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 77
+     $_AND_                         14
+     $_MUX_                          5
+     $_NOT_                         14
+     $_OR_                          30
+     $_XOR_                          8
+     $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000      1
+     $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001      1
+     $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010      1
+     $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011      1
+     alu4_cslice                     1
+     alu4_vslice                     1
+
+=== $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000 ===
+
+   Number of wires:                 40
+   Number of wire bits:             77
+   Number of public wires:           8
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $_AND_                          8
+     $_MUX_                          1
+     $_NOT_                         16
+     $_OR_                          33
+     $_XOR_                          1
+
+=== $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001 ===
+
+   Number of wires:                 41
+   Number of wire bits:             72
+   Number of public wires:           8
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $_AND_                          8
+     $_MUX_                          1
+     $_NOT_                         16
+     $_OR_                          33
+     $_XOR_                          1
+
+=== $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010 ===
+
+   Number of wires:                 42
+   Number of wire bits:             74
+   Number of public wires:           8
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $_AND_                          8
+     $_MUX_                          1
+     $_NOT_                         16
+     $_OR_                          33
+     $_XOR_                          1
+
+=== $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011 ===
+
+   Number of wires:                 40
+   Number of wire bits:             80
+   Number of public wires:           8
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 61
+     $_AND_                          9
+     $_MUX_                          1
+     $_NOT_                         16
+     $_OR_                          34
+     $_XOR_                          1
+
+=== alu4_cslice ===
+
+   Number of wires:                 38
+   Number of wire bits:             61
+   Number of public wires:           5
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 50
+     $_AND_                          3
+     $_MUX_                          1
+     $_NOT_                         15
+     $_OR_                          31
+
+=== alu4_sc_core ===
+
+   Number of wires:                 11
+   Number of wire bits:             26
+   Number of public wires:          11
+   Number of public wire bits:      26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker      1
+     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000      1
+
+=== alu4_vslice ===
+
+   Number of wires:                 32
+   Number of wire bits:             39
+   Number of public wires:           6
+   Number of public wire bits:       9
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $_AND_                          2
+     $_NOT_                          9
+     $_OR_                          17
+     $_XNOR_                         1
+     $_XOR_                          1
+
+=== design hierarchy ===
+
+   alu4_sc_core                      1
+     $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker      1
+     $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000      1
+       $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000      1
+       $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001      1
+       $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010      1
+       $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011      1
+       alu4_cslice                   1
+       alu4_vslice                   1
+
+   Number of wires:                543
+   Number of wire bits:            918
+   Number of public wires:         159
+   Number of public wire bits:     283
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                644
+     $_AND_                         74
+     $_MUX_                         66
+     $_NOT_                        158
+     $_OR_                         306
+     $_XNOR_                         2
+     $_XOR_                         38
+
+12.25. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker...
+Checking module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010...
+Checking module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011...
+Checking module alu4_cslice...
+Checking module alu4_sc_core...
+Checking module alu4_vslice...
+Found and reported 0 problems.
+
+13. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$16d775f87911b01294a20ba5618397dd6f0654d7\alu4_checker.
+Deleting now unused module $paramod\alu4_datapath_bs\ADDER_ARCH=32'00000000000000000000000000000000.
+Deleting now unused module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000000.
+Deleting now unused module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000001.
+Deleting now unused module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000010.
+Deleting now unused module $paramod\alu4_rslice\BIT=s32'00000000000000000000000000000011.
+Deleting now unused module alu4_cslice.
+Deleting now unused module alu4_vslice.
+<suppressed ~8 debug messages>
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu4_sc_core..
+Removed 0 unused cells and 87 unused wires.
+<suppressed ~87 debug messages>
+
+15. Printing statistics.
+
+=== alu4_sc_core ===
+
+   Number of wires:                456
+   Number of wire bits:            738
+   Number of public wires:          72
+   Number of public wire bits:     103
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                644
+     $_AND_                         74
+     $_MUX_                         66
+     $_NOT_                        158
+     $_OR_                         306
+     $_XNOR_                         2
+     $_XOR_                         38
+
+16. Executing LTP pass (find longest path).
+
+Longest topological path in alu4_sc_core (length=37):
+    0: \op [1]
+    1: $flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$2798 (via $flatten\g_bs.u_dp.$auto$opt_expr.cc:607:replace_const_cells$2801)
+    2: $flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1958 [0] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$1959)
+    3: $flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1956 (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$1962)
+    4: $flatten\g_bs.u_dp.$procmux$494.S [1] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:196:simplemap_lognot$1964)
+    5: $flatten\g_bs.u_dp.$procmux$500.S [2] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$1983)
+    6: $flatten\g_bs.u_dp.$procmux$500.B_AND_S [8] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$2011)
+    7: $flatten\g_bs.u_dp.$procmux$500.Y_B [0] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$2010)
+    8: \g_bs.u_dp.u_add.g_rca.u.y [0] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:267:simplemap_mux$2023)
+    9: \g_bs.u_dp.u_add.g_rca.u.g_fa[0].p (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1876)
+   10: $flatten\g_bs.u_dp.\u_add.\g_rca.u.$and$rtl/adder4.v:31$4_Y (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1893)
+   11: \g_bs.u_dp.u_add.g_rca.u.c [1] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1892)
+   12: $flatten\g_bs.u_dp.\u_add.\g_rca.u.$and$rtl/adder4.v:31$9_Y (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1888)
+   13: \g_bs.u_dp.u_add.g_rca.u.c [2] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1887)
+   14: $flatten\g_bs.u_dp.\u_add.\g_rca.u.$and$rtl/adder4.v:31$14_Y (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1883)
+   15: \g_bs.u_dp.u_add.g_rca.u.c [3] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1882)
+   16: \g_bs.u_dp.u_r3.si (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1880)
+   17: \n (via $flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:267:simplemap_mux$1280)
+   18: $flatten\u_chk.$auto$rtlil.cc:2600:NotGate$2686 (via $flatten\u_chk.$auto$opt_expr.cc:607:replace_const_cells$2685)
+   19: $flatten\u_chk.$auto$simplemap.cc:246:simplemap_eqne$2642 (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2645)
+   20: $flatten\u_chk.$0\add3$func$rtl/alu4_checker.v:65$259.q[1:0]$404 [0] (via $flatten\u_chk.$auto$simplemap.cc:267:simplemap_mux$2648)
+   21: $flatten\u_chk.$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][2][0]$b$566 [1] (via $flatten\u_chk.$auto$simplemap.cc:267:simplemap_mux$2043)
+   22: $flatten\u_chk.$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][1][0]$b$560 [0] (via $flatten\u_chk.$auto$simplemap.cc:267:simplemap_mux$2051)
+   23: $flatten\u_chk.$memory$auto$proc_rom.cc:150:do_switch$424$rdmux[0][0][0]$a$556 [0] (via $flatten\u_chk.$auto$simplemap.cc:267:simplemap_mux$2173)
+   24: \u_chk.res4$func$rtl/alu4_checker.v:102$244.$result [0] (via $flatten\u_chk.$auto$simplemap.cc:267:simplemap_mux$2047)
+   25: $flatten\u_chk.$auto$rtlil.cc:2600:NotGate$2750 (via $flatten\u_chk.$auto$opt_expr.cc:607:replace_const_cells$2753)
+   26: $flatten\u_chk.$auto$simplemap.cc:117:simplemap_reduce$2146 (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2147)
+   27: $flatten\u_chk.$auto$simplemap.cc:246:simplemap_eqne$2144 (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2149)
+   28: $flatten\u_chk.$procmux$509_CMP (via $flatten\u_chk.$auto$simplemap.cc:196:simplemap_lognot$2151)
+   29: $flatten\u_chk.$procmux$507.B_AND_S [1] (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2178)
+   30: $flatten\u_chk.$techmap$procmux$507.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$2094_Y (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2682)
+   31: \u_chk.g_res3.res_act [1] (via $flatten\u_chk.$auto$simplemap.cc:267:simplemap_mux$2680)
+   32: $flatten\u_chk.$auto$simplemap.cc:240:simplemap_eqne$2650 [1] (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2653)
+   33: \u_chk.arith_bad (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2656)
+   34: $flatten\u_chk.$or$rtl/alu4_checker.v:110$301_Y (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2470)
+   35: \u_chk.e_arith (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2471)
+   36: $flatten\u_chk.$auto$simplemap.cc:117:simplemap_reduce$2560 [0] (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2561)
+   37: \err (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2564)
+
+17. Executing Verilog backend.
+
+17.1. Executing BMUXMAP pass.
+
+17.2. Executing DEMUXMAP pass.
+Dumping module `\alu4_sc_core'.
+
+18. Executing JSON backend.
+
+End of script. Logfile hash: 4a199a16de, CPU: user 0.46s system 0.01s, MEM: 16.08 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 27% 15x opt_expr (0 sec), 15% 16x opt_clean (0 sec), ...

@@ -1,0 +1,52 @@
+
+15. Printing statistics.
+
+=== alu4_sc_core ===
+
+   Number of wires:                388
+   Number of wire bits:            655
+   Number of public wires:          67
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                569
+     $_AND_                         84
+     $_MUX_                         14
+     $_NOT_                        134
+     $_OR_                         286
+     $_XNOR_                         2
+     $_XOR_                         49
+
+16. Executing LTP pass (find longest path).
+
+Longest topological path in alu4_sc_core (length=28):
+    0: \op [1]
+    1: $flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$2245 (via $flatten\g_bs.u_dp.$auto$opt_expr.cc:607:replace_const_cells$2246)
+    2: $flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1605 [0] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$1606)
+    3: $flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1603 (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$1609)
+    4: $flatten\g_bs.u_dp.$procmux$399_CMP (via $flatten\g_bs.u_dp.$auto$simplemap.cc:196:simplemap_lognot$1611)
+    5: $flatten\g_bs.u_dp.$procmux$402.S [2] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$1674)
+    6: $flatten\g_bs.u_dp.$procmux$402.B_AND_S [8] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1714)
+    7: $flatten\g_bs.u_dp.$procmux$402.Y_B [0] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:126:simplemap_reduce$1713)
+    8: \g_bs.u_dp.u_add.g_rca.u.y [0] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:267:simplemap_mux$1726)
+    9: \g_bs.u_dp.u_add.g_rca.u.g_fa[0].p (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1615)
+   10: $flatten\g_bs.u_dp.\u_add.\g_rca.u.$and$rtl/adder4.v:31$4_Y (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1612)
+   11: \g_bs.u_dp.u_add.g_rca.u.c [1] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1655)
+   12: $flatten\g_bs.u_dp.\u_add.\g_rca.u.$and$rtl/adder4.v:31$9_Y (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1627)
+   13: \g_bs.u_dp.u_add.g_rca.u.c [2] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1626)
+   14: $flatten\g_bs.u_dp.\u_add.\g_rca.u.$and$rtl/adder4.v:31$14_Y (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1622)
+   15: \g_bs.u_dp.u_add.g_rca.u.c [3] (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1621)
+   16: $flatten\g_bs.u_dp.\u_add.\g_rca.u.$and$rtl/adder4.v:31$19_Y (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1617)
+   17: \g_bs.u_dp.cout (via $flatten\g_bs.u_dp.$auto$simplemap.cc:75:simplemap_bitop$1616)
+   18: $flatten\g_bs.u_dp.\u_c.$procmux$342.B_AND_S [2] (via $flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:75:simplemap_bitop$773)
+   19: $flatten\g_bs.u_dp.\u_c.$procmux$342.Y_B (via $flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:126:simplemap_reduce$772)
+   20: \c (via $flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:267:simplemap_mux$776)
+   21: $flatten\u_chk.$auto$simplemap.cc:240:simplemap_eqne$2056 (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2058)
+   22: $flatten\u_chk.$and$rtl/alu4_checker.v:132$307_Y (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2060)
+   23: $flatten\u_chk.$or$rtl/alu4_checker.v:131$308_Y (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2061)
+   24: \u_chk.par_extra (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2067)
+   25: $flatten\u_chk.$or$rtl/alu4_checker.v:135$318_Y (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2073)
+   26: \u_chk.e_par (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$2074)
+   27: $flatten\u_chk.$auto$simplemap.cc:117:simplemap_reduce$2093 [0] (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2094)
+   28: \err (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$2097)

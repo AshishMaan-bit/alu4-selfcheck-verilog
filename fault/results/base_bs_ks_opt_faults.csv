@@ -1,0 +1,345 @@
+net,location,stuck_at,class,corrupt_vecs,detected_vecs,sdc_vecs,alarm_vecs,sdc_ops
+a[0],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[0],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[1],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[1],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[2],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[2],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[3],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[3],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+b[0],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[0],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[1],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[1],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[2],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[2],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[3],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[3],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+op[0],input,0,SDC,3198,0,3198,0,ADC SBB DEC OR NOR SHL ASR ROR
+op[0],input,1,SDC,3198,0,3198,0,ADD SUB INC AND XOR NOT SHR ROL
+op[1],input,0,SDC,3752,0,3752,0,SUB SBB AND OR NOT SHL ROL ROR
+op[1],input,1,SDC,3752,0,3752,0,ADD ADC INC DEC XOR NOR SHR ASR
+op[2],input,0,SDC,3934,0,3934,0,INC DEC AND OR SHR ASR ROL ROR
+op[2],input,1,SDC,3934,0,3934,0,ADD ADC SUB SBB XOR NOR NOT SHL
+op[3],input,0,SDC,3844,0,3844,0,XOR NOR NOT SHL SHR ASR ROL ROR
+op[3],input,1,SDC,3844,0,3844,0,ADD ADC SUB SBB INC DEC AND OR
+cin,input,0,SDC,512,0,512,0,ADC SBB
+cin,input,1,SDC,512,0,512,0,ADC SBB
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n11_,datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n11_,datapath,1,SDC,768,0,768,0,XOR NOT
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n12_,datapath,0,SDC,512,0,512,0,XOR NOT
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n12_,datapath,1,SDC,512,0,512,0,XOR NOT
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n13_,datapath,0,SDC,256,0,256,0,OR NOR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n13_,datapath,1,SDC,640,0,640,0,OR NOR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n15_,datapath,0,SDC,384,0,384,0,NOR SHL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n15_,datapath,1,SDC,640,0,640,0,NOR SHL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n16_,datapath,0,SDC,896,0,896,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n16_,datapath,1,SDC,1152,0,1152,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n17_,datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n17_,datapath,1,SDC,128,0,128,0,ROL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n18_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n18_,datapath,1,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n14_,datapath,0,SDC,512,0,512,0,SHR ROL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n14_,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n19_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n19_,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n20_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n20_,datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n21_,datapath,0,SDC,1920,0,1920,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n21_,datapath,1,SDC,2176,0,2176,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n22_,datapath,0,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n22_,datapath,1,SDC,1920,0,1920,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n23_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n23_,datapath,1,SDC,256,0,256,0,OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n24_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n24_,datapath,1,SDC,1664,0,1664,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n25_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n25_,datapath,1,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n26_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n26_,datapath,1,SDC,1088,0,1088,0,ADD ADC SUB SBB INC DEC AND
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n27_,datapath,0,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n27_,datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.$abc$2398$new_n31_,datapath,0,SDC,768,0,768,0,ADC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n31_,datapath,1,SDC,1024,0,1024,0,ADD SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n32_,datapath,0,SDC,960,0,960,0,INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n32_,datapath,1,SDC,960,0,960,0,ADD ADC
+$flatten\g_bs.u_dp.$abc$2398$new_n33_,datapath,0,SDC,1472,0,1472,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n33_,datapath,1,SDC,512,0,512,0,DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n28_,datapath,0,SDC,1280,0,1280,0,ADC SUB SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n28_,datapath,1,SDC,256,0,256,0,DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n34_,datapath,0,SDC,1984,0,1984,0,SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n34_,datapath,1,SDC,960,0,960,0,ADD ADC
+$flatten\g_bs.u_dp.$abc$2398$new_n35_,datapath,0,SDC,1472,0,1472,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n35_,datapath,1,SDC,1472,0,1472,0,ADD ADC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n29_,datapath,0,SDC,992,0,992,0,ADC INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n29_,datapath,1,SDC,976,0,976,0,SUB SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n46_,datapath,0,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n46_,datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n47_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n47_,datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n48_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n48_,datapath,1,SDC,512,0,512,0,ADD ADC
+$flatten\g_bs.u_dp.$abc$2398$new_n49_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n49_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n50_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n50_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n39_,datapath,0,SDC,1536,0,1536,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n39_,datapath,1,SDC,1024,0,1024,0,SUB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n40_,datapath,0,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n40_,datapath,1,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n41_,datapath,0,SDC,1536,0,1536,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n41_,datapath,1,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n42_,datapath,0,SDC,256,0,256,0,ADC
+$flatten\g_bs.u_dp.$abc$2398$new_n42_,datapath,1,SDC,768,0,768,0,ADD SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n43_,datapath,0,SDC,1536,0,1536,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n43_,datapath,1,SDC,256,0,256,0,ADC
+$flatten\g_bs.u_dp.$abc$2398$new_n44_,datapath,0,SDC,1536,0,1536,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n44_,datapath,1,SDC,512,0,512,0,ADC SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n45_,datapath,0,SDC,1536,0,1536,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n45_,datapath,1,SDC,1536,0,1536,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n51_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n51_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n52_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n52_,datapath,1,SDC,768,0,768,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n54_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n54_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n55_,datapath,0,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n55_,datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n56_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n56_,datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n57_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n57_,datapath,1,SDC,512,0,512,0,ADD ADC
+$flatten\g_bs.u_dp.$abc$2398$new_n58_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n58_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n60_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n60_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r1.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r1.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n28_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n28_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n29_,datapath,0,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n29_,datapath,1,SDC,3456,0,3456,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n30_,datapath,0,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$abc$2476$new_n30_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+r[1],datapath,0,SDC,3968,0,3968,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+r[1],datapath,1,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+g_bs.u_dp.u_r0.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r0.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n12_,datapath,0,SDC,768,0,768,0,AND OR XOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n12_,datapath,1,SDC,256,0,256,0,AND XOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n13_,datapath,0,SDC,896,0,896,0,OR XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n13_,datapath,1,SDC,384,0,384,0,OR XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n14_,datapath,0,SDC,896,0,896,0,AND OR XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n14_,datapath,1,SDC,640,0,640,0,OR NOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n15_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n15_,datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n11_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n11_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n16_,datapath,0,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n16_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n17_,datapath,0,SDC,4480,0,4480,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n17_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n18_,datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n18_,datapath,1,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n19_,datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n19_,datapath,1,SDC,384,0,384,0,XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n20_,datapath,0,SDC,1024,0,1024,0,NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n20_,datapath,1,SDC,384,0,384,0,XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n21_,datapath,0,SDC,1408,0,1408,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n21_,datapath,1,SDC,384,0,384,0,XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n22_,datapath,0,SDC,512,0,512,0,NOT ROL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n22_,datapath,1,SDC,1280,0,1280,0,XOR NOR SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n23_,datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n23_,datapath,1,SDC,1408,0,1408,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n24_,datapath,0,SDC,1408,0,1408,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n24_,datapath,1,SDC,1088,0,1088,0,NOT SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n25_,datapath,0,SDC,1664,0,1664,0,XOR NOR NOT SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n25_,datapath,1,SDC,1408,0,1408,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n26_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n26_,datapath,1,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n27_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n27_,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n28_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n28_,datapath,1,SDC,704,0,704,0,XOR NOR NOT ROL
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n29_,datapath,0,SDC,1664,0,1664,0,XOR NOR NOT SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n29_,datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n30_,datapath,0,SDC,1664,0,1664,0,XOR NOR NOT SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n30_,datapath,1,SDC,2240,0,2240,0,ADC SUB INC DEC AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n31_,datapath,0,SDC,4480,0,4480,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$abc$2453$new_n31_,datapath,1,SDC,1664,0,1664,0,XOR NOR NOT SHR ASR ROL ROR
+r[0],datapath,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROL ROR
+r[0],datapath,1,SDC,4480,0,4480,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$abc$2398$new_n25_,datapath,0,SDC,838,0,838,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$abc$2398$new_n25_,datapath,1,SDC,1690,0,1690,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$abc$2398$new_n64_,datapath,0,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n64_,datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n65_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n65_,datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n66_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n66_,datapath,1,SDC,512,0,512,0,ADD ADC
+$flatten\g_bs.u_dp.$abc$2398$new_n67_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n67_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n69_,datapath,0,SDC,2304,0,2304,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n69_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n59_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n59_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n61_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n61_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n63_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n63_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n68_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n68_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n72_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n72_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n73_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n73_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n30_,datapath,0,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n30_,datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$abc$2398$new_n36_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n36_,datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n37_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n37_,datapath,1,SDC,512,0,512,0,ADD ADC
+g_bs.u_dp.u_v.y3,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_v.y3,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.$abc$2398$new_n75_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n75_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r3.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r3.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n13_,datapath,0,SDC,256,0,256,0,OR NOR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n13_,datapath,1,SDC,512,0,512,0,AND OR XOR NOR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n14_,datapath,0,SDC,1024,0,1024,0,AND OR XOR NOR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n14_,datapath,1,SDC,512,0,512,0,AND OR XOR NOR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n16_,datapath,0,SDC,1664,0,1664,0,AND OR XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n16_,datapath,1,SDC,640,0,640,0,AND XOR NOT
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n17_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n17_,datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n15_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n15_,datapath,1,SDC,1376,0,1376,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n18_,datapath,0,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n18_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n28_,datapath,0,SDC,384,0,384,0,XOR NOT
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n28_,datapath,1,SDC,128,0,128,0,XOR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n26_,datapath,0,SDC,1024,0,1024,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n26_,datapath,1,SDC,256,0,256,0,XOR NOR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n12_,datapath,0,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n12_,datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n23_,datapath,0,SDC,640,0,640,0,XOR NOR NOT ASR ROL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n23_,datapath,1,SDC,512,0,512,0,SHL ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n27_,datapath,0,SDC,1024,0,1024,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n27_,datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n29_,datapath,0,SDC,512,0,512,0,XOR NOR SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n29_,datapath,1,SDC,1024,0,1024,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n30_,datapath,0,SDC,896,0,896,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n30_,datapath,1,SDC,1152,0,1152,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n19_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n19_,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n20_,datapath,0,SDC,384,0,384,0,ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n20_,datapath,1,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n21_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n21_,datapath,1,SDC,384,0,384,0,ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n22_,datapath,0,SDC,768,0,768,0,ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n22_,datapath,1,SDC,1024,0,1024,0,SHR ASR ROL
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n24_,datapath,0,SDC,768,0,768,0,ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n24_,datapath,1,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n25_,datapath,0,SDC,768,0,768,0,ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n25_,datapath,1,SDC,1280,0,1280,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n31_,datapath,0,SDC,1664,0,1664,0,XOR NOR NOT SHL ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$abc$2520$new_n31_,datapath,1,SDC,2432,0,2432,0,XOR NOR NOT SHL SHR ASR ROL ROR
+n,datapath,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ASR ROL ROR
+n,datapath,1,SDC,4480,0,4480,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n11_,datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n11_,datapath,1,SDC,768,0,768,0,XOR NOT
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n12_,datapath,0,SDC,512,0,512,0,XOR NOT
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n12_,datapath,1,SDC,512,0,512,0,XOR NOT
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n13_,datapath,0,SDC,256,0,256,0,OR NOR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n13_,datapath,1,SDC,640,0,640,0,OR NOR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n15_,datapath,0,SDC,384,0,384,0,NOR SHL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n15_,datapath,1,SDC,640,0,640,0,NOR SHL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n16_,datapath,0,SDC,896,0,896,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n16_,datapath,1,SDC,1152,0,1152,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n17_,datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n17_,datapath,1,SDC,128,0,128,0,ROL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n18_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n18_,datapath,1,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n14_,datapath,0,SDC,512,0,512,0,SHR ROL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n14_,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n19_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n19_,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n20_,datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n20_,datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n21_,datapath,0,SDC,1920,0,1920,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n21_,datapath,1,SDC,2176,0,2176,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n22_,datapath,0,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n22_,datapath,1,SDC,1920,0,1920,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n23_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n23_,datapath,1,SDC,256,0,256,0,OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n24_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n24_,datapath,1,SDC,1472,0,1472,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n25_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n25_,datapath,1,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n26_,datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n26_,datapath,1,SDC,1056,0,1056,0,ADD ADC SUB SBB INC DEC AND
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n27_,datapath,0,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n27_,datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.$abc$2398$new_n70_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n70_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r2.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r2.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n28_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n28_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n29_,datapath,0,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n29_,datapath,1,SDC,3456,0,3456,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n30_,datapath,0,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$abc$2498$new_n30_,datapath,1,SDC,2048,0,2048,0,ADD ADC SUB SBB INC DEC AND OR
+r[2],datapath,0,SDC,3968,0,3968,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+r[2],datapath,1,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$abc$2398$new_n26_,datapath,0,SDC,838,0,838,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$abc$2398$new_n26_,datapath,1,SDC,1562,0,1562,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+z,datapath,0,SDC,838,0,838,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+z,datapath,1,SDC,7354,0,7354,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$abc$2398$new_n74_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n74_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n76_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$abc$2398$new_n76_,datapath,1,SDC,768,0,768,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.cout,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.cout,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n9_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n9_,datapath,1,SDC,480,0,480,0,AND OR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n10_,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n10_,datapath,1,SDC,3840,0,3840,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n11_,datapath,0,SDC,5376,0,5376,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n11_,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n12_,datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n12_,datapath,1,SDC,1280,0,1280,0,NOR SHL SHR ROL
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n13_,datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n13_,datapath,1,SDC,384,0,384,0,NOT ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n14_,datapath,0,SDC,2816,0,2816,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n14_,datapath,1,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n15_,datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n15_,datapath,1,SDC,128,0,128,0,ROL
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n16_,datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n16_,datapath,1,SDC,2048,0,2048,0,XOR NOR SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n17_,datapath,0,SDC,2816,0,2816,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n17_,datapath,1,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n18_,datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n18_,datapath,1,SDC,2816,0,2816,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n19_,datapath,0,SDC,5376,0,5376,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$abc$2543$new_n19_,datapath,1,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+c,datapath,0,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+c,datapath,1,SDC,5376,0,5376,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n8_,datapath,0,SDC,288,0,288,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n8_,datapath,1,SDC,1248,0,1248,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n9_,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n9_,datapath,1,SDC,1248,0,1248,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n10_,datapath,0,SDC,1248,0,1248,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n10_,datapath,1,SDC,288,0,288,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n11_,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n11_,datapath,1,SDC,1248,0,1248,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n12_,datapath,0,SDC,256,0,256,0,AND OR
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n12_,datapath,1,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n13_,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n13_,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n14_,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$abc$2556$new_n14_,datapath,1,SDC,4368,0,4368,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+v,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+v,datapath,1,SDC,7616,0,7616,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR

@@ -1,0 +1,15 @@
+KILLED    | arch=1 DP0 A1L1 | func_fails=  512 | SC err_asserted=  512 | DMR err_asserted=      0 | alu4_datapath.v  | SBB uses wrong borrow polarity
+KILLED    | arch=1 DP0 A1L1 | func_fails=  576 | SC err_asserted=  576 | DMR err_asserted=      0 | alu4_datapath.v  | overflow uses B instead of adder operand
+KILLED    | arch=1 DP0 A1L1 | func_fails=  256 | SC err_asserted=  256 | DMR err_asserted=      0 | alu4_datapath.v  | ASR does not sign-extend
+KILLED    | arch=1 DP0 A1L1 | func_fails=  256 | SC err_asserted=  256 | DMR err_asserted=      0 | alu4_datapath.v  | ROR carry from wrong bit
+KILLED    | arch=1 DP0 A1L1 | func_fails=  512 | SC err_asserted=  512 | DMR err_asserted=      0 | alu4_datapath.v  | DEC subtracts 2 instead of 1
+KILLED    | arch=1 DP1 A1L1 | func_fails=  384 | SC err_asserted=  256 | DMR err_asserted=      - | alu4_datapath_bs.v | bit-sliced: ROR uses wrong neighbour
+KILLED    | arch=1 DP1 A1L1 | func_fails=  256 | SC err_asserted=  256 | DMR err_asserted=      - | alu4_datapath_bs.v | bit-sliced: ROL carry missing
+KILLED    | arch=1 DP1 A1L1 | func_fails=   64 | SC err_asserted=   64 | DMR err_asserted=      0 | adder4.v         | CLA c3 missing p[2] term
+KILLED    | arch=2 DP1 A1L1 | func_fails=  192 | SC err_asserted=  192 | DMR err_asserted=      0 | adder4.v         | KS prefix wired to wrong span
+KILLED    | arch=1 DP1 A0L1 | func_fails=    0 | SC err_asserted= 1280 | DMR err_asserted=      - | alu4_checker.v   | checker[RES3]: residue of B used instead of adder operand
+KILLED    | arch=1 DP1 A1L1 | func_fails=    0 | SC err_asserted= 3072 | DMR err_asserted=      - | alu4_checker.v   | checker[INV]: inverse carry-in not complemented
+KILLED    | arch=1 DP1 A1L1 | func_fails=    0 | SC err_asserted=  480 | DMR err_asserted=      - | alu4_checker.v   | checker[PAR]: OR parity misses AND term
+KILLED    | arch=1 DP1 A1L1 | func_fails=    0 | SC err_asserted=  256 | DMR err_asserted=      - | alu4_checker.v   | checker: ASR parity rule wrong
+KILLED    | arch=1 DP1 A1L1 | func_fails=    0 | SC err_asserted= 3648 | DMR err_asserted=      - | alu4_checker.v   | checker: N recomputed from wrong bit
+Mutants killed: 14/14

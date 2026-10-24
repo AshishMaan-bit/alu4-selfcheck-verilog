@@ -1,0 +1,9 @@
+------------------------------------------------------------
+ DUT              : RTL SC core, ADDER_ARCH = 1, DP_STYLE = 0, ARITH_CHK = 1, LOGIC_CHK = 0
+ vectors applied  : 8192
+ functional fails : 0
+ err asserted     : 0
+ undetected fails : 0
+ RESULT: PASS
+------------------------------------------------------------
+tb/tb_alu4_exhaustive.v:98: $finish called at 8192000 (1ps)

@@ -1,0 +1,10 @@
+# compiled simulation binaries (rebuilt by the run_*.sh scripts)
+sim/build/
+*.vvp
+# Python / editor / OS clutter
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+~$*.docx
+.~lock.*

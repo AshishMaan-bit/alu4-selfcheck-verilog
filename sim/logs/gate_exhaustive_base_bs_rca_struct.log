@@ -1,0 +1,9 @@
+------------------------------------------------------------
+ DUT              : gate-level netlist
+ vectors applied  : 8192
+ functional fails : 0
+ err asserted     : 0
+ undetected fails : 0
+ RESULT: PASS
+------------------------------------------------------------
+tb/tb_alu4_exhaustive.v:98: $finish called at 8192000 (1ps)

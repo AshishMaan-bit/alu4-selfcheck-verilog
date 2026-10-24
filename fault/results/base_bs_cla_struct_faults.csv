@@ -1,0 +1,841 @@
+net,location,stuck_at,class,corrupt_vecs,detected_vecs,sdc_vecs,alarm_vecs,sdc_ops
+a[0],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[0],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[1],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[1],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[2],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[2],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[3],input,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+a[3],input,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+b[0],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[0],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[1],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[1],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[2],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[2],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[3],input,0,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+b[3],input,1,SDC,1664,0,1664,0,ADD ADC SUB SBB AND OR XOR NOR
+op[0],input,0,SDC,3198,0,3198,0,ADC SBB DEC OR NOR SHL ASR ROR
+op[0],input,1,SDC,3198,0,3198,0,ADD SUB INC AND XOR NOT SHR ROL
+op[1],input,0,SDC,3752,0,3752,0,SUB SBB AND OR NOT SHL ROL ROR
+op[1],input,1,SDC,3752,0,3752,0,ADD ADC INC DEC XOR NOR SHR ASR
+op[2],input,0,SDC,3934,0,3934,0,INC DEC AND OR SHR ASR ROL ROR
+op[2],input,1,SDC,3934,0,3934,0,ADD ADC SUB SBB XOR NOR NOT SHL
+op[3],input,0,SDC,3844,0,3844,0,XOR NOR NOT SHL SHR ASR ROL ROR
+op[3],input,1,SDC,3844,0,3844,0,ADD ADC SUB SBB INC DEC AND OR
+cin,input,0,SDC,512,0,512,0,ADC SBB
+cin,input,1,SDC,512,0,512,0,ADC SBB
+$flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$1657,datapath,0,SDC,768,0,768,0,ADD INC
+$flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$1657,datapath,1,SDC,1248,0,1248,0,ADC SBB DEC
+$flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$1655,datapath,0,SDC,1024,0,1024,0,ADD ADC
+$flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$1655,datapath,1,SDC,1024,0,1024,0,SUB SBB
+$flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$1661,datapath,0,SDC,960,0,960,0,ADD ADC
+$flatten\g_bs.u_dp.$auto$rtlil.cc:2600:NotGate$1661,datapath,1,SDC,960,0,960,0,INC DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1520[1],datapath,0,SDC,960,0,960,0,ADD ADC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1520[1],datapath,1,SDC,960,0,960,0,INC DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1520[0],datapath,0,SDC,1024,0,1024,0,ADD SBB INC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1520[0],datapath,1,SDC,736,0,736,0,ADC DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1518,datapath,0,SDC,2432,0,2432,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1518,datapath,1,SDC,480,0,480,0,DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1539[1],datapath,0,SDC,256,0,256,0,DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1539[1],datapath,1,SDC,1280,0,1280,0,ADC SUB SBB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1537,datapath,0,SDC,768,0,768,0,ADD SBB DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1537,datapath,1,SDC,256,0,256,0,ADC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1554[0],datapath,0,SDC,1280,0,1280,0,ADD ADC SBB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1554[0],datapath,1,SDC,512,0,512,0,SUB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1552,datapath,0,SDC,2272,0,2272,0,ADD ADC SBB INC DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1552,datapath,1,SDC,512,0,512,0,SUB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1569[0],datapath,0,SDC,1024,0,1024,0,ADD ADC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1569[0],datapath,1,SDC,512,0,512,0,SBB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1567,datapath,0,SDC,1760,0,1760,0,ADD ADC INC DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1567,datapath,1,SDC,512,0,512,0,SBB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1584[0],datapath,0,SDC,512,0,512,0,DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1584[0],datapath,1,SDC,480,0,480,0,INC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1582,datapath,0,SDC,1728,0,1728,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:246:simplemap_eqne$1582,datapath,1,SDC,480,0,480,0,INC
+$flatten\g_bs.u_dp.$procmux$304_CMP,datapath,0,SDC,512,0,512,0,SUB
+$flatten\g_bs.u_dp.$procmux$304_CMP,datapath,1,SDC,2272,0,2272,0,ADD ADC SBB INC DEC
+$flatten\g_bs.u_dp.$procmux$307.S[1],datapath,0,SDC,480,0,480,0,INC
+$flatten\g_bs.u_dp.$procmux$307.S[1],datapath,1,SDC,1728,0,1728,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$procmux$301.S[0],datapath,0,SDC,1024,0,1024,0,SUB INC
+$flatten\g_bs.u_dp.$procmux$301.S[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SBB DEC
+$flatten\g_bs.u_dp.$procmux$301.S[1],datapath,0,SDC,512,0,512,0,SBB
+$flatten\g_bs.u_dp.$procmux$301.S[1],datapath,1,SDC,1760,0,1760,0,ADD ADC INC DEC
+$flatten\g_bs.u_dp.$procmux$307.S[2],datapath,0,SDC,1024,0,1024,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.S[2],datapath,1,SDC,1504,0,1504,0,ADD ADC INC
+$flatten\g_bs.u_dp.$procmux$307.S[0],datapath,0,SDC,480,0,480,0,DEC
+$flatten\g_bs.u_dp.$procmux$307.S[0],datapath,1,SDC,2432,0,2432,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.$procmux$307.B[8],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B[8],datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[8],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[8],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[0],datapath,0,SDC,1024,0,1024,0,SUB SBB DEC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[0],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1638,datapath,0,SDC,960,0,960,0,INC DEC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1638,datapath,1,SDC,960,0,960,0,ADD ADC
+$flatten\g_bs.u_dp.$techmap$procmux$307.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1501_Y,datapath,0,SDC,1984,0,1984,0,SUB SBB INC DEC
+$flatten\g_bs.u_dp.$techmap$procmux$307.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1501_Y,datapath,1,SDC,960,0,960,0,ADD ADC
+g_bs.u_dp.u_add.genblk1.g_cla.u.y[0],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.y[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[0],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.$procmux$301.B[1],datapath,0,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.$procmux$301.B[1],datapath,1,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.$procmux$301.B_AND_S[1],datapath,0,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.$procmux$301.B_AND_S[1],datapath,1,SDC,512,0,512,0,ADC SBB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1642,datapath,0,SDC,1280,0,1280,0,SUB SBB INC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1642,datapath,1,SDC,512,0,512,0,ADC SBB
+$flatten\g_bs.u_dp.$procmux$301.S[2],datapath,0,SDC,256,0,256,0,ADC
+$flatten\g_bs.u_dp.$procmux$301.S[2],datapath,1,SDC,768,0,768,0,ADD SBB DEC
+$flatten\g_bs.u_dp.$procmux$301.B_AND_S[2],datapath,0,SDC,256,0,256,0,ADC
+$flatten\g_bs.u_dp.$procmux$301.B_AND_S[2],datapath,1,SDC,512,0,512,0,ADC SBB
+$flatten\g_bs.u_dp.$procmux$301.Y_B,datapath,0,SDC,1536,0,1536,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.$procmux$301.Y_B,datapath,1,SDC,512,0,512,0,ADC SBB
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1650,datapath,0,SDC,1280,0,1280,0,SUB SBB INC
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1650,datapath,1,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.$techmap$procmux$301.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$527_Y,datapath,0,SDC,1536,0,1536,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.$techmap$procmux$301.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$527_Y,datapath,1,SILENT,0,0,0,0,
+g_bs.u_dp.ci,datapath,0,SDC,1536,0,1536,0,ADC SUB SBB INC
+g_bs.u_dp.ci,datapath,1,SDC,1536,0,1536,0,ADD ADC SBB DEC
+g_bs.u_dp.u_r0.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r0.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1308[0],datapath,0,SDC,768,0,768,0,NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1308[0],datapath,1,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1669,datapath,0,SDC,1344,0,1344,0,SUB SBB XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1669,datapath,1,SDC,1536,0,1536,0,AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1681,datapath,0,SDC,1536,0,1536,0,ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1681,datapath,1,SDC,1920,0,1920,0,NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1368[1],datapath,0,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1368[1],datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1366,datapath,0,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1366,datapath,1,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r0.$procmux$250_CMP,datapath,0,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r0.$procmux$250_CMP,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1675,datapath,0,SDC,512,0,512,0,AND XOR ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1675,datapath,1,SDC,1280,0,1280,0,OR NOR SHL ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1323[0],datapath,0,SDC,384,0,384,0,XOR SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1323[0],datapath,1,SDC,640,0,640,0,NOR ASR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1381,datapath,0,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1381,datapath,1,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r0.$procmux$249_CMP,datapath,0,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r0.$procmux$249_CMP,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1431,datapath,0,SDC,512,0,512,0,SHR ASR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1431,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1671,datapath,0,SDC,1024,0,1024,0,INC DEC XOR SHR
+$flatten\g_bs.u_dp.\u_r0.$auto$rtlil.cc:2600:NotGate$1671,datapath,1,SDC,1536,0,1536,0,AND OR NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1293[0],datapath,0,SDC,1152,0,1152,0,INC DEC AND ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1293[0],datapath,1,SDC,640,0,640,0,OR SHL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1422,datapath,0,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1422,datapath,1,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$247_CMP,datapath,0,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$247_CMP,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[0],datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[0],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1278[0],datapath,0,SDC,1664,0,1664,0,INC DEC XOR NOR SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1278[0],datapath,1,SDC,896,0,896,0,AND NOT ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1396,datapath,0,SDC,2880,0,2880,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1396,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[1],datapath,0,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[1],datapath,1,SDC,2880,0,2880,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[1],datapath,0,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[1],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1440[0],datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1440[0],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[3],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[3],datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1308[1],datapath,0,SDC,1728,0,1728,0,ADC SUB SBB INC DEC AND SHR ASR ROL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1308[1],datapath,1,SDC,896,0,896,0,NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1336,datapath,0,SDC,2432,0,2432,0,ADD ADC SUB SBB AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1336,datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[3],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[3],datapath,1,SDC,2432,0,2432,0,ADD ADC SUB SBB AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[3],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[3],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1445[0],datapath,0,SDC,1280,0,1280,0,NOT SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1445[0],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[6],datapath,0,SDC,768,0,768,0,OR NOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[6],datapath,1,SDC,256,0,256,0,OR NOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[4],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[4],datapath,1,SDC,384,0,384,0,NOR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1321,datapath,0,SDC,2304,0,2304,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1321,datapath,1,SDC,384,0,384,0,NOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[4],datapath,0,SDC,384,0,384,0,NOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[4],datapath,1,SDC,2304,0,2304,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[4],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[4],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[5],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[5],datapath,1,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1306,datapath,0,SDC,2432,0,2432,0,ADC SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1306,datapath,1,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[5],datapath,0,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[5],datapath,1,SDC,2432,0,2432,0,ADC SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[5],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[5],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1440[2],datapath,0,SDC,384,0,384,0,XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1440[2],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1278[1],datapath,0,SDC,1408,0,1408,0,SUB SBB NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1278[1],datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1291,datapath,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1291,datapath,1,SDC,128,0,128,0,OR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[6],datapath,0,SDC,128,0,128,0,OR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[6],datapath,1,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[6],datapath,0,SDC,384,0,384,0,OR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[6],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[7],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B[7],datapath,1,SDC,384,0,384,0,AND
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1276,datapath,0,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1276,datapath,1,SDC,384,0,384,0,AND
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[7],datapath,0,SDC,384,0,384,0,AND
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[7],datapath,1,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[7],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.B_AND_S[7],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1440[3],datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1440[3],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1445[1],datapath,0,SDC,896,0,896,0,AND OR XOR NOR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1445[1],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.Y_B,datapath,0,SDC,2176,0,2176,0,AND OR XOR NOR NOT SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.Y_B,datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[0],datapath,0,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1351,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:246:simplemap_eqne$1351,datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[2],datapath,0,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r0.$procmux$246.S[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[1],datapath,0,SDC,512,0,512,0,NOT SHL
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1464[0],datapath,0,SDC,1536,0,1536,0,NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1464[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[2],datapath,0,SDC,384,0,384,0,NOR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[3],datapath,0,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1459[3],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1464[1],datapath,0,SDC,896,0,896,0,AND OR NOR
+$flatten\g_bs.u_dp.\u_r0.$auto$simplemap.cc:117:simplemap_reduce$1464[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r0.$techmap$procmux$246.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1405_Y,datapath,0,SDC,2432,0,2432,0,AND OR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r0.$techmap$procmux$246.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1405_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+r[0],datapath,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROL ROR
+r[0],datapath,1,SDC,4480,0,4480,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$procmux$307.B[9],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B[9],datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[9],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[9],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[1],datapath,0,SDC,1024,0,1024,0,SUB SBB DEC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[1],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+g_bs.u_dp.u_add.genblk1.g_cla.u.y[1],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.y[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[1],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[0],datapath,0,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:49$23_Y,datapath,0,SDC,768,0,768,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:49$23_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.c1,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.c1,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r1.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r1.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1106[0],datapath,0,SDC,640,0,640,0,NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1106[0],datapath,1,SDC,384,0,384,0,XOR SHR
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1719,datapath,0,SDC,1152,0,1152,0,SUB SBB XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1719,datapath,1,SDC,1536,0,1536,0,AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1725,datapath,0,SDC,1664,0,1664,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1725,datapath,1,SDC,1984,0,1984,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1106[1],datapath,0,SDC,2368,0,2368,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1106[1],datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1104,datapath,0,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1104,datapath,1,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r1.$procmux$267_CMP,datapath,0,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r1.$procmux$267_CMP,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1721,datapath,0,SDC,640,0,640,0,AND XOR NOT ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1721,datapath,1,SDC,1280,0,1280,0,OR NOR SHL ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1121[0],datapath,0,SDC,320,0,320,0,XOR SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1121[0],datapath,1,SDC,576,0,576,0,NOR ASR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1119,datapath,0,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1119,datapath,1,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r1.$procmux$266_CMP,datapath,0,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r1.$procmux$266_CMP,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1235,datapath,0,SDC,512,0,512,0,SHR ASR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1235,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1723,datapath,0,SDC,960,0,960,0,INC DEC XOR NOR SHR
+$flatten\g_bs.u_dp.\u_r1.$auto$rtlil.cc:2600:NotGate$1723,datapath,1,SDC,1536,0,1536,0,AND OR NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1091[0],datapath,0,SDC,1344,0,1344,0,INC DEC AND XOR NOR NOT ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1091[0],datapath,1,SDC,704,0,704,0,OR SHL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1149,datapath,0,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1149,datapath,1,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$264_CMP,datapath,0,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$264_CMP,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[0],datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[0],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1091[1],datapath,0,SDC,2176,0,2176,0,ADD ADC SUB SBB INC DEC AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1091[1],datapath,1,SDC,960,0,960,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1089,datapath,0,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1089,datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r1.$procmux$268_CMP,datapath,0,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r1.$procmux$268_CMP,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1136[0],datapath,0,SDC,1280,0,1280,0,INC DEC XOR NOR SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1136[0],datapath,1,SDC,832,0,832,0,AND NOT ROL
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1134,datapath,0,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1134,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r1.$procmux$265_CMP,datapath,0,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r1.$procmux$265_CMP,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[1],datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[1],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1244[0],datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1244[0],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[2],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[2],datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1224,datapath,0,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1224,datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[2],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[2],datapath,1,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[2],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[2],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[5],datapath,0,SDC,768,0,768,0,OR NOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[5],datapath,1,SDC,256,0,256,0,OR NOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[3],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[3],datapath,1,SDC,384,0,384,0,NOR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1209,datapath,0,SDC,2368,0,2368,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1209,datapath,1,SDC,320,0,320,0,NOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[3],datapath,0,SDC,320,0,320,0,NOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[3],datapath,1,SDC,2368,0,2368,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[3],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[3],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1244[1],datapath,0,SDC,384,0,384,0,NOR NOT
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1244[1],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1248[0],datapath,0,SDC,1664,0,1664,0,NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1248[0],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[4],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[4],datapath,1,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1194,datapath,0,SDC,2560,0,2560,0,ADD ADC SUB SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1194,datapath,1,SDC,128,0,128,0,XOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[4],datapath,0,SDC,128,0,128,0,XOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[4],datapath,1,SDC,2560,0,2560,0,ADD ADC SUB SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[4],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[4],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1166[1],datapath,0,SDC,1152,0,1152,0,SUB SBB NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1166[1],datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1179,datapath,0,SDC,3392,0,3392,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1179,datapath,1,SDC,192,0,192,0,OR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[5],datapath,0,SDC,192,0,192,0,OR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[5],datapath,1,SDC,3392,0,3392,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[5],datapath,0,SDC,384,0,384,0,OR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[5],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1244[2],datapath,0,SDC,640,0,640,0,OR XOR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1244[2],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[6],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B[6],datapath,1,SDC,384,0,384,0,AND
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1164,datapath,0,SDC,2368,0,2368,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:246:simplemap_eqne$1164,datapath,1,SDC,320,0,320,0,AND
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[6],datapath,0,SDC,320,0,320,0,AND
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.S[6],datapath,1,SDC,2368,0,2368,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[6],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.B_AND_S[6],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1248[1],datapath,0,SDC,768,0,768,0,AND OR XOR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1248[1],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.Y_B,datapath,0,SDC,2432,0,2432,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$procmux$263.Y_B,datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1261[0],datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1261[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1261[1],datapath,0,SDC,576,0,576,0,NOR NOT
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1261[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1265[0],datapath,0,SDC,1856,0,1856,0,NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1265[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1261[2],datapath,0,SDC,320,0,320,0,OR XOR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1261[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1265[1],datapath,0,SDC,640,0,640,0,AND OR XOR
+$flatten\g_bs.u_dp.\u_r1.$auto$simplemap.cc:117:simplemap_reduce$1265[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r1.$techmap$procmux$263.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1021_Y,datapath,0,SDC,2496,0,2496,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r1.$techmap$procmux$263.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1021_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+r[1],datapath,0,SDC,3968,0,3968,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+r[1],datapath,1,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1600[0],datapath,0,SDC,1690,0,1690,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1600[0],datapath,1,SDC,838,0,838,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$procmux$307.B[10],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B[10],datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[10],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[10],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[2],datapath,0,SDC,1024,0,1024,0,SUB SBB DEC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[2],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+g_bs.u_dp.u_add.genblk1.g_cla.u.y[2],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.y[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[2],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[1],datapath,0,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:50$25_Y,datapath,0,SDC,384,0,384,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:50$25_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:50$26_Y,datapath,0,SDC,1152,0,1152,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:50$26_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:50$27_Y,datapath,0,SDC,384,0,384,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:50$27_Y,datapath,1,SDC,768,0,768,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:50$28_Y,datapath,0,SDC,384,0,384,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:50$28_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.c2,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.c2,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r2.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r2.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1775,datapath,0,SDC,640,0,640,0,AND XOR NOT ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1775,datapath,1,SDC,1280,0,1280,0,OR NOR SHL ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1771,datapath,0,SDC,832,0,832,0,INC DEC XOR NOR SHR
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1771,datapath,1,SDC,1536,0,1536,0,AND OR NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1039[0],datapath,0,SDC,1216,0,1216,0,INC DEC AND XOR NOR NOT ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1039[0],datapath,1,SDC,736,0,736,0,OR SHL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1769,datapath,0,SDC,1120,0,1120,0,SUB SBB XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1769,datapath,1,SDC,1536,0,1536,0,AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1781,datapath,0,SDC,1728,0,1728,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r2.$auto$rtlil.cc:2600:NotGate$1781,datapath,1,SDC,2016,0,2016,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1014[1],datapath,0,SDC,2368,0,2368,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1014[1],datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$1037,datapath,0,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$1037,datapath,1,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$276_CMP,datapath,0,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$276_CMP,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$924[0],datapath,0,SDC,640,0,640,0,NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$924[0],datapath,1,SDC,448,0,448,0,XOR SHR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$982,datapath,0,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$982,datapath,1,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r2.$procmux$279_CMP,datapath,0,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r2.$procmux$279_CMP,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1046,datapath,0,SDC,512,0,512,0,SHR ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1046,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$939[0],datapath,0,SDC,320,0,320,0,XOR SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$939[0],datapath,1,SDC,544,0,544,0,NOR ASR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$997,datapath,0,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$997,datapath,1,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r2.$procmux$278_CMP,datapath,0,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r2.$procmux$278_CMP,datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[0],datapath,1,SDC,2496,0,2496,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[0],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$924[1],datapath,0,SDC,2304,0,2304,0,ADD ADC SUB SBB INC DEC AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$924[1],datapath,1,SDC,992,0,992,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$967,datapath,0,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$967,datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r2.$procmux$280_CMP,datapath,0,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r2.$procmux$280_CMP,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$894[0],datapath,0,SDC,1152,0,1152,0,INC DEC XOR NOR SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$894[0],datapath,1,SDC,800,0,800,0,AND NOT ROL
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$1012,datapath,0,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$1012,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r2.$procmux$277_CMP,datapath,0,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r2.$procmux$277_CMP,datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[1],datapath,1,SDC,2624,0,2624,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[1],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1057[0],datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1057[0],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[2],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[2],datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$952,datapath,0,SDC,3072,0,3072,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$952,datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[2],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[2],datapath,1,SDC,3072,0,3072,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[2],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[2],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[5],datapath,0,SDC,768,0,768,0,OR NOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[5],datapath,1,SDC,256,0,256,0,OR NOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[3],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[3],datapath,1,SDC,384,0,384,0,NOR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$937,datapath,0,SDC,2432,0,2432,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$937,datapath,1,SDC,288,0,288,0,NOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[3],datapath,0,SDC,288,0,288,0,NOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[3],datapath,1,SDC,2432,0,2432,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[3],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[3],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1057[1],datapath,0,SDC,384,0,384,0,NOR NOT
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1057[1],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1061[0],datapath,0,SDC,1664,0,1664,0,NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1061[0],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[4],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[4],datapath,1,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$922,datapath,0,SDC,2688,0,2688,0,ADD ADC SUB SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$922,datapath,1,SDC,192,0,192,0,XOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[4],datapath,0,SDC,192,0,192,0,XOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[4],datapath,1,SDC,2688,0,2688,0,ADD ADC SUB SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[4],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[4],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$894[1],datapath,0,SDC,1120,0,1120,0,SUB SBB NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$894[1],datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$907,datapath,0,SDC,3328,0,3328,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$907,datapath,1,SDC,224,0,224,0,OR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[5],datapath,0,SDC,224,0,224,0,OR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[5],datapath,1,SDC,3328,0,3328,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[5],datapath,0,SDC,384,0,384,0,OR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[5],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1057[2],datapath,0,SDC,640,0,640,0,OR XOR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1057[2],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[6],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B[6],datapath,1,SDC,384,0,384,0,AND
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$892,datapath,0,SDC,2176,0,2176,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:246:simplemap_eqne$892,datapath,1,SDC,288,0,288,0,AND
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[6],datapath,0,SDC,288,0,288,0,AND
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.S[6],datapath,1,SDC,2176,0,2176,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[6],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.B_AND_S[6],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1061[1],datapath,0,SDC,768,0,768,0,AND OR XOR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1061[1],datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.Y_B,datapath,0,SDC,2432,0,2432,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$procmux$275.Y_B,datapath,1,SDC,2688,0,2688,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1074[0],datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1074[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1074[1],datapath,0,SDC,544,0,544,0,NOR NOT
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1074[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1078[0],datapath,0,SDC,1824,0,1824,0,NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1078[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1074[2],datapath,0,SDC,416,0,416,0,OR XOR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1074[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1078[1],datapath,0,SDC,704,0,704,0,AND OR XOR
+$flatten\g_bs.u_dp.\u_r2.$auto$simplemap.cc:117:simplemap_reduce$1078[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r2.$techmap$procmux$275.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1021_Y,datapath,0,SDC,2528,0,2528,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r2.$techmap$procmux$275.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$1021_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+r[2],datapath,0,SDC,3968,0,3968,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+r[2],datapath,1,SDC,4224,0,4224,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$procmux$307.B[11],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B[11],datapath,1,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[11],datapath,0,SDC,512,0,512,0,SUB SBB
+$flatten\g_bs.u_dp.$procmux$307.B_AND_S[11],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[3],datapath,0,SDC,1024,0,1024,0,SUB SBB DEC
+$flatten\g_bs.u_dp.$procmux$307.Y_B[3],datapath,1,SDC,1024,0,1024,0,SUB SBB INC
+g_bs.u_dp.u_v.y3,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_v.y3,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[3],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.p[3],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[2],datapath,0,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:51$30_Y,datapath,0,SDC,384,0,384,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:51$30_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:51$31_Y,datapath,0,SDC,1152,0,1152,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:51$31_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:51$32_Y,datapath,0,SDC,384,0,384,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:51$32_Y,datapath,1,SDC,576,0,576,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:51$33_Y,datapath,0,SDC,192,0,192,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:51$33_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:51$34_Y,datapath,0,SDC,1344,0,1344,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:51$34_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:52$36_Y,datapath,0,SDC,192,0,192,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:52$36_Y,datapath,1,SDC,896,0,896,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:52$37_Y,datapath,0,SDC,192,0,192,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:52$37_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.c3,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.c3,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r3.si,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_r3.si,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1827,datapath,0,SDC,896,0,896,0,AND XOR NOT SHR ROL
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1827,datapath,1,SDC,1280,0,1280,0,OR NOR SHL ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1821,datapath,0,SDC,1024,0,1024,0,INC DEC XOR NOR SHR ASR
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1821,datapath,1,SDC,1536,0,1536,0,AND OR NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$750[0],datapath,0,SDC,1536,0,1536,0,INC DEC AND XOR NOR NOT SHR ASR ROL
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$750[0],datapath,1,SDC,752,0,752,0,OR SHL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1819,datapath,0,SDC,1040,0,1040,0,SUB SBB NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1819,datapath,1,SDC,1536,0,1536,0,AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1825,datapath,0,SDC,1568,0,1568,0,ADD ADC SUB SBB INC DEC AND OR
+$flatten\g_bs.u_dp.\u_r3.$auto$rtlil.cc:2600:NotGate$1825,datapath,1,SDC,2032,0,2032,0,XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$693[1],datapath,0,SDC,2112,0,2112,0,ADD ADC SUB SBB INC DEC AND OR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$693[1],datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$748,datapath,0,SDC,2880,0,2880,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$748,datapath,1,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[0],datapath,0,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[0],datapath,1,SDC,2880,0,2880,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[0],datapath,0,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[0],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$795[1],datapath,0,SDC,2560,0,2560,0,ADD ADC SUB SBB INC DEC AND OR SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$795[1],datapath,1,SDC,1008,0,1008,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$838,datapath,0,SDC,2752,0,2752,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$838,datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r3.$procmux$292_CMP,datapath,0,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_r3.$procmux$292_CMP,datapath,1,SDC,2752,0,2752,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$708[0],datapath,0,SDC,1216,0,1216,0,INC DEC XOR NOR SHL SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$708[0],datapath,1,SDC,784,0,784,0,AND NOT ROL
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$706,datapath,0,SDC,2752,0,2752,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$706,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r3.$procmux$289_CMP,datapath,0,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_r3.$procmux$289_CMP,datapath,1,SDC,2752,0,2752,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[1],datapath,1,SDC,2752,0,2752,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[1],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$852[0],datapath,0,SDC,768,0,768,0,SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$852[0],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$693[0],datapath,0,SDC,704,0,704,0,XOR SHL SHR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$693[0],datapath,1,SDC,528,0,528,0,NOR ASR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$691,datapath,0,SDC,2560,0,2560,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$691,datapath,1,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[2],datapath,0,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[2],datapath,1,SDC,2560,0,2560,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[2],datapath,0,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[2],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$857[0],datapath,0,SDC,1024,0,1024,0,SHL ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$857[0],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[4],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[4],datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$823,datapath,0,SDC,3456,0,3456,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$823,datapath,1,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[4],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[4],datapath,1,SDC,3456,0,3456,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[4],datapath,0,SDC,256,0,256,0,NOT
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[4],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[7],datapath,0,SDC,768,0,768,0,OR NOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[7],datapath,1,SDC,256,0,256,0,OR NOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[5],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[5],datapath,1,SDC,384,0,384,0,NOR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$808,datapath,0,SDC,2592,0,2592,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$808,datapath,1,SDC,272,0,272,0,NOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[5],datapath,0,SDC,272,0,272,0,NOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[5],datapath,1,SDC,2592,0,2592,0,ADD ADC SUB SBB INC DEC AND OR XOR SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[5],datapath,0,SDC,128,0,128,0,NOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[5],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$852[2],datapath,0,SDC,384,0,384,0,NOR NOT
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$852[2],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[6],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[6],datapath,1,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$735[0],datapath,0,SDC,512,0,512,0,NOR NOT SHL
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$735[0],datapath,1,SDC,480,0,480,0,XOR SHR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$793,datapath,0,SDC,2880,0,2880,0,ADD ADC SUB SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$793,datapath,1,SDC,224,0,224,0,XOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[6],datapath,0,SDC,224,0,224,0,XOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[6],datapath,1,SDC,2880,0,2880,0,ADD ADC SUB SBB INC DEC AND NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[6],datapath,0,SDC,256,0,256,0,XOR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[6],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$765[1],datapath,0,SDC,1104,0,1104,0,SUB SBB NOT SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$765[1],datapath,1,SDC,512,0,512,0,AND OR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$778,datapath,0,SDC,3424,0,3424,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$778,datapath,1,SDC,240,0,240,0,OR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[7],datapath,0,SDC,240,0,240,0,OR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[7],datapath,1,SDC,3424,0,3424,0,ADD ADC SUB SBB INC DEC AND XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[7],datapath,0,SDC,384,0,384,0,OR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[7],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$852[3],datapath,0,SDC,640,0,640,0,OR XOR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$852[3],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$857[1],datapath,0,SDC,1024,0,1024,0,OR XOR NOR NOT
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$857[1],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$860,datapath,0,SDC,2048,0,2048,0,OR XOR NOR NOT SHL ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$860,datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[8],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B[8],datapath,1,SDC,384,0,384,0,AND
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$763,datapath,0,SDC,2080,0,2080,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$763,datapath,1,SDC,272,0,272,0,AND
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[8],datapath,0,SDC,272,0,272,0,AND
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[8],datapath,1,SDC,2080,0,2080,0,ADD ADC SUB SBB INC DEC XOR NOR NOT SHL SHR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[8],datapath,0,SDC,128,0,128,0,AND
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.B_AND_S[8],datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.Y_B,datapath,0,SDC,2176,0,2176,0,AND OR XOR NOR NOT SHL ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.Y_B,datapath,1,SDC,2944,0,2944,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[0],datapath,0,SDC,768,0,768,0,SHL ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$733,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:246:simplemap_eqne$733,datapath,1,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[3],datapath,0,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_r3.$procmux$287.S[3],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[1],datapath,0,SDC,512,0,512,0,SHR ASR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$879[0],datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$879[0],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[2],datapath,0,SDC,528,0,528,0,NOR NOT
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[2],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[3],datapath,0,SDC,464,0,464,0,OR XOR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$874[3],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$879[1],datapath,0,SDC,992,0,992,0,OR XOR NOR NOT
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$879[1],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$882,datapath,0,SDC,2272,0,2272,0,OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$auto$simplemap.cc:117:simplemap_reduce$882,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_r3.$techmap$procmux$287.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$715_Y,datapath,0,SDC,2544,0,2544,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_r3.$techmap$procmux$287.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$715_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+n,datapath,0,SDC,3712,0,3712,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL ASR ROL ROR
+n,datapath,1,SDC,4480,0,4480,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1600[1],datapath,0,SDC,1562,0,1562,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$auto$simplemap.cc:117:simplemap_reduce$1600[1],datapath,1,SDC,838,0,838,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$reduce_or$rtl/alu4_datapath_bs.v:140$244_Y,datapath,0,SDC,7354,0,7354,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.$reduce_or$rtl/alu4_datapath_bs.v:140$244_Y,datapath,1,SDC,838,0,838,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+z,datapath,0,SDC,838,0,838,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+z,datapath,1,SDC,7354,0,7354,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[3],datapath,0,SDC,768,0,768,0,ADD ADC SUB SBB DEC
+g_bs.u_dp.u_add.genblk1.g_cla.u.g[3],datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:53$39_Y,datapath,0,SDC,384,0,384,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:53$39_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:53$40_Y,datapath,0,SDC,1152,0,1152,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:53$40_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:53$41_Y,datapath,0,SDC,384,0,384,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:53$41_Y,datapath,1,SDC,480,0,480,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:53$42_Y,datapath,0,SDC,192,0,192,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:53$42_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:53$43_Y,datapath,0,SDC,1344,0,1344,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:53$43_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:54$45_Y,datapath,0,SDC,192,0,192,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:54$45_Y,datapath,1,SDC,672,0,672,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:54$46_Y,datapath,0,SDC,96,0,96,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:54$46_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:53$47_Y,datapath,0,SDC,1440,0,1440,0,ADD ADC SUB SBB DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:53$47_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:55$50_Y,datapath,0,SDC,96,0,96,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:55$50_Y,datapath,1,SDC,960,0,960,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:55$51_Y,datapath,0,SDC,96,0,96,0,ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:55$51_Y,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.cout,datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.cout,datapath,1,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1869,datapath,0,SDC,800,0,800,0,SBB INC AND OR
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1869,datapath,1,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1871,datapath,0,SDC,896,0,896,0,XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1871,datapath,1,SDC,1536,0,1536,0,INC DEC SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1877,datapath,0,SDC,384,0,384,0,NOT ROL
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1877,datapath,1,SDC,1760,0,1760,0,ADC SBB DEC SHL ASR ROR
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1873,datapath,0,SDC,384,0,384,0,NOR SHR
+$flatten\g_bs.u_dp.\u_c.$auto$rtlil.cc:2600:NotGate$1873,datapath,1,SDC,1296,0,1296,0,SUB SBB SHL ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$520[0],datapath,0,SDC,896,0,896,0,XOR NOR NOT ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$520[0],datapath,1,SDC,768,0,768,0,SBB SHL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$520[1],datapath,0,SDC,448,0,448,0,SBB OR ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$520[1],datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$518,datapath,0,SDC,2144,0,2144,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$518,datapath,1,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_c.$procmux$261_CMP[0],datapath,0,SDC,256,0,256,0,SHL
+$flatten\g_bs.u_dp.\u_c.$procmux$261_CMP[0],datapath,1,SDC,2144,0,2144,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$505[0],datapath,0,SDC,384,0,384,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$505[0],datapath,1,SDC,528,0,528,0,SUB ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$505[1],datapath,0,SDC,2056,0,2056,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$505[1],datapath,1,SDC,1024,0,1024,0,SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$503,datapath,0,SDC,2144,0,2144,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$503,datapath,1,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_c.$procmux$261_CMP[1],datapath,0,SDC,256,0,256,0,ROL
+$flatten\g_bs.u_dp.\u_c.$procmux$261_CMP[1],datapath,1,SDC,2144,0,2144,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_c.$procmux$259.S[1],datapath,1,SDC,2144,0,2144,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$575[0],datapath,0,SDC,608,0,608,0,AND OR ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$575[0],datapath,1,SDC,528,0,528,0,ADD INC SHR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$573,datapath,0,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$573,datapath,1,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_c.$procmux$260_CMP[0],datapath,0,SDC,256,0,256,0,SHR
+$flatten\g_bs.u_dp.\u_c.$procmux$260_CMP[0],datapath,1,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$560[0],datapath,0,SDC,608,0,608,0,AND OR ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$560[0],datapath,1,SDC,992,0,992,0,ADC DEC ASR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$558,datapath,0,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$558,datapath,1,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_c.$procmux$260_CMP[1],datapath,0,SDC,256,0,256,0,ASR
+$flatten\g_bs.u_dp.\u_c.$procmux$260_CMP[1],datapath,1,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$533,datapath,0,SDC,512,0,512,0,SHR ASR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$533,datapath,1,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$543,datapath,0,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$543,datapath,1,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$260_CMP[2],datapath,0,SDC,256,0,256,0,ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$260_CMP[2],datapath,1,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$procmux$259.S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.S[0],datapath,1,SDC,2240,0,2240,0,ADD ADC SUB SBB INC AND OR XOR NOR NOT SHL ROL
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$628[1],datapath,0,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$628[1],datapath,1,SDC,1024,0,1024,0,ADD ADC SUB SBB
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:158:logic_reduce$668,datapath,0,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:158:logic_reduce$668,datapath,1,SDC,240,0,240,0,ADD
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[0],datapath,0,SDC,240,0,240,0,ADD
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[0],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$656,datapath,0,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$656,datapath,1,SDC,256,0,256,0,ADC
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[1],datapath,0,SDC,256,0,256,0,ADC
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[1],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$582[0],datapath,0,SDC,496,0,496,0,ADD ADC
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$582[0],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$641,datapath,0,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$641,datapath,1,SDC,272,0,272,0,SUB
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[2],datapath,0,SDC,272,0,272,0,SUB
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[2],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$626,datapath,0,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$626,datapath,1,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[3],datapath,0,SDC,256,0,256,0,SBB
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[3],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$582[1],datapath,0,SDC,528,0,528,0,SUB SBB
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$582[1],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$598[1],datapath,0,SDC,704,0,704,0,XOR NOR SHR ASR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$598[1],datapath,1,SDC,512,0,512,0,INC DEC
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$611,datapath,0,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$611,datapath,1,SDC,32,0,32,0,INC
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[4],datapath,0,SDC,32,0,32,0,INC
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[4],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$596,datapath,0,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:246:simplemap_eqne$596,datapath,1,SDC,480,0,480,0,DEC
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[5],datapath,0,SDC,480,0,480,0,DEC
+$flatten\g_bs.u_dp.\u_c.$procmux$262_CMP[5],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$582[2],datapath,0,SDC,512,0,512,0,INC DEC
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$582[2],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$586,datapath,0,SDC,1024,0,1024,0,ADD ADC SUB SBB
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$586,datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.S[2],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_c.$procmux$259.S[2],datapath,1,SDC,1648,0,1648,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.B_AND_S[0],datapath,0,SDC,768,0,768,0,SHR ASR ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.B_AND_S[0],datapath,1,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.B_AND_S[1],datapath,0,SDC,512,0,512,0,SHL ROL
+$flatten\g_bs.u_dp.\u_c.$procmux$259.B_AND_S[1],datapath,1,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$671,datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$671,datapath,1,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.B_AND_S[2],datapath,0,SDC,1536,0,1536,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_c.$procmux$259.B_AND_S[2],datapath,1,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.Y_B,datapath,0,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$procmux$259.Y_B,datapath,1,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$679,datapath,0,SDC,1280,0,1280,0,SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$auto$simplemap.cc:117:simplemap_reduce$679,datapath,1,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_c.$techmap$procmux$259.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$527_Y,datapath,0,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_c.$techmap$procmux$259.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$527_Y,datapath,1,SILENT,0,0,0,0,
+c,datapath,0,SDC,2816,0,2816,0,ADD ADC SUB SBB INC DEC SHL SHR ASR ROL ROR
+c,datapath,1,SDC,5376,0,5376,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$rtlil.cc:2600:NotGate$1917,datapath,0,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_v.$auto$rtlil.cc:2600:NotGate$1917,datapath,1,SDC,64,0,64,0,INC DEC
+$flatten\g_bs.u_dp.\u_v.$auto$rtlil.cc:2600:NotGate$1913,datapath,0,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_v.$auto$rtlil.cc:2600:NotGate$1913,datapath,1,SDC,288,0,288,0,ADC SBB DEC
+$flatten\g_bs.u_dp.\u_v.$auto$rtlil.cc:2600:NotGate$1915,datapath,0,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_v.$auto$rtlil.cc:2600:NotGate$1915,datapath,1,SDC,256,0,256,0,SUB SBB
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$419[0],datapath,0,SDC,256,0,256,0,AND OR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$419[0],datapath,1,SDC,160,0,160,0,ADC DEC
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$419[1],datapath,0,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$419[1],datapath,1,SDC,512,0,512,0,ADD ADC SUB SBB
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$417,datapath,0,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$417,datapath,1,SDC,128,0,128,0,ADC
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$435[0],datapath,0,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$435[0],datapath,1,SDC,128,0,128,0,SUB
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$433,datapath,0,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$433,datapath,1,SDC,128,0,128,0,SUB
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$451[0],datapath,0,SILENT,0,0,0,0,
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$451[0],datapath,1,SDC,128,0,128,0,SBB
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$449,datapath,0,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$449,datapath,1,SDC,128,0,128,0,SBB
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$467[0],datapath,0,SDC,256,0,256,0,AND OR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$467[0],datapath,1,SDC,160,0,160,0,ADD INC
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$467[1],datapath,0,SDC,512,0,512,0,XOR NOR SHR ASR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:117:simplemap_reduce$467[1],datapath,1,SDC,64,0,64,0,INC DEC
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$465,datapath,0,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$465,datapath,1,SDC,32,0,32,0,INC
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$481,datapath,0,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:246:simplemap_eqne$481,datapath,1,SDC,32,0,32,0,DEC
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:158:logic_reduce$408,datapath,0,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$auto$simplemap.cc:158:logic_reduce$408,datapath,1,SDC,128,0,128,0,ADD
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:88$190_Y,datapath,0,SDC,128,0,128,0,ADD
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:88$190_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:88$191_Y,datapath,0,SDC,128,0,128,0,ADC
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:88$191_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:88$193_Y,datapath,0,SDC,128,0,128,0,SUB
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:88$193_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:89$195_Y,datapath,0,SDC,128,0,128,0,SBB
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:89$195_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:89$197_Y,datapath,0,SDC,32,0,32,0,INC
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:89$197_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:89$199_Y,datapath,0,SDC,32,0,32,0,DEC
+$flatten\g_bs.u_dp.\u_v.$eq$rtl/alu4_datapath_bs.v:89$199_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$192_Y,datapath,0,SDC,256,0,256,0,ADD ADC
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$192_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$194_Y,datapath,0,SDC,384,0,384,0,ADD ADC SUB
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$194_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$196_Y,datapath,0,SDC,512,0,512,0,ADD ADC SUB SBB
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$196_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$198_Y,datapath,0,SDC,544,0,544,0,ADD ADC SUB SBB INC
+$flatten\g_bs.u_dp.\u_v.$or$rtl/alu4_datapath_bs.v:88$198_Y,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+g_bs.u_dp.u_v.is_arith,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+g_bs.u_dp.u_v.is_arith,datapath,1,SDC,1280,0,1280,0,AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$xnor$rtl/alu4_datapath_bs.v:90$201_Y,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$xnor$rtl/alu4_datapath_bs.v:90$201_Y,datapath,1,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$and$rtl/alu4_datapath_bs.v:90$202_Y,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$and$rtl/alu4_datapath_bs.v:90$202_Y,datapath,1,SDC,3136,0,3136,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR
+$flatten\g_bs.u_dp.\u_v.$xor$rtl/alu4_datapath_bs.v:90$203_Y,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+$flatten\g_bs.u_dp.\u_v.$xor$rtl/alu4_datapath_bs.v:90$203_Y,datapath,1,SDC,960,0,960,0,ADD ADC SUB SBB INC DEC
+v,datapath,0,SDC,576,0,576,0,ADD ADC SUB SBB INC DEC
+v,datapath,1,SDC,7616,0,7616,0,ADD ADC SUB SBB INC DEC AND OR XOR NOR NOT SHL SHR ASR ROL ROR

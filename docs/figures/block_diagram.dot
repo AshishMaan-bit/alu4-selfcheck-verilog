@@ -1,0 +1,27 @@
+
+digraph alu {
+  rankdir=LR; splines=ortho; nodesep=0.35; ranksep=0.55;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, color="#52514e", fillcolor="#ffffff"];
+  edge [color="#52514e", arrowsize=0.6, fontname="Helvetica", fontsize=8];
+  in [label="a[3:0]  b[3:0]\nop[3:0]  cin", shape=box, style="rounded", color="#52514e"];
+  subgraph cluster_dp { label="alu4_datapath_bs  (bit-sliced, no logic sharing between bits)"; fontname="Helvetica"; fontsize=10; color="#2a78d6"; style="rounded";
+    opc [label="operand\nconditioning\ny = b | ~b | 0 | F\nci"];
+    add [label="4-bit adder\nRCA / CLA / KS"];
+    rs [label="result slices\nu_r0 .. u_r3\n(own decoder,\nlogic, shift, mux)", fillcolor="#e8f0fb"];
+    cs [label="C slice", fillcolor="#e8f0fb"];
+    vs [label="V slice", fillcolor="#e8f0fb"];
+    zn [label="Z = NOR(r)\nN = r[3]"];
+  }
+  subgraph cluster_chk { label="alu4_checker  (independent decoder, sees only ALU inputs/outputs)"; fontname="Helvetica"; fontsize=10; color="#1baf7a"; style="rounded";
+    inv [label="ARITH: inverse operation\nr + ~y + ~ci == {~c, a}\n+ V recomputation", fillcolor="#e6f6ef"];
+    par [label="LOGIC/XOR/NOT/SHIFT:\nshared parity predictor\np({r,c}) vs f(pa, pb, p(a&b))", fillcolor="#e6f6ef"];
+    flg [label="Z/N recomputation", fillcolor="#e6f6ef"];
+    orr [label="OR", shape=circle, width=0.4];
+  }
+  out [label="r  c  v  z  n", shape=box, style="rounded"];
+  er  [label="err, err_vec[3:0]", shape=box, style="rounded", color="#d03b3b"];
+  in -> opc; opc -> add; in -> rs; add -> rs; add -> cs; add -> vs; in -> cs;
+  rs -> zn; rs -> out; cs -> out; vs -> out; zn -> out;
+  in -> inv; in -> par; out -> inv; out -> par; out -> flg;
+  inv -> orr; par -> orr; flg -> orr; orr -> er;
+}

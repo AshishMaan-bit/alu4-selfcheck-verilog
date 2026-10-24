@@ -1,0 +1,381 @@
+A  base_bs_cla_opt              vectors=8192 mismatches=0
+A  base_bs_cla_struct           vectors=8192 mismatches=0
+A  base_bs_ks_opt               vectors=8192 mismatches=0
+A  base_bs_ks_struct            vectors=8192 mismatches=0
+A  base_bs_rca_opt              vectors=8192 mismatches=0
+A  base_bs_rca_struct           vectors=8192 mismatches=0
+A  base_cla_opt                 vectors=8192 mismatches=0
+A  base_cla_struct              vectors=8192 mismatches=0
+A  base_ks_opt                  vectors=8192 mismatches=0
+A  base_ks_struct               vectors=8192 mismatches=0
+A  base_rca_opt                 vectors=8192 mismatches=0
+A  base_rca_struct              vectors=8192 mismatches=0
+A  dmr_cla_opt                  vectors=8192 mismatches=0
+A  dmr_cla_struct               vectors=8192 mismatches=0
+A  dmr_ks_opt                   vectors=8192 mismatches=0
+A  dmr_ks_struct                vectors=8192 mismatches=0
+A  dmr_rca_opt                  vectors=8192 mismatches=0
+A  dmr_rca_struct               vectors=8192 mismatches=0
+A  sc_invdup_cla_opt            vectors=8192 mismatches=0
+A  sc_invdup_cla_struct         vectors=8192 mismatches=0
+A  sc_invdup_ks_opt             vectors=8192 mismatches=0
+A  sc_invdup_ks_struct          vectors=8192 mismatches=0
+A  sc_invdup_rca_opt            vectors=8192 mismatches=0
+A  sc_invdup_rca_struct         vectors=8192 mismatches=0
+A  sc_invpar_bs_cla_opt         vectors=8192 mismatches=0
+A  sc_invpar_bs_cla_struct      vectors=8192 mismatches=0
+A  sc_invpar_bs_ks_opt          vectors=8192 mismatches=0
+A  sc_invpar_bs_ks_struct       vectors=8192 mismatches=0
+A  sc_invpar_bs_rca_opt         vectors=8192 mismatches=0
+A  sc_invpar_bs_rca_struct      vectors=8192 mismatches=0
+A  sc_invpar_cla_opt            vectors=8192 mismatches=0
+A  sc_invpar_cla_struct         vectors=8192 mismatches=0
+A  sc_invpar_ks_opt             vectors=8192 mismatches=0
+A  sc_invpar_ks_struct          vectors=8192 mismatches=0
+A  sc_invpar_rca_opt            vectors=8192 mismatches=0
+A  sc_invpar_rca_struct         vectors=8192 mismatches=0
+A  sc_res3dup_cla_opt           vectors=8192 mismatches=0
+A  sc_res3dup_cla_struct        vectors=8192 mismatches=0
+A  sc_res3dup_ks_opt            vectors=8192 mismatches=0
+A  sc_res3dup_ks_struct         vectors=8192 mismatches=0
+A  sc_res3dup_rca_opt           vectors=8192 mismatches=0
+A  sc_res3dup_rca_struct        vectors=8192 mismatches=0
+A  sc_res3par_bs_cla_opt        vectors=8192 mismatches=0
+A  sc_res3par_bs_cla_struct     vectors=8192 mismatches=0
+A  sc_res3par_bs_ks_opt         vectors=8192 mismatches=0
+A  sc_res3par_bs_ks_struct      vectors=8192 mismatches=0
+A  sc_res3par_bs_rca_opt        vectors=8192 mismatches=0
+A  sc_res3par_bs_rca_struct     vectors=8192 mismatches=0
+A  sc_res3par_cla_opt           vectors=8192 mismatches=0
+A  sc_res3par_cla_struct        vectors=8192 mismatches=0
+A  sc_res3par_ks_opt            vectors=8192 mismatches=0
+A  sc_res3par_ks_struct         vectors=8192 mismatches=0
+A  sc_res3par_rca_opt           vectors=8192 mismatches=0
+A  sc_res3par_rca_struct        vectors=8192 mismatches=0
+B  base_bs_cla_opt              SA0 atten\g_bs.u_dp.$abc$2405$new_n44_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_bs_cla_opt              SA1 atten\g_bs.u_dp.$abc$2405$new_n25_ python(corrupt,err,sdc)=(1690, 0, 1690) iverilog=(1690, 0, 1690) OK
+B  base_bs_cla_opt              SA1 g_bs.u_dp.\u_r2.$abc$2500$new_n19_ python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_cla_opt              SA1 g_bs.u_dp.\u_r2.$abc$2500$new_n22_ python(corrupt,err,sdc)=(1920, 0, 1920) iverilog=(1920, 0, 1920) OK
+B  base_bs_cla_opt              SA0 \g_bs.u_dp.\u_v.$abc$2558$new_n14_ python(corrupt,err,sdc)=(576, 0, 576) iverilog=(576, 0, 576) OK
+B  base_bs_cla_opt              SA0 atten\g_bs.u_dp.$abc$2405$new_n40_ python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_cla_struct           SA1 map.cc:117:simplemap_reduce$874[0] python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_bs_cla_struct           SA0 \g_bs.u_dp.$procmux$301.B_AND_S[1] python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_cla_struct           SA1 0.$auto$rtlil.cc:2600:NotGate$1675 python(corrupt,err,sdc)=(1280, 0, 1280) iverilog=(1280, 0, 1280) OK
+B  base_bs_cla_struct           SA1 u_dp.\u_r1.$procmux$263.B_AND_S[2] python(corrupt,err,sdc)=(2688, 0, 2688) iverilog=(2688, 0, 2688) OK
+B  base_bs_cla_struct           SA0 or$rtl/alu4_datapath_bs.v:90$203_Y python(corrupt,err,sdc)=(576, 0, 576) iverilog=(576, 0, 576) OK
+B  base_bs_cla_struct           SA1 ap.cc:117:simplemap_reduce$1308[0] python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_ks_opt               SA0 g_bs.u_dp.\u_r0.$abc$2453$new_n13_ python(corrupt,err,sdc)=(896, 0, 896) iverilog=(896, 0, 896) OK
+B  base_bs_ks_opt               SA1 atten\g_bs.u_dp.$abc$2398$new_n67_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_bs_ks_opt               SA0 atten\g_bs.u_dp.$abc$2398$new_n59_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_bs_ks_opt               SA1 atten\g_bs.u_dp.$abc$2398$new_n73_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_bs_ks_opt               SA1 g_bs.u_dp.\u_r2.$abc$2498$new_n14_ python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_ks_opt               SA1 c                                  python(corrupt,err,sdc)=(5376, 0, 5376) iverilog=(5376, 0, 5376) OK
+B  base_bs_ks_struct            SA0 \g_bs.u_dp.\u_r0.$procmux$246.B[3] python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_ks_struct            SA1 c.$auto$rtlil.cc:2600:NotGate$1867 python(corrupt,err,sdc)=(1296, 0, 1296) iverilog=(1296, 0, 1296) OK
+B  base_bs_ks_struct            SA1 g_bs.u_dp.\u_c.$procmux$262_CMP[3] python(corrupt,err,sdc)=(1648, 0, 1648) iverilog=(1648, 0, 1648) OK
+B  base_bs_ks_struct            SA1 g_bs.u_dp.\u_c.$procmux$262_CMP[5] python(corrupt,err,sdc)=(1648, 0, 1648) iverilog=(1648, 0, 1648) OK
+B  base_bs_ks_struct            SA1 u_dp.\u_r3.$procmux$287.B_AND_S[6] python(corrupt,err,sdc)=(2944, 0, 2944) iverilog=(2944, 0, 2944) OK
+B  base_bs_ks_struct            SA0 u_dp.\u_r1.$procmux$263.B_AND_S[4] python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_rca_opt              SA1 g_bs.u_dp.\u_r3.$abc$2478$new_n17_ python(corrupt,err,sdc)=(512, 0, 512) iverilog=(512, 0, 512) OK
+B  base_bs_rca_opt              SA1 \g_bs.u_dp.\u_c.$abc$2501$new_n15_ python(corrupt,err,sdc)=(128, 0, 128) iverilog=(128, 0, 128) OK
+B  base_bs_rca_opt              SA1 atten\g_bs.u_dp.$abc$2365$new_n72_ python(corrupt,err,sdc)=(768, 0, 768) iverilog=(768, 0, 768) OK
+B  base_bs_rca_opt              SA1 g_bs.u_dp.\u_r2.$abc$2460$new_n18_ python(corrupt,err,sdc)=(384, 0, 384) iverilog=(384, 0, 384) OK
+B  base_bs_rca_opt              SA1 atten\g_bs.u_dp.$abc$2365$new_n59_ python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_bs_rca_opt              SA0 g_bs.u_dp.\u_r3.$abc$2478$new_n23_ python(corrupt,err,sdc)=(640, 0, 640) iverilog=(640, 0, 640) OK
+B  base_bs_rca_struct           SA0 implemap.cc:246:simplemap_eqne$704 python(corrupt,err,sdc)=(3424, 0, 3424) iverilog=(3424, 0, 3424) OK
+B  base_bs_rca_struct           SA1 .\g_rca.u.$and$rtl/adder4.v:31$3_Y python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_bs_rca_struct           SA1 eq$rtl/alu4_datapath_bs.v:89$199_Y python(corrupt,err,sdc)=(1280, 0, 1280) iverilog=(1280, 0, 1280) OK
+B  base_bs_rca_struct           SA0 u_dp.\u_r0.$procmux$246.B_AND_S[0] python(corrupt,err,sdc)=(768, 0, 768) iverilog=(768, 0, 768) OK
+B  base_bs_rca_struct           SA1 mplemap.cc:246:simplemap_eqne$1549 python(corrupt,err,sdc)=(480, 0, 480) iverilog=(480, 0, 480) OK
+B  base_bs_rca_struct           SA0 g_bs.u_dp.\u_c.$procmux$261_CMP[0] python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_cla_opt                 SA1 ten\g_conv.u_dp.$abc$1317$new_n39_ python(corrupt,err,sdc)=(350, 0, 350) iverilog=(350, 0, 350) OK
+B  base_cla_opt                 SA1 en\g_conv.u_dp.$abc$1317$new_n124_ python(corrupt,err,sdc)=(768, 0, 768) iverilog=(768, 0, 768) OK
+B  base_cla_opt                 SA1 en\g_conv.u_dp.$abc$1317$new_n128_ python(corrupt,err,sdc)=(512, 0, 512) iverilog=(512, 0, 512) OK
+B  base_cla_opt                 SA1 en\g_conv.u_dp.$abc$1317$new_n147_ python(corrupt,err,sdc)=(1690, 0, 1690) iverilog=(1690, 0, 1690) OK
+B  base_cla_opt                 SA1 ten\g_conv.u_dp.$abc$1317$new_n72_ python(corrupt,err,sdc)=(768, 0, 768) iverilog=(768, 0, 768) OK
+B  base_cla_opt                 SA0 v                                  python(corrupt,err,sdc)=(576, 0, 576) iverilog=(576, 0, 576) OK
+B  base_cla_struct              SA1 tten\g_conv.u_dp.$procmux$266.B[1] python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_cla_struct              SA1 map.cc:117:simplemap_reduce$737[3] python(corrupt,err,sdc)=(2944, 0, 2944) iverilog=(2944, 0, 2944) OK
+B  base_cla_struct              SA1 tten\g_conv.u_dp.$procmux$272.B[8] python(corrupt,err,sdc)=(512, 0, 512) iverilog=(512, 0, 512) OK
+B  base_cla_struct              SA0 a[2]                               python(corrupt,err,sdc)=(3712, 0, 3712) iverilog=(3712, 0, 3712) OK
+B  base_cla_struct              SA1 op[0]                              python(corrupt,err,sdc)=(3198, 0, 3198) iverilog=(3198, 0, 3198) OK
+B  base_cla_struct              SA1 implemap.cc:246:simplemap_eqne$574 python(corrupt,err,sdc)=(510, 0, 510) iverilog=(510, 0, 510) OK
+B  base_ks_opt                  SA1 en\g_conv.u_dp.$abc$1295$new_n127_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_ks_opt                  SA1 en\g_conv.u_dp.$abc$1295$new_n138_ python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_ks_opt                  SA1 en\g_conv.u_dp.$abc$1295$new_n135_ python(corrupt,err,sdc)=(640, 0, 640) iverilog=(640, 0, 640) OK
+B  base_ks_opt                  SA0 en\g_conv.u_dp.$abc$1295$new_n119_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_ks_opt                  SA1 en\g_conv.u_dp.$abc$1295$new_n150_ python(corrupt,err,sdc)=(2496, 0, 2496) iverilog=(2496, 0, 2496) OK
+B  base_ks_opt                  SA1 op[0]                              python(corrupt,err,sdc)=(3198, 0, 3198) iverilog=(3198, 0, 3198) OK
+B  base_ks_struct               SA0 onv.u_dp.u_add.genblk1.g_ks.u.y[1] python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_ks_struct               SA1 tten\g_conv.u_dp.$procmux$252.S[1] python(corrupt,err,sdc)=(6588, 0, 6588) iverilog=(6588, 0, 6588) OK
+B  base_ks_struct               SA1 map.cc:117:simplemap_reduce$863[1] python(corrupt,err,sdc)=(2880, 0, 2880) iverilog=(2880, 0, 2880) OK
+B  base_ks_struct               SA1 map.cc:117:simplemap_reduce$707[1] python(corrupt,err,sdc)=(838, 0, 838) iverilog=(838, 0, 838) OK
+B  base_ks_struct               SA0 onv.u_dp.u_add.genblk1.g_ks.u.g[2] python(corrupt,err,sdc)=(768, 0, 768) iverilog=(768, 0, 768) OK
+B  base_ks_struct               SA0 _conv.u_dp.$procmux$252.B_AND_S[5] python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_rca_opt                 SA1 en\g_conv.u_dp.$abc$1282$new_n113_ python(corrupt,err,sdc)=(256, 0, 256) iverilog=(256, 0, 256) OK
+B  base_rca_opt                 SA0 ten\g_conv.u_dp.$abc$1282$new_n45_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_rca_opt                 SA0 en\g_conv.u_dp.$abc$1282$new_n123_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_rca_opt                 SA0 a[3]                               python(corrupt,err,sdc)=(3712, 0, 3712) iverilog=(3712, 0, 3712) OK
+B  base_rca_opt                 SA0 ten\g_conv.u_dp.$abc$1282$new_n31_ python(corrupt,err,sdc)=(1536, 0, 1536) iverilog=(1536, 0, 1536) OK
+B  base_rca_opt                 SA0 a[0]                               python(corrupt,err,sdc)=(3712, 0, 3712) iverilog=(3712, 0, 3712) OK
+B  base_rca_struct              SA1 map.cc:117:simplemap_reduce$815[0] python(corrupt,err,sdc)=(2944, 0, 2944) iverilog=(2944, 0, 2944) OK
+B  base_rca_struct              SA0 plemap.cc:117:simplemap_reduce$798 python(corrupt,err,sdc)=(1920, 0, 1920) iverilog=(1920, 0, 1920) OK
+B  base_rca_struct              SA0 tten\g_conv.u_dp.$procmux$272.B[8] python(corrupt,err,sdc)=(512, 0, 512) iverilog=(512, 0, 512) OK
+B  base_rca_struct              SA1 conv.u_dp.$procmux$252.B_AND_S[30] python(corrupt,err,sdc)=(2688, 0, 2688) iverilog=(2688, 0, 2688) OK
+B  base_rca_struct              SA1 map.cc:117:simplemap_reduce$821[0] python(corrupt,err,sdc)=(2944, 0, 2944) iverilog=(2944, 0, 2944) OK
+B  base_rca_struct              SA0 map.cc:117:simplemap_reduce$808[0] python(corrupt,err,sdc)=(1024, 0, 1024) iverilog=(1024, 0, 1024) OK
+B  dmr_cla_opt                  SA1 $flatten\u_dp2.$abc$1369$new_n156_ python(corrupt,err,sdc)=(0, 1280, 0) iverilog=(0, 1280, 0) OK
+B  dmr_cla_opt                  SA0 $flatten\u_dp.$abc$1369$new_n105_  python(corrupt,err,sdc)=(4224, 4224, 0) iverilog=(4224, 4224, 0) OK
+B  dmr_cla_opt                  SA1 $flatten\u_dp.$abc$1369$new_n62_   python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  dmr_cla_opt                  SA0 err                                python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  dmr_cla_opt                  SA0 $flatten\u_dp2.$abc$1369$new_n103_ python(corrupt,err,sdc)=(0, 4224, 0) iverilog=(0, 4224, 0) OK
+B  dmr_cla_opt                  SA1 $flatten\u_dp.$abc$1369$new_n81_   python(corrupt,err,sdc)=(128, 128, 0) iverilog=(128, 128, 0) OK
+B  dmr_cla_struct               SA0 tten\u_dp.$procmux$253.B_AND_S[20] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  dmr_cla_struct               SA1 ten\u_dp2.$procmux$253.B_AND_S[19] python(corrupt,err,sdc)=(0, 2944, 0) iverilog=(0, 2944, 0) OK
+B  dmr_cla_struct               SA0 implemap.cc:246:simplemap_eqne$520 python(corrupt,err,sdc)=(0, 6588, 0) iverilog=(0, 6588, 0) OK
+B  dmr_cla_struct               SA0 ten\u_dp2.$procmux$253.B_AND_S[34] python(corrupt,err,sdc)=(0, 384, 0) iverilog=(0, 384, 0) OK
+B  dmr_cla_struct               SA1 dp.$auto$rtlil.cc:2600:NotGate$933 python(corrupt,err,sdc)=(3866, 3866, 0) iverilog=(3866, 3866, 0) OK
+B  dmr_cla_struct               SA0 map.cc:117:simplemap_reduce$804[1] python(corrupt,err,sdc)=(640, 640, 0) iverilog=(640, 640, 0) OK
+B  dmr_ks_opt                   SA1 $flatten\u_dp2.$abc$1347$new_n71_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  dmr_ks_opt                   SA1 $flatten\u_dp2.$abc$1347$new_n64_  python(corrupt,err,sdc)=(0, 1280, 0) iverilog=(0, 1280, 0) OK
+B  dmr_ks_opt                   SA1 $flatten\u_dp2.$abc$1347$new_n59_  python(corrupt,err,sdc)=(0, 384, 0) iverilog=(0, 384, 0) OK
+B  dmr_ks_opt                   SA1 $flatten\u_dp2.$abc$1347$new_n23_  python(corrupt,err,sdc)=(0, 3554, 0) iverilog=(0, 3554, 0) OK
+B  dmr_ks_opt                   SA0 $flatten\u_dp.$abc$1347$new_n84_   python(corrupt,err,sdc)=(4224, 4224, 0) iverilog=(4224, 4224, 0) OK
+B  dmr_ks_opt                   SA1 $flatten\u_dp.$abc$1347$new_n63_   python(corrupt,err,sdc)=(1024, 1024, 0) iverilog=(1024, 1024, 0) OK
+B  dmr_ks_struct                SA0 plemap.cc:117:simplemap_reduce$514 python(corrupt,err,sdc)=(0, 996, 0) iverilog=(0, 996, 0) OK
+B  dmr_ks_struct                SA1 tten\u_dp.$procmux$253.B_AND_S[33] python(corrupt,err,sdc)=(2688, 2688, 0) iverilog=(2688, 2688, 0) OK
+B  dmr_ks_struct                SA1 tten\u_dp.$procmux$253.B_AND_S[30] python(corrupt,err,sdc)=(2688, 2688, 0) iverilog=(2688, 2688, 0) OK
+B  dmr_ks_struct                SA1 $xnor$rtl/alu4_datapath.v:49$217_Y python(corrupt,err,sdc)=(576, 576, 0) iverilog=(576, 576, 0) OK
+B  dmr_ks_struct                SA0 map.cc:117:simplemap_reduce$789[0] python(corrupt,err,sdc)=(768, 768, 0) iverilog=(768, 768, 0) OK
+B  dmr_ks_struct                SA0 $flatten\u_dp.$procmux$253.S[0]    python(corrupt,err,sdc)=(510, 510, 0) iverilog=(510, 510, 0) OK
+B  dmr_rca_opt                  SA0 u_dp2.c                            python(corrupt,err,sdc)=(0, 2816, 0) iverilog=(0, 2816, 0) OK
+B  dmr_rca_opt                  SA1 u_dp2.z                            python(corrupt,err,sdc)=(0, 7354, 0) iverilog=(0, 7354, 0) OK
+B  dmr_rca_opt                  SA0 $flatten\u_dp2.$abc$1334$new_n24_  python(corrupt,err,sdc)=(0, 1984, 0) iverilog=(0, 1984, 0) OK
+B  dmr_rca_opt                  SA1 $flatten\u_dp.$abc$1334$new_n94_   python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  dmr_rca_opt                  SA0 $flatten\u_dp.$abc$1334$new_n28_   python(corrupt,err,sdc)=(1342, 1342, 0) iverilog=(1342, 1342, 0) OK
+B  dmr_rca_opt                  SA0 $flatten\u_dp2.$abc$1334$new_n36_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  dmr_rca_struct               SA0 ten\u_dp2.$procmux$253.B_AND_S[12] python(corrupt,err,sdc)=(0, 256, 0) iverilog=(0, 256, 0) OK
+B  dmr_rca_struct               SA0 atten\u_dp.$procmux$253.B_AND_S[1] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  dmr_rca_struct               SA0 $flatten\u_dp.$procmux$253.B[39]   python(corrupt,err,sdc)=(128, 128, 0) iverilog=(128, 128, 0) OK
+B  dmr_rca_struct               SA1 ce_or$rtl/alu4_datapath.v:77$227_Y python(corrupt,err,sdc)=(0, 838, 0) iverilog=(0, 838, 0) OK
+B  dmr_rca_struct               SA1 map.cc:117:simplemap_reduce$378[2] python(corrupt,err,sdc)=(0, 8192, 0) iverilog=(0, 8192, 0) OK
+B  dmr_rca_struct               SA1 tten\u_dp.$procmux$253.B_AND_S[32] python(corrupt,err,sdc)=(2944, 2944, 0) iverilog=(2944, 2944, 0) OK
+B  sc_invdup_cla_opt            SA1 $flatten\u_chk.$abc$2277$new_n149_ python(corrupt,err,sdc)=(0, 640, 0) iverilog=(0, 640, 0) OK
+B  sc_invdup_cla_opt            SA0 $flatten\u_chk.$abc$2277$new_n89_  python(corrupt,err,sdc)=(0, 3072, 0) iverilog=(0, 3072, 0) OK
+B  sc_invdup_cla_opt            SA1 ten\g_conv.u_dp.$abc$2433$new_n48_ python(corrupt,err,sdc)=(480, 256, 224) iverilog=(480, 256, 224) OK
+B  sc_invdup_cla_opt            SA1 $flatten\u_chk.$abc$2277$new_n73_  python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invdup_cla_opt            SA1 $flatten\u_chk.$abc$2277$new_n33_  python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_invdup_cla_opt            SA1 en\g_conv.u_dp.$abc$2433$new_n103_ python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invdup_cla_struct         SA1 ten\g_conv.u_dp.$procmux$377.B[10] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invdup_cla_struct         SA0 .g_cla.u.$and$rtl/adder4.v:54$45_Y python(corrupt,err,sdc)=(192, 192, 0) iverilog=(192, 192, 0) OK
+B  sc_invdup_cla_struct         SA1 map.cc:117:simplemap_reduce$884[1] python(corrupt,err,sdc)=(2944, 2944, 0) iverilog=(2944, 2944, 0) OK
+B  sc_invdup_cla_struct         SA0 conv.u_dp.$procmux$357.B_AND_S[18] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_invdup_cla_struct         SA0 mplemap.cc:246:simplemap_eqne$1139 python(corrupt,err,sdc)=(0, 6362, 0) iverilog=(0, 6362, 0) OK
+B  sc_invdup_cla_struct         SA0 k.$auto$rtlil.cc:2600:NotGate$1472 python(corrupt,err,sdc)=(0, 1790, 0) iverilog=(0, 1790, 0) OK
+B  sc_invdup_ks_opt             SA0 a[2]                               python(corrupt,err,sdc)=(3712, 0, 3712) iverilog=(3712, 0, 3712) OK
+B  sc_invdup_ks_opt             SA0 ten\g_conv.u_dp.$abc$2411$new_n55_ python(corrupt,err,sdc)=(4480, 4480, 0) iverilog=(4480, 4480, 0) OK
+B  sc_invdup_ks_opt             SA1 $flatten\u_chk.$abc$2255$new_n109_ python(corrupt,err,sdc)=(0, 1792, 0) iverilog=(0, 1792, 0) OK
+B  sc_invdup_ks_opt             SA0 $flatten\u_chk.$abc$2255$new_n46_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invdup_ks_opt             SA1 $flatten\u_chk.$abc$2255$new_n85_  python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invdup_ks_opt             SA0 $flatten\u_chk.$abc$2255$new_n156_ python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_invdup_ks_struct          SA0 tten\g_conv.u_dp.$procmux$345.S[2] python(corrupt,err,sdc)=(1200, 1200, 0) iverilog=(1200, 1200, 0) OK
+B  sc_invdup_ks_struct          SA1 and$rtl/alu4_checker.v:93$239_Y[2] python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invdup_ks_struct          SA1 k.$or$rtl/alu4_checker.v:134$288_Y python(corrupt,err,sdc)=(0, 2704, 0) iverilog=(0, 2704, 0) OK
+B  sc_invdup_ks_struct          SA0 map.cc:117:simplemap_reduce$895[4] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invdup_ks_struct          SA0 u_chk.is_arith                     python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invdup_ks_struct          SA1 .$and$rtl/alu4_checker.v:133$282_Y python(corrupt,err,sdc)=(0, 3584, 0) iverilog=(0, 3584, 0) OK
+B  sc_invdup_rca_opt            SA0 ten\g_conv.u_dp.$abc$2398$new_n57_ python(corrupt,err,sdc)=(480, 256, 224) iverilog=(480, 256, 224) OK
+B  sc_invdup_rca_opt            SA0 $flatten\u_chk.$abc$2242$new_n100_ python(corrupt,err,sdc)=(0, 256, 0) iverilog=(0, 256, 0) OK
+B  sc_invdup_rca_opt            SA1 ten\g_conv.u_dp.$abc$2398$new_n95_ python(corrupt,err,sdc)=(1024, 1024, 0) iverilog=(1024, 1024, 0) OK
+B  sc_invdup_rca_opt            SA1 ten\g_conv.u_dp.$abc$2398$new_n62_ python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_invdup_rca_opt            SA0 ten\g_conv.u_dp.$abc$2398$new_n38_ python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_invdup_rca_opt            SA1 $flatten\u_chk.$abc$2242$new_n59_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invdup_rca_struct         SA1 map.cc:117:simplemap_reduce$898[1] python(corrupt,err,sdc)=(2688, 2688, 0) iverilog=(2688, 2688, 0) OK
+B  sc_invdup_rca_struct         SA1 ../share/yosys/techmap.v:597$474_Y python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invdup_rca_struct         SA1 ten\g_conv.u_dp.$procmux$357.B[25] python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_invdup_rca_struct         SA0 map.cc:117:simplemap_reduce$885[2] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invdup_rca_struct         SA0 map.cc:117:simplemap_reduce$538[1] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_invdup_rca_struct         SA0 b[3]                               python(corrupt,err,sdc)=(1664, 0, 1664) iverilog=(1664, 0, 1664) OK
+B  sc_invpar_bs_cla_opt         SA1 g_bs.u_dp.\u_r2.$abc$3536$new_n11_ python(corrupt,err,sdc)=(768, 768, 0) iverilog=(768, 768, 0) OK
+B  sc_invpar_bs_cla_opt         SA1 op[3]                              python(corrupt,err,sdc)=(3844, 0, 3844) iverilog=(3844, 0, 3844) OK
+B  sc_invpar_bs_cla_opt         SA1 c                                  python(corrupt,err,sdc)=(5376, 5376, 0) iverilog=(5376, 5376, 0) OK
+B  sc_invpar_bs_cla_opt         SA0 g_bs.u_dp.\u_r0.$abc$3495$new_n15_ python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_bs_cla_opt         SA1 g_bs.u_dp.\u_r1.$abc$3518$new_n19_ python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_invpar_bs_cla_opt         SA1 $flatten\u_chk.$abc$3301$new_n147_ python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invpar_bs_cla_struct      SA1 \g_bs.u_dp.\u_r2.$procmux$370.B[5] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_invpar_bs_cla_struct      SA1 hk.$or$rtl/alu4_checker.v:86$258_Y python(corrupt,err,sdc)=(0, 4602, 0) iverilog=(0, 4602, 0) OK
+B  sc_invpar_bs_cla_struct      SA1 mplemap.cc:246:simplemap_eqne$1859 python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invpar_bs_cla_struct      SA1 mplemap.cc:246:simplemap_eqne$1202 python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_invpar_bs_cla_struct      SA0 .u_dp.\u_c.$procmux$342.B_AND_S[1] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_bs_cla_struct      SA1 lumacc.cc:485:replace_alu$423.A[2] python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invpar_bs_ks_opt          SA1 cin                                python(corrupt,err,sdc)=(512, 0, 512) iverilog=(512, 0, 512) OK
+B  sc_invpar_bs_ks_opt          SA1 g_bs.u_dp.\u_r2.$abc$3527$new_n29_ python(corrupt,err,sdc)=(3456, 3456, 0) iverilog=(3456, 3456, 0) OK
+B  sc_invpar_bs_ks_opt          SA0 \g_bs.u_dp.\u_v.$abc$3585$new_n13_ python(corrupt,err,sdc)=(576, 576, 0) iverilog=(576, 576, 0) OK
+B  sc_invpar_bs_ks_opt          SA1 z                                  python(corrupt,err,sdc)=(7354, 7354, 0) iverilog=(7354, 7354, 0) OK
+B  sc_invpar_bs_ks_opt          SA0 g_bs.u_dp.u_r0.si                  python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_invpar_bs_ks_opt          SA0 n\g_bs.u_dp.\u_c.$abc$3571$new_n9_ python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_invpar_bs_ks_struct       SA1 1.g_ks.u.$and$rtl/adder4.v:73$56_Y python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_invpar_bs_ks_struct       SA1 \g_bs.u_dp.\u_r1.$procmux$358.S[6] python(corrupt,err,sdc)=(2368, 2368, 0) iverilog=(2368, 2368, 0) OK
+B  sc_invpar_bs_ks_struct       SA0 ap.cc:117:simplemap_reduce$1234[0] python(corrupt,err,sdc)=(320, 320, 0) iverilog=(320, 320, 0) OK
+B  sc_invpar_bs_ks_struct       SA1 ap.cc:117:simplemap_reduce$1279[1] python(corrupt,err,sdc)=(1024, 1024, 0) iverilog=(1024, 1024, 0) OK
+B  sc_invpar_bs_ks_struct       SA0 _bs.u_dp.u_add.genblk1.g_ks.u.y[0] python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_invpar_bs_ks_struct       SA1 lemap.cc:117:simplemap_reduce$1331 python(corrupt,err,sdc)=(2496, 2496, 0) iverilog=(2496, 2496, 0) OK
+B  sc_invpar_bs_rca_opt         SA0 $flatten\u_chk.$abc$3260$new_n74_  python(corrupt,err,sdc)=(0, 3072, 0) iverilog=(0, 3072, 0) OK
+B  sc_invpar_bs_rca_opt         SA0 $flatten\u_chk.$abc$3260$new_n58_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invpar_bs_rca_opt         SA0 $flatten\u_chk.$abc$3260$new_n55_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invpar_bs_rca_opt         SA1 g_bs.u_dp.u_r2.si                  python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_invpar_bs_rca_opt         SA1 $flatten\u_chk.$abc$3260$new_n77_  python(corrupt,err,sdc)=(0, 576, 0) iverilog=(0, 576, 0) OK
+B  sc_invpar_bs_rca_opt         SA0 g_bs.u_dp.\u_r3.$abc$3515$new_n29_ python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_bs_rca_struct      SA1 \g_bs.u_dp.\u_r2.$procmux$370.B[6] python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_invpar_bs_rca_struct      SA1 mplemap.cc:246:simplemap_eqne$1603 python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_bs_rca_struct      SA1 ap.cc:117:simplemap_reduce$1575[0] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_bs_rca_struct      SA0 \g_bs.u_dp.\u_r3.$procmux$382.B[5] python(corrupt,err,sdc)=(128, 128, 0) iverilog=(128, 128, 0) OK
+B  sc_invpar_bs_rca_struct      SA0 u_chk.is_nor                       python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invpar_bs_rca_struct      SA0 and$rtl/alu4_checker.v:93$265_Y[2] python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_invpar_cla_opt            SA1 $flatten\u_chk.$abc$2206$new_n160_ python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invpar_cla_opt            SA0 ten\g_conv.u_dp.$abc$2346$new_n27_ python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_cla_opt            SA0 $flatten\u_chk.$abc$2206$new_n140_ python(corrupt,err,sdc)=(0, 2608, 0) iverilog=(0, 2608, 0) OK
+B  sc_invpar_cla_opt            SA0 en\g_conv.u_dp.$abc$2346$new_n143_ python(corrupt,err,sdc)=(4480, 4480, 0) iverilog=(4480, 4480, 0) OK
+B  sc_invpar_cla_opt            SA1 $flatten\u_chk.$abc$2206$new_n51_  python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_invpar_cla_opt            SA0 $flatten\u_chk.$abc$2206$new_n143_ python(corrupt,err,sdc)=(0, 2048, 0) iverilog=(0, 2048, 0) OK
+B  sc_invpar_cla_struct         SA1 _conv.u_dp.$procmux$367.B_AND_S[9] python(corrupt,err,sdc)=(1024, 1024, 0) iverilog=(1024, 1024, 0) OK
+B  sc_invpar_cla_struct         SA0 not$rtl/alu4_checker.v:93$238_Y[3] python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_invpar_cla_struct         SA1 mplemap.cc:246:simplemap_eqne$1069 python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invpar_cla_struct         SA1 plemap.cc:117:simplemap_reduce$944 python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_cla_struct         SA0 k.$or$rtl/alu4_checker.v:134$286_Y python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_invpar_cla_struct         SA1 ten\g_conv.u_dp.$procmux$347.B[23] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_invpar_ks_opt             SA0 $flatten\u_chk.$abc$2184$new_n60_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invpar_ks_opt             SA0 $flatten\u_chk.$abc$2184$new_n112_ python(corrupt,err,sdc)=(0, 2304, 0) iverilog=(0, 2304, 0) OK
+B  sc_invpar_ks_opt             SA1 $flatten\u_chk.$abc$2184$new_n111_ python(corrupt,err,sdc)=(0, 768, 0) iverilog=(0, 768, 0) OK
+B  sc_invpar_ks_opt             SA0 $flatten\u_chk.$abc$2184$new_n157_ python(corrupt,err,sdc)=(0, 7354, 0) iverilog=(0, 7354, 0) OK
+B  sc_invpar_ks_opt             SA1 $flatten\u_chk.$abc$2184$new_n119_ python(corrupt,err,sdc)=(0, 2816, 0) iverilog=(0, 2816, 0) OK
+B  sc_invpar_ks_opt             SA0 $flatten\u_chk.$abc$2184$new_n36_  python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_invpar_ks_struct          SA0 ten\g_conv.u_dp.$procmux$367.B[11] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_ks_struct          SA0 ap.cc:117:simplemap_reduce$1264[1] python(corrupt,err,sdc)=(0, 2112, 0) iverilog=(0, 2112, 0) OK
+B  sc_invpar_ks_struct          SA1 u_chk.v_pred                       python(corrupt,err,sdc)=(0, 2496, 0) iverilog=(0, 2496, 0) OK
+B  sc_invpar_ks_struct          SA1 conv.u_dp.$procmux$347.B_AND_S[35] python(corrupt,err,sdc)=(2944, 2944, 0) iverilog=(2944, 2944, 0) OK
+B  sc_invpar_ks_struct          SA1 err_vec[1]                         python(corrupt,err,sdc)=(0, 8192, 0) iverilog=(0, 8192, 0) OK
+B  sc_invpar_ks_struct          SA0 implemap.cc:246:simplemap_eqne$470 python(corrupt,err,sdc)=(5327, 4893, 434) iverilog=(5327, 4893, 434) OK
+B  sc_invpar_rca_opt            SA1 ten\g_conv.u_dp.$abc$2311$new_n59_ python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_invpar_rca_opt            SA1 op[1]                              python(corrupt,err,sdc)=(3752, 0, 3752) iverilog=(3752, 0, 3752) OK
+B  sc_invpar_rca_opt            SA0 $flatten\u_chk.$abc$2171$new_n150_ python(corrupt,err,sdc)=(0, 3584, 0) iverilog=(0, 3584, 0) OK
+B  sc_invpar_rca_opt            SA0 en\g_conv.u_dp.$abc$2311$new_n119_ python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_invpar_rca_opt            SA0 $flatten\u_chk.$abc$2171$new_n34_  python(corrupt,err,sdc)=(0, 1440, 0) iverilog=(0, 1440, 0) OK
+B  sc_invpar_rca_opt            SA0 ten\g_conv.u_dp.$abc$2311$new_n30_ python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_invpar_rca_struct         SA0 .$xor$rtl/alu4_checker.v:124$262_Y python(corrupt,err,sdc)=(0, 256, 0) iverilog=(0, 256, 0) OK
+B  sc_invpar_rca_struct         SA0 ten\g_conv.u_dp.$procmux$347.B[27] python(corrupt,err,sdc)=(128, 128, 0) iverilog=(128, 128, 0) OK
+B  sc_invpar_rca_struct         SA0 ten\g_conv.u_dp.$procmux$347.B[30] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_invpar_rca_struct         SA1 u_chk.is_sbb                       python(corrupt,err,sdc)=(0, 6740, 0) iverilog=(0, 6740, 0) OK
+B  sc_invpar_rca_struct         SA1 ten\g_conv.u_dp.$procmux$347.B[25] python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_invpar_rca_struct         SA1 map.cc:117:simplemap_reduce$889[0] python(corrupt,err,sdc)=(2688, 2688, 0) iverilog=(2688, 2688, 0) OK
+B  sc_res3dup_cla_opt           SA1 $flatten\u_chk.$abc$2910$new_n56_  python(corrupt,err,sdc)=(0, 2944, 0) iverilog=(0, 2944, 0) OK
+B  sc_res3dup_cla_opt           SA1 ten\g_conv.u_dp.$abc$3100$new_n76_ python(corrupt,err,sdc)=(768, 768, 0) iverilog=(768, 768, 0) OK
+B  sc_res3dup_cla_opt           SA1 $flatten\u_chk.$abc$2910$new_n72_  python(corrupt,err,sdc)=(0, 384, 0) iverilog=(0, 384, 0) OK
+B  sc_res3dup_cla_opt           SA0 en\g_conv.u_dp.$abc$3100$new_n104_ python(corrupt,err,sdc)=(3040, 3040, 0) iverilog=(3040, 3040, 0) OK
+B  sc_res3dup_cla_opt           SA0 $flatten\u_chk.$abc$2910$new_n196_ python(corrupt,err,sdc)=(0, 256, 0) iverilog=(0, 256, 0) OK
+B  sc_res3dup_cla_opt           SA0 b[0]                               python(corrupt,err,sdc)=(1664, 0, 1664) iverilog=(1664, 0, 1664) OK
+B  sc_res3dup_cla_struct        SA0 /alu4_checker.v:101$213.$result[1] python(corrupt,err,sdc)=(0, 640, 0) iverilog=(0, 640, 0) OK
+B  sc_res3dup_cla_struct        SA1 ten\g_conv.u_dp.$procmux$455.B[37] python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_res3dup_cla_struct        SA0 _conv.u_dp.$procmux$455.B_AND_S[6] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_res3dup_cla_struct        SA1 tten\g_conv.u_dp.$procmux$455.S[0] python(corrupt,err,sdc)=(6380, 5232, 1148) iverilog=(6380, 5232, 1148) OK
+B  sc_res3dup_cla_struct        SA1 tten\g_conv.u_dp.$procmux$475.B[9] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_res3dup_cla_struct        SA0 err                                python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3dup_ks_opt            SA0 $flatten\u_chk.$abc$2882$new_n145_ python(corrupt,err,sdc)=(0, 256, 0) iverilog=(0, 256, 0) OK
+B  sc_res3dup_ks_opt            SA1 ten\g_conv.u_dp.$abc$3070$new_n86_ python(corrupt,err,sdc)=(1408, 1408, 0) iverilog=(1408, 1408, 0) OK
+B  sc_res3dup_ks_opt            SA1 $flatten\u_chk.$abc$2882$new_n179_ python(corrupt,err,sdc)=(0, 128, 0) iverilog=(0, 128, 0) OK
+B  sc_res3dup_ks_opt            SA0 $flatten\u_chk.$abc$2882$new_n185_ python(corrupt,err,sdc)=(0, 1536, 0) iverilog=(0, 1536, 0) OK
+B  sc_res3dup_ks_opt            SA0 en\g_conv.u_dp.$abc$3070$new_n135_ python(corrupt,err,sdc)=(4480, 4480, 0) iverilog=(4480, 4480, 0) OK
+B  sc_res3dup_ks_opt            SA1 ten\g_conv.u_dp.$abc$3070$new_n72_ python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_res3dup_ks_struct         SA0 mplemap.cc:246:simplemap_eqne$1511 python(corrupt,err,sdc)=(0, 5152, 0) iverilog=(0, 5152, 0) OK
+B  sc_res3dup_ks_struct         SA0 switch$424$rdmux[0][1][0]$b$621[0] python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_res3dup_ks_struct         SA1 _conv.u_dp.$procmux$475.B_AND_S[9] python(corrupt,err,sdc)=(1024, 1024, 0) iverilog=(1024, 1024, 0) OK
+B  sc_res3dup_ks_struct         SA1 switch$416$rdmux[0][1][0]$b$531[0] python(corrupt,err,sdc)=(0, 652, 0) iverilog=(0, 652, 0) OK
+B  sc_res3dup_ks_struct         SA1 nd$rtl/alu4_checker.v:144$393_Y[1] python(corrupt,err,sdc)=(0, 768, 0) iverilog=(0, 768, 0) OK
+B  sc_res3dup_ks_struct         SA0 c_not$rtl/alu4_checker.v:155$317_Y python(corrupt,err,sdc)=(0, 838, 0) iverilog=(0, 838, 0) OK
+B  sc_res3dup_rca_opt           SA0 ten\g_conv.u_dp.$abc$3043$new_n43_ python(corrupt,err,sdc)=(3068, 2304, 764) iverilog=(3068, 2304, 764) OK
+B  sc_res3dup_rca_opt           SA1 ten\g_conv.u_dp.$abc$3043$new_n52_ python(corrupt,err,sdc)=(4884, 3962, 922) iverilog=(4884, 3962, 922) OK
+B  sc_res3dup_rca_opt           SA1 $flatten\u_chk.$abc$2856$new_n130_ python(corrupt,err,sdc)=(0, 4272, 0) iverilog=(0, 4272, 0) OK
+B  sc_res3dup_rca_opt           SA1 $flatten\u_chk.$abc$2856$new_n36_  python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_res3dup_rca_opt           SA1 en\g_conv.u_dp.$abc$3043$new_n143_ python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_res3dup_rca_opt           SA1 en\g_conv.u_dp.$abc$3043$new_n123_ python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_res3dup_rca_struct        SA0 conv.u_dp.$procmux$455.B_AND_S[35] python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_res3dup_rca_struct        SA1 conv.u_dp.$procmux$455.B_AND_S[14] python(corrupt,err,sdc)=(2688, 2688, 0) iverilog=(2688, 2688, 0) OK
+B  sc_res3dup_rca_struct        SA1 ap.cc:117:simplemap_reduce$1175[1] python(corrupt,err,sdc)=(2944, 2944, 0) iverilog=(2944, 2944, 0) OK
+B  sc_res3dup_rca_struct        SA1 ap.cc:117:simplemap_reduce$1181[1] python(corrupt,err,sdc)=(2944, 2944, 0) iverilog=(2944, 2944, 0) OK
+B  sc_res3dup_rca_struct        SA1 ./share/yosys/techmap.v:597$1317_Y python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3dup_rca_struct        SA0 ap.cc:117:simplemap_reduce$1447[0] python(corrupt,err,sdc)=(0, 3524, 0) iverilog=(0, 3524, 0) OK
+B  sc_res3par_bs_cla_opt        SA1 g_bs.u_dp.\u_r0.$abc$4147$new_n31_ python(corrupt,err,sdc)=(1664, 1664, 0) iverilog=(1664, 1664, 0) OK
+B  sc_res3par_bs_cla_opt        SA0 $flatten\u_chk.$abc$3919$new_n90_  python(corrupt,err,sdc)=(0, 960, 0) iverilog=(0, 960, 0) OK
+B  sc_res3par_bs_cla_opt        SA1 $flatten\u_chk.$abc$3919$new_n154_ python(corrupt,err,sdc)=(0, 480, 0) iverilog=(0, 480, 0) OK
+B  sc_res3par_bs_cla_opt        SA1 g_bs.u_dp.\u_r0.$abc$4147$new_n17_ python(corrupt,err,sdc)=(2048, 2048, 0) iverilog=(2048, 2048, 0) OK
+B  sc_res3par_bs_cla_opt        SA1 $flatten\u_chk.$abc$3919$new_n84_  python(corrupt,err,sdc)=(0, 384, 0) iverilog=(0, 384, 0) OK
+B  sc_res3par_bs_cla_opt        SA1 r[2]                               python(corrupt,err,sdc)=(4224, 4224, 0) iverilog=(4224, 4224, 0) OK
+B  sc_res3par_bs_cla_struct     SA0 \g_bs.u_dp.\u_r1.$procmux$456.B[5] python(corrupt,err,sdc)=(768, 768, 0) iverilog=(768, 768, 0) OK
+B  sc_res3par_bs_cla_struct     SA0 lemap.cc:117:simplemap_reduce$2165 python(corrupt,err,sdc)=(0, 1612, 0) iverilog=(0, 1612, 0) OK
+B  sc_res3par_bs_cla_struct     SA1 .$xor$rtl/alu4_checker.v:124$310_Y python(corrupt,err,sdc)=(0, 768, 0) iverilog=(0, 768, 0) OK
+B  sc_res3par_bs_cla_struct     SA1 mplemap.cc:246:simplemap_eqne$1171 python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_res3par_bs_cla_struct     SA1 u_dp.\u_r2.$procmux$468.B_AND_S[6] python(corrupt,err,sdc)=(2688, 2688, 0) iverilog=(2688, 2688, 0) OK
+B  sc_res3par_bs_cla_struct     SA1 g_bs.u_dp.cout                     python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_res3par_bs_ks_opt         SA0 $flatten\u_chk.$abc$3898$new_n67_  python(corrupt,err,sdc)=(0, 1062, 0) iverilog=(0, 1062, 0) OK
+B  sc_res3par_bs_ks_opt         SA1 op[3]                              python(corrupt,err,sdc)=(3844, 0, 3844) iverilog=(3844, 0, 3844) OK
+B  sc_res3par_bs_ks_opt         SA0 $flatten\u_chk.$abc$3898$new_n144_ python(corrupt,err,sdc)=(0, 5276, 0) iverilog=(0, 5276, 0) OK
+B  sc_res3par_bs_ks_opt         SA1 $flatten\u_chk.$abc$3898$new_n31_  python(corrupt,err,sdc)=(0, 3498, 0) iverilog=(0, 3498, 0) OK
+B  sc_res3par_bs_ks_opt         SA1 $flatten\u_chk.$abc$3898$new_n72_  python(corrupt,err,sdc)=(0, 384, 0) iverilog=(0, 384, 0) OK
+B  sc_res3par_bs_ks_opt         SA1 $flatten\u_chk.$abc$3898$new_n35_  python(corrupt,err,sdc)=(0, 384, 0) iverilog=(0, 384, 0) OK
+B  sc_res3par_bs_ks_struct      SA1 lemap.cc:117:simplemap_reduce$1838 python(corrupt,err,sdc)=(2624, 2624, 0) iverilog=(2624, 2624, 0) OK
+B  sc_res3par_bs_ks_struct      SA0 k.$auto$rtlil.cc:2600:NotGate$2692 python(corrupt,err,sdc)=(0, 768, 0) iverilog=(0, 768, 0) OK
+B  sc_res3par_bs_ks_struct      SA1 ap.cc:117:simplemap_reduce$1995[0] python(corrupt,err,sdc)=(838, 838, 0) iverilog=(838, 838, 0) OK
+B  sc_res3par_bs_ks_struct      SA1 op[2]                              python(corrupt,err,sdc)=(3934, 0, 3934) iverilog=(3934, 0, 3934) OK
+B  sc_res3par_bs_ks_struct      SA1 \g_bs.u_dp.\u_r3.$procmux$480.S[1] python(corrupt,err,sdc)=(2752, 2752, 0) iverilog=(2752, 2752, 0) OK
+B  sc_res3par_bs_ks_struct      SA1 mplemap.cc:246:simplemap_eqne$2409 python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_bs_rca_opt        SA1 $flatten\u_chk.$abc$3893$new_n31_  python(corrupt,err,sdc)=(0, 3498, 0) iverilog=(0, 3498, 0) OK
+B  sc_res3par_bs_rca_opt        SA1 b[2]                               python(corrupt,err,sdc)=(1664, 0, 1664) iverilog=(1664, 0, 1664) OK
+B  sc_res3par_bs_rca_opt        SA0 g_bs.u_dp.\u_r1.$abc$4144$new_n18_ python(corrupt,err,sdc)=(1024, 1024, 0) iverilog=(1024, 1024, 0) OK
+B  sc_res3par_bs_rca_opt        SA0 atten\g_bs.u_dp.$abc$4067$new_n30_ python(corrupt,err,sdc)=(1024, 1024, 0) iverilog=(1024, 1024, 0) OK
+B  sc_res3par_bs_rca_opt        SA1 $flatten\u_chk.$abc$3893$new_n183_ python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_bs_rca_opt        SA1 r[1]                               python(corrupt,err,sdc)=(4224, 4224, 0) iverilog=(4224, 4224, 0) OK
+B  sc_res3par_bs_rca_struct     SA0 .$and$rtl/alu4_checker.v:132$328_Y python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_bs_rca_struct     SA0 u_chk.is_and                       python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_bs_rca_struct     SA0 map.cc:117:simplemap_reduce$842[0] python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_bs_rca_struct     SA1 mplemap.cc:246:simplemap_eqne$1728 python(corrupt,err,sdc)=(384, 384, 0) iverilog=(384, 384, 0) OK
+B  sc_res3par_bs_rca_struct     SA0 ap.cc:117:simplemap_reduce$2472[1] python(corrupt,err,sdc)=(0, 2304, 0) iverilog=(0, 2304, 0) OK
+B  sc_res3par_bs_rca_struct     SA1 n\g_bs.u_dp.\u_r2.$procmux$472_CMP python(corrupt,err,sdc)=(2496, 2496, 0) iverilog=(2496, 2496, 0) OK
+B  sc_res3par_cla_opt           SA1 en\g_conv.u_dp.$abc$3011$new_n113_ python(corrupt,err,sdc)=(128, 128, 0) iverilog=(128, 128, 0) OK
+B  sc_res3par_cla_opt           SA0 $flatten\u_chk.$abc$2837$new_n184_ python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_cla_opt           SA0 ten\g_conv.u_dp.$abc$3011$new_n95_ python(corrupt,err,sdc)=(1536, 1536, 0) iverilog=(1536, 1536, 0) OK
+B  sc_res3par_cla_opt           SA0 $flatten\u_chk.$abc$2837$new_n32_  python(corrupt,err,sdc)=(0, 1952, 0) iverilog=(0, 1952, 0) OK
+B  sc_res3par_cla_opt           SA1 ten\g_conv.u_dp.$abc$3011$new_n51_ python(corrupt,err,sdc)=(4884, 3514, 1370) iverilog=(4884, 3514, 1370) OK
+B  sc_res3par_cla_opt           SA1 $flatten\u_chk.$abc$2837$new_n164_ python(corrupt,err,sdc)=(0, 512, 0) iverilog=(0, 512, 0) OK
+B  sc_res3par_cla_struct        SA0 implemap.cc:246:simplemap_eqne$809 python(corrupt,err,sdc)=(6588, 5216, 1372) iverilog=(6588, 5216, 1372) OK
+B  sc_res3par_cla_struct        SA1 ap.cc:117:simplemap_reduce$1171[1] python(corrupt,err,sdc)=(2944, 2944, 0) iverilog=(2944, 2944, 0) OK
+B  sc_res3par_cla_struct        SA1 u_chk.is_dec                       python(corrupt,err,sdc)=(0, 5152, 0) iverilog=(0, 5152, 0) OK
+B  sc_res3par_cla_struct        SA1 switch$406$rdmux[0][0][0]$b$518[0] python(corrupt,err,sdc)=(0, 392, 0) iverilog=(0, 392, 0) OK
+B  sc_res3par_cla_struct        SA1 ap.cc:117:simplemap_reduce$1458[0] python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_cla_struct        SA1 ap.cc:117:simplemap_reduce$1812[1] python(corrupt,err,sdc)=(0, 8192, 0) iverilog=(0, 8192, 0) OK
+B  sc_res3par_ks_opt            SA0 $flatten\u_chk.$abc$2814$new_n183_ python(corrupt,err,sdc)=(0, 3584, 0) iverilog=(0, 3584, 0) OK
+B  sc_res3par_ks_opt            SA1 $flatten\u_chk.$abc$2814$new_n118_ python(corrupt,err,sdc)=(0, 500, 0) iverilog=(0, 500, 0) OK
+B  sc_res3par_ks_opt            SA0 en\g_conv.u_dp.$abc$2987$new_n138_ python(corrupt,err,sdc)=(4480, 4480, 0) iverilog=(4480, 4480, 0) OK
+B  sc_res3par_ks_opt            SA0 $flatten\u_chk.$abc$2814$new_n123_ python(corrupt,err,sdc)=(0, 288, 0) iverilog=(0, 288, 0) OK
+B  sc_res3par_ks_opt            SA1 $flatten\u_chk.$abc$2814$new_n40_  python(corrupt,err,sdc)=(0, 1344, 0) iverilog=(0, 1344, 0) OK
+B  sc_res3par_ks_opt            SA1 en\g_conv.u_dp.$abc$2987$new_n136_ python(corrupt,err,sdc)=(1280, 1280, 0) iverilog=(1280, 1280, 0) OK
+B  sc_res3par_ks_struct         SA1 _conv.u_dp.$procmux$445.B_AND_S[5] python(corrupt,err,sdc)=(2688, 2688, 0) iverilog=(2688, 2688, 0) OK
+B  sc_res3par_ks_struct         SA1 hk.$or$rtl/alu4_checker.v:86$252_Y python(corrupt,err,sdc)=(0, 3498, 0) iverilog=(0, 3498, 0) OK
+B  sc_res3par_ks_struct         SA1 tten\u_chk.$procmux$472.B_AND_S[2] python(corrupt,err,sdc)=(0, 2036, 0) iverilog=(0, 2036, 0) OK
+B  sc_res3par_ks_struct         SA0 .$xor$rtl/alu4_datapath.v:49$394_Y python(corrupt,err,sdc)=(576, 576, 0) iverilog=(576, 576, 0) OK
+B  sc_res3par_ks_struct         SA0 ten\g_conv.u_dp.$procmux$445.B[28] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_res3par_ks_struct         SA1 ten\g_conv.u_dp.$procmux$465.B[11] python(corrupt,err,sdc)=(512, 512, 0) iverilog=(512, 512, 0) OK
+B  sc_res3par_rca_opt           SA0 ten\g_conv.u_dp.$abc$2957$new_n41_ python(corrupt,err,sdc)=(510, 404, 106) iverilog=(510, 404, 106) OK
+B  sc_res3par_rca_opt           SA1 $flatten\u_chk.$abc$2786$new_n137_ python(corrupt,err,sdc)=(0, 1152, 0) iverilog=(0, 1152, 0) OK
+B  sc_res3par_rca_opt           SA1 $flatten\u_chk.$abc$2786$new_n149_ python(corrupt,err,sdc)=(0, 768, 0) iverilog=(0, 768, 0) OK
+B  sc_res3par_rca_opt           SA1 $flatten\u_chk.$abc$2786$new_n29_  python(corrupt,err,sdc)=(0, 4610, 0) iverilog=(0, 4610, 0) OK
+B  sc_res3par_rca_opt           SA1 $flatten\u_chk.$abc$2786$new_n124_ python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_rca_opt           SA1 $flatten\u_chk.$abc$2786$new_n192_ python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_rca_struct        SA1 ten\g_conv.u_dp.$procmux$445.B[20] python(corrupt,err,sdc)=(256, 256, 0) iverilog=(256, 256, 0) OK
+B  sc_res3par_rca_struct        SA1 tten\g_conv.u_dp.$procmux$445.S[6] python(corrupt,err,sdc)=(5172, 4013, 1159) iverilog=(5172, 4013, 1159) OK
+B  sc_res3par_rca_struct        SA0 u_chk.is_inc                       python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_rca_struct        SA0 k.$or$rtl/alu4_checker.v:134$309_Y python(corrupt,err,sdc)=(0, 0, 0) iverilog=(0, 0, 0) OK
+B  sc_res3par_rca_struct        SA0 ap.cc:117:simplemap_reduce$1726[1] python(corrupt,err,sdc)=(0, 576, 0) iverilog=(0, 576, 0) OK
+B  sc_res3par_rca_struct        SA1 conv.u_dp.$procmux$445.B_AND_S[12] python(corrupt,err,sdc)=(2944, 2944, 0) iverilog=(2944, 2944, 0) OK
+
+Part A (fault-free, 54 netlists x 8192 vectors): ALL MATCH
+Part B (54 netlists x 6 random faults): ALL MATCH

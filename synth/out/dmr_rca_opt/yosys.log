@@ -1,0 +1,1005 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Executing script file `synth/out/dmr_rca_opt/synth.ys' --
+
+1. Executing Verilog-2005 frontend: rtl/adder4.v
+Parsing Verilog input from `rtl/adder4.v' to AST representation.
+Generating RTLIL representation for module `\adder4_rca'.
+Generating RTLIL representation for module `\adder4_cla'.
+Generating RTLIL representation for module `\adder4_ks'.
+Generating RTLIL representation for module `\adder4'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/alu4_datapath.v
+Parsing Verilog input from `rtl/alu4_datapath.v' to AST representation.
+Generating RTLIL representation for module `\alu4_datapath'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/alu4_checker.v
+Parsing Verilog input from `rtl/alu4_checker.v' to AST representation.
+Generating RTLIL representation for module `\alu4_checker'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: rtl/alu4_datapath_bs.v
+Parsing Verilog input from `rtl/alu4_datapath_bs.v' to AST representation.
+Generating RTLIL representation for module `\alu4_rslice'.
+Generating RTLIL representation for module `\alu4_cslice'.
+Generating RTLIL representation for module `\alu4_vslice'.
+Generating RTLIL representation for module `\alu4_datapath_bs'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: rtl/alu4_sc_core.v
+Parsing Verilog input from `rtl/alu4_sc_core.v' to AST representation.
+Generating RTLIL representation for module `\alu4_sc_core'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: rtl/alu4_dmr_core.v
+Parsing Verilog input from `rtl/alu4_dmr_core.v' to AST representation.
+Generating RTLIL representation for module `\alu4_dmr_core'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: rtl/alu4_base_core.v
+Parsing Verilog input from `rtl/alu4_base_core.v' to AST representation.
+Generating RTLIL representation for module `\alu4_base_core'.
+Successfully finished Verilog frontend.
+Parameter \ADDER_ARCH = 0
+
+8. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_dmr_core'.
+Parameter \ADDER_ARCH = 0
+Generating RTLIL representation for module `$paramod\alu4_dmr_core\ADDER_ARCH=32'00000000000000000000000000000000'.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     \alu4_datapath
+Used module:         \adder4
+Used module:             \adder4_cla
+Parameter \ADDER_ARCH = 1
+
+9.2. Executing AST frontend in derive mode using pre-parsed AST for module `\adder4'.
+Parameter \ADDER_ARCH = 1
+Generating RTLIL representation for module `$paramod\adder4\ADDER_ARCH=s32'00000000000000000000000000000001'.
+Parameter \ADDER_ARCH = 0
+
+9.3. Executing AST frontend in derive mode using pre-parsed AST for module `\alu4_datapath'.
+Parameter \ADDER_ARCH = 0
+Generating RTLIL representation for module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Parameter \ADDER_ARCH = 0
+Found cached RTLIL representation for module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+
+9.4. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         \adder4
+Used module:             \adder4_cla
+Parameter \ADDER_ARCH = 0
+
+9.5. Executing AST frontend in derive mode using pre-parsed AST for module `\adder4'.
+Parameter \ADDER_ARCH = 0
+Generating RTLIL representation for module `$paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000'.
+
+9.6. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+
+9.7. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+Removing unused module `$paramod\adder4\ADDER_ARCH=s32'00000000000000000000000000000001'.
+Removing unused module `\alu4_base_core'.
+Removing unused module `\alu4_sc_core'.
+Removing unused module `\alu4_datapath_bs'.
+Removing unused module `\alu4_vslice'.
+Removing unused module `\alu4_cslice'.
+Removing unused module `\alu4_rslice'.
+Removing unused module `\alu4_checker'.
+Removing unused module `\alu4_datapath'.
+Removing unused module `\adder4'.
+Removing unused module `\adder4_ks'.
+Removing unused module `\adder4_cla'.
+Removed 12 unused modules.
+Warning: Selection "*alu4_checker*" did not match any module.
+Warning: Selection "*alu4_rslice*" did not match any module.
+Warning: Selection "*alu4_cslice*" did not match any module.
+Warning: Selection "*alu4_vslice*" did not match any module.
+
+10. Executing SYNTH pass.
+
+10.1. Executing HIERARCHY pass (managing design hierarchy).
+
+10.1.1. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+
+10.1.2. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:         $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000
+Used module:             \adder4_rca
+Removed 0 unused modules.
+
+10.2. Executing PROC pass (convert processes to netlists).
+
+10.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$rtl/alu4_datapath.v:54$220 in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath.v:54$220 in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Marked 1 switch rules as full_case in process $proc$rtl/alu4_datapath.v:30$213 in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Removed a total of 1 dead cases.
+
+10.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 5 assignments to connections.
+
+10.2.4. Executing PROC_INIT pass (extract init attributes).
+
+10.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+10.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+10.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:54$220'.
+     1/3: $1\v_i[0:0]
+     2/3: $1\c_i[0:0]
+     3/3: $1\r_i[3:0]
+Creating decoders for process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:30$213'.
+     1/2: $1\ci[0:0]
+     2/2: $1\y[3:0]
+
+10.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.\r_i' from process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:54$220'.
+No latch inferred for signal `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.\c_i' from process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:54$220'.
+No latch inferred for signal `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.\v_i' from process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:54$220'.
+No latch inferred for signal `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.\y' from process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:30$213'.
+No latch inferred for signal `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.\ci' from process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:30$213'.
+
+10.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+10.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+10.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:54$220'.
+Removing empty process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:54$220'.
+Found and cleaned up 1 empty switch in `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:30$213'.
+Removing empty process `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$proc$rtl/alu4_datapath.v:30$213'.
+Cleaned up 2 empty switches.
+
+10.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+<suppressed ~3 debug messages>
+Optimizing module alu4_dmr_core.
+Optimizing module $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module adder4_rca.
+
+10.3. Executing FLATTEN pass (flatten design).
+Keeping alu4_dmr_core.u_dp2 (found keep_hierarchy attribute).
+Keeping alu4_dmr_core.u_dp (found keep_hierarchy attribute).
+Deleting now unused module $paramod\adder4\ADDER_ARCH=32'00000000000000000000000000000000.
+Deleting now unused module adder4_rca.
+<suppressed ~2 debug messages>
+
+10.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 0 unused cells and 30 unused wires.
+<suppressed ~2 debug messages>
+
+10.6. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000...
+Checking module alu4_dmr_core...
+Found and reported 0 problems.
+
+10.7. Executing OPT pass (performing simple optimizations).
+
+10.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+<suppressed ~132 debug messages>
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 44 cells.
+
+10.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_dmr_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+    New ctrl vector for $pmux cell $procmux$241: { $procmux$252_CTRL $auto$opt_reduce.cc:134:opt_pmux$283 $auto$opt_reduce.cc:134:opt_pmux$281 $auto$opt_reduce.cc:134:opt_pmux$279 }
+    New ctrl vector for $pmux cell $procmux$229: { $procmux$252_CTRL $auto$opt_reduce.cc:134:opt_pmux$285 }
+    New ctrl vector for $pmux cell $procmux$267: { $procmux$240_CMP [1] $procmux$240_CMP [3] $auto$opt_reduce.cc:134:opt_pmux$287 }
+    New ctrl vector for $pmux cell $procmux$273: { $auto$opt_reduce.cc:134:opt_pmux$289 $procmux$240_CMP [4] $procmux$240_CMP [5] }
+  Optimizing cells in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module \alu4_dmr_core.
+Performed a total of 4 changes.
+
+10.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 0 unused cells and 34 unused wires.
+<suppressed ~1 debug messages>
+
+10.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_dmr_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module \alu4_dmr_core.
+Performed a total of 0 changes.
+
+10.7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.7.16. Finished OPT passes. (There is nothing left to do.)
+
+10.8. Executing FSM pass (extract and optimize FSM).
+
+10.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+10.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+10.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+10.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+10.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+10.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+10.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+10.9. Executing OPT pass (performing simple optimizations).
+
+10.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_dmr_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module \alu4_dmr_core.
+Performed a total of 0 changes.
+
+10.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.9.9. Finished OPT passes. (There is nothing left to do.)
+
+10.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$240_CMP5 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$240_CMP4 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$240_CMP3 ($eq).
+Removed top 2 bits (of 4) from port B of cell $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$240_CMP2 ($eq).
+Removed top 3 bits (of 4) from port B of cell $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$240_CMP1 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$239_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.$procmux$238_CMP0 ($eq).
+
+10.11. Executing PEEPOPT pass (run peephole optimizers).
+
+10.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module alu4_dmr_core:
+  created 0 $alu and 0 $macc cells.
+
+10.14. Executing SHARE pass (SAT-based resource sharing).
+
+10.15. Executing OPT pass (performing simple optimizations).
+
+10.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_dmr_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module \alu4_dmr_core.
+Performed a total of 0 changes.
+
+10.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.15.9. Finished OPT passes. (There is nothing left to do.)
+
+10.16. Executing MEMORY pass.
+
+10.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+10.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+10.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+10.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+10.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+10.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+10.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+10.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+10.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.18. Executing OPT pass (performing simple optimizations).
+
+10.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+<suppressed ~3 debug messages>
+Optimizing module alu4_dmr_core.
+
+10.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 2 unused cells and 1 unused wires.
+<suppressed ~3 debug messages>
+
+10.18.5. Finished fast OPT passes.
+
+10.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10.20. Executing OPT pass (performing simple optimizations).
+
+10.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu4_dmr_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+  Optimizing cells in module \alu4_dmr_core.
+Performed a total of 0 changes.
+
+10.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 0 cells.
+
+10.20.6. Executing OPT_SHARE pass.
+
+10.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+
+10.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.20.10. Finished OPT passes. (There is nothing left to do.)
+
+10.21. Executing TECHMAP pass (map to technology primitives).
+
+10.21.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+10.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $ne.
+Using template $paramod$d629d85c8826a74239b9178d1930215a43b0ceb0\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$274c8d34472ef950383656115be6e1c8ace5024c\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $mux.
+Using template $paramod$c2e415ef15bc3ccd2723772353a6b450d3d76206\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $xnor.
+Using extmapper simplemap for cells of type $logic_not.
+No more expansions possible.
+<suppressed ~208 debug messages>
+
+10.22. Executing OPT pass (performing simple optimizations).
+
+10.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+<suppressed ~79 debug messages>
+Optimizing module alu4_dmr_core.
+
+10.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+<suppressed ~180 debug messages>
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 60 cells.
+
+10.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 0 unused cells and 169 unused wires.
+<suppressed ~2 debug messages>
+
+10.22.5. Finished fast OPT passes.
+
+10.23. Executing ABC pass (technology mapping using ABC).
+
+10.23.1. Extracting gate netlist of module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000' to `<abc-temp-dir>/input.blif'..
+Extracted 215 gates and 229 wires to a netlist network with 13 inputs and 7 outputs.
+
+10.23.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+10.23.1.2. Re-integrating ABC results.
+ABC RESULTS:             ORNOT cells:        6
+ABC RESULTS:               NOT cells:        9
+ABC RESULTS:              XNOR cells:        7
+ABC RESULTS:               XOR cells:        7
+ABC RESULTS:              NAND cells:        7
+ABC RESULTS:               NOR cells:       16
+ABC RESULTS:               AND cells:        6
+ABC RESULTS:            ANDNOT cells:       72
+ABC RESULTS:                OR cells:       52
+ABC RESULTS:               MUX cells:        9
+ABC RESULTS:        internal signals:      209
+ABC RESULTS:           input signals:       13
+ABC RESULTS:          output signals:        7
+Removing temp directory.
+
+10.23.2. Extracting gate netlist of module `\alu4_dmr_core' to `<abc-temp-dir>/input.blif'..
+Extracted 15 gates and 31 wires to a netlist network with 16 inputs and 1 outputs.
+
+10.23.2.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+10.23.2.2. Re-integrating ABC results.
+ABC RESULTS:               XOR cells:        8
+ABC RESULTS:                OR cells:        7
+ABC RESULTS:        internal signals:       14
+ABC RESULTS:           input signals:       16
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+10.24. Executing OPT pass (performing simple optimizations).
+
+10.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+Optimizing module alu4_dmr_core.
+
+10.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\alu4_dmr_core'.
+Removed a total of 1 cells.
+
+10.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 0 unused cells and 131 unused wires.
+<suppressed ~10 debug messages>
+
+10.24.5. Finished fast OPT passes.
+
+10.25. Executing HIERARCHY pass (managing design hierarchy).
+
+10.25.1. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000
+
+10.25.2. Analyzing design hierarchy..
+Top module:  \alu4_dmr_core
+Used module:     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000
+Removed 0 unused modules.
+
+10.26. Printing statistics.
+
+=== $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000 ===
+
+   Number of wires:                207
+   Number of wire bits:            241
+   Number of public wires:          24
+   Number of public wire bits:      58
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                190
+     $_ANDNOT_                      72
+     $_AND_                          6
+     $_MUX_                          9
+     $_NAND_                         7
+     $_NOR_                         16
+     $_NOT_                          9
+     $_ORNOT_                        6
+     $_OR_                          52
+     $_XNOR_                         7
+     $_XOR_                          6
+
+=== alu4_dmr_core ===
+
+   Number of wires:                 30
+   Number of wire bits:             48
+   Number of public wires:          16
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $_OR_                           7
+     $_XOR_                          8
+     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000      2
+
+=== design hierarchy ===
+
+   alu4_dmr_core                     1
+     $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000      2
+
+   Number of wires:                444
+   Number of wire bits:            530
+   Number of public wires:          64
+   Number of public wire bits:     150
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                395
+     $_ANDNOT_                     144
+     $_AND_                         12
+     $_MUX_                         18
+     $_NAND_                        14
+     $_NOR_                         32
+     $_NOT_                         18
+     $_ORNOT_                       12
+     $_OR_                         111
+     $_XNOR_                        14
+     $_XOR_                         20
+
+10.27. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000...
+Checking module alu4_dmr_core...
+Found and reported 0 problems.
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000' to `<abc-temp-dir>/input.blif'..
+Extracted 190 gates and 203 wires to a netlist network with 13 inputs and 7 outputs.
+
+11.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+11.1.2. Re-integrating ABC results.
+ABC RESULTS:               XOR cells:        1
+ABC RESULTS:             ORNOT cells:        3
+ABC RESULTS:              XNOR cells:        4
+ABC RESULTS:            ANDNOT cells:       14
+ABC RESULTS:               NOR cells:        9
+ABC RESULTS:               MUX cells:        8
+ABC RESULTS:                OR cells:       21
+ABC RESULTS:               AND cells:       43
+ABC RESULTS:              NAND cells:       44
+ABC RESULTS:        internal signals:      183
+ABC RESULTS:           input signals:       13
+ABC RESULTS:          output signals:        7
+Removing temp directory.
+
+11.2. Extracting gate netlist of module `\alu4_dmr_core' to `<abc-temp-dir>/input.blif'..
+Extracted 15 gates and 31 wires to a netlist network with 16 inputs and 1 outputs.
+
+11.2.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+11.2.2. Re-integrating ABC results.
+ABC RESULTS:              XNOR cells:        8
+ABC RESULTS:               AND cells:        6
+ABC RESULTS:              NAND cells:        1
+ABC RESULTS:        internal signals:       14
+ABC RESULTS:           input signals:       16
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 0 unused cells and 234 unused wires.
+<suppressed ~2 debug messages>
+
+13. Executing ABC pass (technology mapping using ABC).
+
+13.1. Extracting gate netlist of module `$paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000' to `<abc-temp-dir>/input.blif'..
+Extracted 147 gates and 160 wires to a netlist network with 13 inputs and 7 outputs.
+
+13.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+13.1.2. Re-integrating ABC results.
+ABC RESULTS:            ANDNOT cells:        5
+ABC RESULTS:               XOR cells:        2
+ABC RESULTS:              XNOR cells:        3
+ABC RESULTS:                OR cells:       14
+ABC RESULTS:               NOR cells:       10
+ABC RESULTS:               MUX cells:        9
+ABC RESULTS:             ORNOT cells:        7
+ABC RESULTS:               AND cells:       45
+ABC RESULTS:              NAND cells:       42
+ABC RESULTS:        internal signals:      140
+ABC RESULTS:           input signals:       13
+ABC RESULTS:          output signals:        7
+Removing temp directory.
+
+13.2. Extracting gate netlist of module `\alu4_dmr_core' to `<abc-temp-dir>/input.blif'..
+Extracted 15 gates and 31 wires to a netlist network with 16 inputs and 1 outputs.
+
+13.2.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+13.2.2. Re-integrating ABC results.
+ABC RESULTS:              XNOR cells:        8
+ABC RESULTS:               AND cells:        6
+ABC RESULTS:              NAND cells:        1
+ABC RESULTS:        internal signals:       14
+ABC RESULTS:           input signals:       16
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000..
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 0 unused cells and 191 unused wires.
+<suppressed ~2 debug messages>
+
+15. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\alu4_datapath\ADDER_ARCH=32'00000000000000000000000000000000.
+<suppressed ~2 debug messages>
+
+16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu4_dmr_core..
+Removed 0 unused cells and 48 unused wires.
+<suppressed ~48 debug messages>
+
+17. Printing statistics.
+
+=== alu4_dmr_core ===
+
+   Number of wires:                290
+   Number of wire bits:            308
+   Number of public wires:          16
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                289
+     $_ANDNOT_                      10
+     $_AND_                         96
+     $_MUX_                         18
+     $_NAND_                        85
+     $_NOR_                         20
+     $_ORNOT_                       14
+     $_OR_                          28
+     $_XNOR_                        14
+     $_XOR_                          4
+
+18. Executing LTP pass (find longest path).
+
+Longest topological path in alu4_dmr_core (length=20):
+    0: \op [3]
+    1: $flatten\u_dp2.$abc$1334$new_n23_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1337)
+    2: $flatten\u_dp2.$abc$1334$new_n24_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1338)
+    3: $flatten\u_dp2.$abc$1334$new_n35_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1349)
+    4: $flatten\u_dp2.$abc$1334$new_n36_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1350)
+    5: $flatten\u_dp2.$abc$1334$new_n38_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1352)
+    6: $flatten\u_dp2.$abc$1334$new_n44_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1358)
+    7: $flatten\u_dp2.$abc$1334$new_n69_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1383)
+    8: $flatten\u_dp2.$abc$1334$new_n74_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1388)
+    9: $flatten\u_dp2.$abc$1334$new_n94_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1408)
+   10: $flatten\u_dp2.$abc$1334$new_n100_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1414)
+   11: $flatten\u_dp2.$abc$1334$new_n118_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1432)
+   12: $flatten\u_dp2.$abc$1334$new_n124_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1438)
+   13: $flatten\u_dp2.$abc$1334$new_n126_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1440)
+   14: $flatten\u_dp2.$abc$1334$new_n127_ (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1441)
+   15: \u_dp2.n (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1460)
+   16: \u_dp2.z (via $flatten\u_dp2.$abc$1334$auto$blifparse.cc:386:parse_blif$1463)
+   17: $abc$1472$new_n19_ (via $abc$1472$auto$blifparse.cc:386:parse_blif$1474)
+   18: $abc$1472$new_n20_ (via $abc$1472$auto$blifparse.cc:386:parse_blif$1475)
+   19: $abc$1472$new_n24_ (via $abc$1472$auto$blifparse.cc:386:parse_blif$1479)
+   20: \err (via $abc$1472$auto$blifparse.cc:386:parse_blif$1487)
+
+19. Executing Verilog backend.
+
+19.1. Executing BMUXMAP pass.
+
+19.2. Executing DEMUXMAP pass.
+Dumping module `\alu4_dmr_core'.
+
+20. Executing JSON backend.
+
+Warnings: 4 unique messages, 4 total
+End of script. Logfile hash: 184dfb8743, CPU: user 0.24s system 0.01s, MEM: 14.67 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 66% 3x abc (0 sec), 8% 14x opt_expr (0 sec), ...

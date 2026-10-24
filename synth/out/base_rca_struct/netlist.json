@@ -1,0 +1,4789 @@
+{
+  "creator": "Yosys 0.33 (git sha1 2584903a060)",
+  "modules": {
+    "alu4_base_core": {
+      "attributes": {
+        "src": "rtl/alu4_base_core.v:11.1-41.10",
+        "top": "00000000000000000000000000000001",
+        "hdlname": "\\alu4_base_core"
+      },
+      "parameter_default_values": {
+        "ADDER_ARCH": "00000000000000000000000000000000",
+        "DP_STYLE": "00000000000000000000000000000000"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "op": {
+          "direction": "input",
+          "bits": [ 10, 11, 12, 13 ]
+        },
+        "cin": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "r": {
+          "direction": "output",
+          "bits": [ 15, 16, 17, 18 ]
+        },
+        "c": {
+          "direction": "output",
+          "bits": [ 19 ]
+        },
+        "v": {
+          "direction": "output",
+          "bits": [ 20 ]
+        },
+        "z": {
+          "direction": "output",
+          "bits": [ 21 ]
+        },
+        "n": {
+          "direction": "output",
+          "bits": [ 18 ]
+        },
+        "err": {
+          "direction": "output",
+          "bits": [ "0" ]
+        },
+        "err_vec": {
+          "direction": "output",
+          "bits": [ "0", "0", "0", "0" ]
+        }
+      },
+      "cells": {
+        "$flatten\\g_conv.u_dp.$auto$opt_expr.cc:607:replace_const_cells$896": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$opt_expr.cc:607:replace_const_cells$898": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$opt_expr.cc:607:replace_const_cells$900": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$opt_expr.cc:607:replace_const_cells$902": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$375": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 27 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$388": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 30 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$403": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 30 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$434": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 35 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$449": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 35 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$462": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 13 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$464": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 35 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$479": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 30 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$492": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 13 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$494": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 30 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$509": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 42 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$524": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 42 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$539": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 42 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$552": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 25 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$554": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 42 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$566": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$569": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 47 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$581": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22 ],
+            "B": [ 11 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$584": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 47 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$596": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 23 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$599": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 47 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$612": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22 ],
+            "B": [ 23 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$613": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 25 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$615": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 47 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$619": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 53 ],
+            "Y": [ 54 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$626": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ 56 ],
+            "Y": [ 57 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$643": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 58 ],
+            "B": [ 59 ],
+            "Y": [ 55 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$644": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "B": [ 26 ],
+            "Y": [ 61 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$646": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ 61 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$648": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 62 ],
+            "B": [ 63 ],
+            "Y": [ 64 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$650": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 65 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$652": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ 68 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$702": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:77.16-77.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$703": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:77.16-77.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 18 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$705": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:77.16-77.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ 71 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$708": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 69 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$710": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 73 ],
+            "B": [ 57 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$716": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75 ],
+            "B": [ 76 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$720": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 68 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$721": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 78 ],
+            "B": [ 79 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$722": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ 56 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$723": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 80 ],
+            "B": [ 81 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$724": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82 ],
+            "B": [ 83 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$726": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ 26 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$727": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "B": [ 59 ],
+            "Y": [ 85 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$729": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 84 ],
+            "B": [ 85 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$731": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 86 ],
+            "B": [ 58 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$777": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 88 ],
+            "B": [ 89 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$778": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "B": [ 92 ],
+            "Y": [ 93 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$780": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94 ],
+            "B": [ 95 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$781": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 98 ],
+            "Y": [ 99 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$783": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 90 ],
+            "B": [ 93 ],
+            "Y": [ 100 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$784": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "B": [ 96 ],
+            "Y": [ 102 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$786": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 100 ],
+            "B": [ 102 ],
+            "Y": [ 103 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$788": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ 99 ],
+            "Y": [ 104 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$790": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ 106 ],
+            "Y": [ 107 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$791": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 108 ],
+            "B": [ 109 ],
+            "Y": [ 110 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$792": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 111 ],
+            "B": [ 112 ],
+            "Y": [ 113 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$793": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 114 ],
+            "B": [ 115 ],
+            "Y": [ 116 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$794": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 117 ],
+            "B": [ 118 ],
+            "Y": [ 119 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$796": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 107 ],
+            "B": [ 110 ],
+            "Y": [ 120 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$797": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 113 ],
+            "B": [ 116 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$799": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 120 ],
+            "B": [ 121 ],
+            "Y": [ 122 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$801": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 122 ],
+            "B": [ 119 ],
+            "Y": [ 123 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$803": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124 ],
+            "B": [ 125 ],
+            "Y": [ 126 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$804": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 127 ],
+            "B": [ 128 ],
+            "Y": [ 129 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$805": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 130 ],
+            "B": [ 131 ],
+            "Y": [ 132 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$806": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 133 ],
+            "B": [ 134 ],
+            "Y": [ 135 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$807": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 136 ],
+            "B": [ 137 ],
+            "Y": [ 138 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$809": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 126 ],
+            "B": [ 129 ],
+            "Y": [ 139 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$810": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 132 ],
+            "B": [ 135 ],
+            "Y": [ 140 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$812": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 139 ],
+            "B": [ 140 ],
+            "Y": [ 141 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$814": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 141 ],
+            "B": [ 138 ],
+            "Y": [ 142 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$816": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 143 ],
+            "B": [ 144 ],
+            "Y": [ 145 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$818": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146 ],
+            "B": [ 147 ],
+            "Y": [ 148 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$819": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 149 ],
+            "B": [ 150 ],
+            "Y": [ 151 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$820": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 152 ],
+            "B": [ 153 ],
+            "Y": [ 154 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$822": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 127 ],
+            "Y": [ 155 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$823": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 148 ],
+            "B": [ 151 ],
+            "Y": [ 156 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$825": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 155 ],
+            "B": [ 156 ],
+            "Y": [ 157 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$827": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 157 ],
+            "B": [ 154 ],
+            "Y": [ 158 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$831": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 159 ],
+            "B": [ 160 ],
+            "Y": [ 161 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$835": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 159 ],
+            "B": [ 162 ],
+            "Y": [ 163 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$839": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 159 ],
+            "B": [ 164 ],
+            "Y": [ 165 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$843": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 159 ],
+            "B": [ 166 ],
+            "Y": [ 167 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$861": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 159 ],
+            "B": [ 65 ],
+            "Y": [ 168 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$863": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 168 ],
+            "B": [ 54 ],
+            "Y": [ 169 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$865": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ 170 ],
+            "Y": [ 171 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$867": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:593.20-593.31|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 171 ],
+            "B": [ 172 ],
+            "Y": [ 173 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$873": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ 53 ],
+            "Y": [ 174 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$875": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 174 ],
+            "B": [ 175 ],
+            "Y": [ 176 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$390": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 159 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$405": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$436": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "Y": [ 53 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$451": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "Y": [ 52 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$466": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "Y": [ 175 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$481": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "Y": [ 83 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$496": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 41 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$511": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$526": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$541": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 45 ],
+            "Y": [ 56 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$556": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$571": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$586": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$601": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$617": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$706": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:77.16-77.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$602": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 177 ],
+            "B": [ "0" ],
+            "S": [ 64 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$711": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 178 ],
+            "B": [ 77 ],
+            "S": [ 74 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$732": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 179 ],
+            "B": [ 104 ],
+            "S": [ 87 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$733": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180 ],
+            "B": [ 123 ],
+            "S": [ 87 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$734": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 181 ],
+            "B": [ 142 ],
+            "S": [ 87 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$735": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 182 ],
+            "B": [ 158 ],
+            "S": [ 87 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$856": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 167 ],
+            "S": [ 169 ],
+            "Y": [ 183 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$857": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 165 ],
+            "S": [ 169 ],
+            "Y": [ 184 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$858": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 163 ],
+            "S": [ 169 ],
+            "Y": [ 185 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$859": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 161 ],
+            "S": [ 169 ],
+            "Y": [ 186 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$871": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.25|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 173 ],
+            "S": [ 176 ],
+            "Y": [ 187 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$673": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:34.82-34.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 188 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$674": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:34.82-34.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "Y": [ 189 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$675": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:34.82-34.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "Y": [ 190 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$676": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:34.82-34.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "Y": [ 191 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$677": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:35.94-35.98"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "Y": [ 192 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$693": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:63.46-63.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 193 ],
+            "Y": [ 194 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$694": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:63.46-63.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 195 ],
+            "Y": [ 196 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$695": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:63.46-63.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 197 ],
+            "Y": [ 198 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$696": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:63.46-63.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 199 ],
+            "Y": [ 200 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$697": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:64.40-64.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 201 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$698": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:64.40-64.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 202 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$699": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:64.40-64.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 203 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:38:simplemap_not$700": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:64.40-64.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 204 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$653": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.22-29.33|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 183 ],
+            "Y": [ 205 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$654": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.29-31.55|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 206 ],
+            "B": [ 207 ],
+            "Y": [ 178 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$655": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 208 ],
+            "B": [ 209 ],
+            "Y": [ 207 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$656": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 186 ],
+            "Y": [ 206 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$657": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:30.29-30.37|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 208 ],
+            "B": [ 209 ],
+            "Y": [ 182 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$658": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.22-29.33|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 186 ],
+            "Y": [ 208 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$659": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.29-31.55|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 210 ],
+            "B": [ 211 ],
+            "Y": [ 209 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$660": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 212 ],
+            "B": [ 213 ],
+            "Y": [ 211 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$661": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 185 ],
+            "Y": [ 210 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$662": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:30.29-30.37|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 212 ],
+            "B": [ 213 ],
+            "Y": [ 181 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$663": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.22-29.33|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 185 ],
+            "Y": [ 212 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$664": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.29-31.55|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 214 ],
+            "B": [ 215 ],
+            "Y": [ 213 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$665": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 216 ],
+            "B": [ 217 ],
+            "Y": [ 215 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$666": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 184 ],
+            "Y": [ 214 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$667": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:30.29-30.37|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 216 ],
+            "B": [ 217 ],
+            "Y": [ 180 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$668": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.22-29.33|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 184 ],
+            "Y": [ 216 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$669": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.29-31.55|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 218 ],
+            "B": [ 219 ],
+            "Y": [ 217 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$670": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 205 ],
+            "B": [ 187 ],
+            "Y": [ 219 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$671": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 183 ],
+            "Y": [ 218 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$672": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:30.29-30.37|rtl/alu4_datapath.v:44.39-46.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 205 ],
+            "B": [ 187 ],
+            "Y": [ 179 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$678": {
+          "hide_name": 1,
+          "type": "$_XNOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:49.17-49.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 186 ],
+            "Y": [ 220 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$679": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:49.34-49.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 182 ],
+            "B": [ 5 ],
+            "Y": [ 221 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$680": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:49.16-49.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 220 ],
+            "B": [ 221 ],
+            "Y": [ 177 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$681": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:60.43-60.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 6 ],
+            "Y": [ 222 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$682": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:60.43-60.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 7 ],
+            "Y": [ 223 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$683": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:60.43-60.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 8 ],
+            "Y": [ 224 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$684": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:60.43-60.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 9 ],
+            "Y": [ 225 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$685": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:61.44-61.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 6 ],
+            "Y": [ 193 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$686": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:61.44-61.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 7 ],
+            "Y": [ 195 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$687": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:61.44-61.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 8 ],
+            "Y": [ 197 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$688": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:61.44-61.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 9 ],
+            "Y": [ 199 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$689": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:62.43-62.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 6 ],
+            "Y": [ 226 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$690": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:62.43-62.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 7 ],
+            "Y": [ 227 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$691": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:62.43-62.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 8 ],
+            "Y": [ 228 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$692": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:62.43-62.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 9 ],
+            "Y": [ 229 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$712": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 28 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$713": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 69 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$736": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 27 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$737": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 27 ],
+            "Y": [ 105 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$738": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 27 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$739": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 27 ],
+            "Y": [ 143 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$740": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 68 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$741": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 68 ],
+            "Y": [ 106 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$742": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 68 ],
+            "Y": [ 125 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$743": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 68 ],
+            "Y": [ 144 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$744": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 78 ],
+            "Y": [ 91 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$745": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 78 ],
+            "Y": [ 108 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$746": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 78 ],
+            "Y": [ 127 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$748": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 79 ],
+            "Y": [ 92 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$749": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 79 ],
+            "Y": [ 109 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$750": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 79 ],
+            "Y": [ 128 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$753": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 67 ],
+            "Y": [ 111 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$754": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 67 ],
+            "Y": [ 130 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$755": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 67 ],
+            "Y": [ 146 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$756": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 201 ],
+            "B": [ 56 ],
+            "Y": [ 101 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$757": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 202 ],
+            "B": [ 56 ],
+            "Y": [ 112 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$758": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 203 ],
+            "B": [ 56 ],
+            "Y": [ 131 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$759": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 204 ],
+            "B": [ 56 ],
+            "Y": [ 147 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$760": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 194 ],
+            "B": [ 80 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$761": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 196 ],
+            "B": [ 80 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$762": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 198 ],
+            "B": [ 80 ],
+            "Y": [ 133 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$763": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 200 ],
+            "B": [ 80 ],
+            "Y": [ 149 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$764": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 226 ],
+            "B": [ 81 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$765": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 227 ],
+            "B": [ 81 ],
+            "Y": [ 115 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$766": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 228 ],
+            "B": [ 81 ],
+            "Y": [ 134 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$767": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 229 ],
+            "B": [ 81 ],
+            "Y": [ 150 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$768": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 193 ],
+            "B": [ 82 ],
+            "Y": [ 97 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$769": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 195 ],
+            "B": [ 82 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$770": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 197 ],
+            "B": [ 82 ],
+            "Y": [ 136 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$771": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 199 ],
+            "B": [ 82 ],
+            "Y": [ 152 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$772": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 222 ],
+            "B": [ 83 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$773": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 223 ],
+            "B": [ 83 ],
+            "Y": [ 118 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$774": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 224 ],
+            "B": [ 83 ],
+            "Y": [ 137 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$775": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 225 ],
+            "B": [ 83 ],
+            "Y": [ 153 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$844": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 188 ],
+            "B": [ 54 ],
+            "Y": [ 166 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$845": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 189 ],
+            "B": [ 54 ],
+            "Y": [ 164 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$846": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 190 ],
+            "B": [ 54 ],
+            "Y": [ 162 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$847": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 191 ],
+            "B": [ 54 ],
+            "Y": [ 160 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$868": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 175 ],
+            "Y": [ 172 ]
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$869": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:585.44-585.84|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 192 ],
+            "B": [ 53 ],
+            "Y": [ 170 ]
+          }
+        }
+      },
+      "netnames": {
+        "$flatten\\g_conv.u_dp.$auto$opt_reduce.cc:134:opt_pmux$284": {
+          "hide_name": 1,
+          "bits": [ 64 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$rtlil.cc:2600:NotGate$877": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$rtlil.cc:2600:NotGate$881": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$rtlil.cc:2600:NotGate$885": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$rtlil.cc:2600:NotGate$895": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$372": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$384": {
+          "hide_name": 1,
+          "bits": [ 29, 30 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$399": {
+          "hide_name": 1,
+          "bits": [ 32, 30 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$430": {
+          "hide_name": 1,
+          "bits": [ 34, 35 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$445": {
+          "hide_name": 1,
+          "bits": [ 37, 35 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$505": {
+          "hide_name": 1,
+          "bits": [ 32, 42 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$565": {
+          "hide_name": 1,
+          "bits": [ 32, 47 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$620": {
+          "hide_name": 1,
+          "bits": [ 58, 59 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$623": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$636": {
+          "hide_name": 1,
+          "bits": [ 58, 59, 60, 26, 63 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$642": {
+          "hide_name": 1,
+          "bits": [ 55, 61 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$645": {
+          "hide_name": 1,
+          "bits": [ 62 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$701": {
+          "hide_name": 1,
+          "bits": [ 70, 71 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$707": {
+          "hide_name": 1,
+          "bits": [ 73 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$725": {
+          "hide_name": 1,
+          "bits": [ 84, 85 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$728": {
+          "hide_name": 1,
+          "bits": [ 86 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$776": {
+          "hide_name": 1,
+          "bits": [ 90, 93, 101, 96, 99 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$782": {
+          "hide_name": 1,
+          "bits": [ 100, 102 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$785": {
+          "hide_name": 1,
+          "bits": [ 103 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$789": {
+          "hide_name": 1,
+          "bits": [ 107, 110, 113, 116, 119 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$795": {
+          "hide_name": 1,
+          "bits": [ 120, 121 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$798": {
+          "hide_name": 1,
+          "bits": [ 122 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$802": {
+          "hide_name": 1,
+          "bits": [ 126, 129, 132, 135, 138 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$808": {
+          "hide_name": 1,
+          "bits": [ 139, 140 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$811": {
+          "hide_name": 1,
+          "bits": [ 141 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$815": {
+          "hide_name": 1,
+          "bits": [ 145, 127, 148, 151, 154 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$821": {
+          "hide_name": 1,
+          "bits": [ 155, 156 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$824": {
+          "hide_name": 1,
+          "bits": [ 157 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$860": {
+          "hide_name": 1,
+          "bits": [ 168 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$864": {
+          "hide_name": 1,
+          "bits": [ 171 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$872": {
+          "hide_name": 1,
+          "bits": [ 174 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$382": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$397": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$428": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$443": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$458": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$473": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$488": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$503": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$518": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$533": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$548": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$563": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$578": {
+          "hide_name": 1,
+          "bits": [ 49 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$593": {
+          "hide_name": 1,
+          "bits": [ 50 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$609": {
+          "hide_name": 1,
+          "bits": [ 51 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$239_CMP": {
+          "hide_name": 1,
+          "bits": [ 230, 175, 52, 53, 65, 159 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$240.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 75, 76, "0" ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:583.28-583.35|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$240.S": {
+          "hide_name": 1,
+          "bits": [ 28, 69, 57 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:573.22-573.23|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$240.Y_B": {
+          "hide_name": 1,
+          "bits": [ 77 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:578.19-578.22|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$252.B": {
+          "hide_name": 1,
+          "bits": [ 3, 4, 5, 2, 5, 2, 3, 4, 3, 4, 5, 5, 3, 4, 5, "0", "0", 2, 3, 4, 201, 202, 203, 204, 194, 196, 198, 200, 226, 227, 228, 229, 193, 195, 197, 199, 222, 223, 224, 225 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:571.28-571.29|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$252.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 88, 105, 124, 143, 89, 106, 125, 144, 91, 108, 127, 127, 92, 109, 128, "0", "0", 111, 130, 146, 101, 112, 131, 147, 94, 114, 133, 149, 95, 115, 134, 150, 97, 117, 136, 152, 98, 118, 137, 153 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:583.28-583.35|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$252.S": {
+          "hide_name": 1,
+          "bits": [ 27, 68, 78, 79, 67, 56, 80, 81, 82, 83 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:573.22-573.23|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$252.Y_B": {
+          "hide_name": 1,
+          "bits": [ 104, 123, 142, 158 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:578.19-578.22|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$266.B": {
+          "hide_name": 1,
+          "bits": [ "1", 192, 14 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:571.28-571.29|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$266.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 66, 170, 172 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:583.28-583.35|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$266.S": {
+          "hide_name": 1,
+          "bits": [ 66, 53, 175 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:573.22-573.23|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$266.Y_B": {
+          "hide_name": 1,
+          "bits": [ 173 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:578.19-578.22|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$272.B": {
+          "hide_name": 1,
+          "bits": [ "1", "1", "1", "1", "0", "0", "0", "0", 188, 189, 190, 191 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:571.28-571.29|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$272.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 159, 159, 159, 159, "0", "0", "0", "0", 166, 164, 162, 160 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:583.28-583.35|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$272.S": {
+          "hide_name": 1,
+          "bits": [ 159, 65, 54 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:573.22-573.23|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$procmux$272.Y_B": {
+          "hide_name": 1,
+          "bits": [ 167, 165, 163, 161 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:578.19-578.22|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$reduce_or$rtl/alu4_datapath.v:77$226_Y": {
+          "hide_name": 1,
+          "bits": [ 72 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:77.16-77.21"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$techmap$procmux$240.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$366_Y": {
+          "hide_name": 1,
+          "bits": [ 74 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$techmap$procmux$252.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$406_Y": {
+          "hide_name": 1,
+          "bits": [ 87 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:57.9-71.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$techmap$procmux$266.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$366_Y": {
+          "hide_name": 1,
+          "bits": [ 176 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$techmap$procmux$272.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$627_Y": {
+          "hide_name": 1,
+          "bits": [ 169 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|/usr/bin/../share/yosys/techmap.v:597.13-597.15|rtl/alu4_datapath.v:31.9-39.16|rtl/alu4_datapath.v:0.0-0.0"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$xnor$rtl/alu4_datapath.v:49$216_Y": {
+          "hide_name": 1,
+          "bits": [ 220 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:49.17-49.29"
+          }
+        },
+        "$flatten\\g_conv.u_dp.$xor$rtl/alu4_datapath.v:49$217_Y": {
+          "hide_name": 1,
+          "bits": [ 221 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:49.34-49.47"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$13_Y": {
+          "hide_name": 1,
+          "bits": [ 210 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$14_Y": {
+          "hide_name": 1,
+          "bits": [ 211 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$18_Y": {
+          "hide_name": 1,
+          "bits": [ 206 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$19_Y": {
+          "hide_name": 1,
+          "bits": [ 207 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$3_Y": {
+          "hide_name": 1,
+          "bits": [ 218 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$4_Y": {
+          "hide_name": 1,
+          "bits": [ 219 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$8_Y": {
+          "hide_name": 1,
+          "bits": [ 214 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.30-31.41|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "$flatten\\g_conv.u_dp.\\u_add.\\g_rca.u.$and$rtl/adder4.v:31$9_Y": {
+          "hide_name": 1,
+          "bits": [ 215 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:31.46-31.54|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:15.23-15.24"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:16.23-16.24"
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:20.23-20.24"
+          }
+        },
+        "cin": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:18.23-18.26"
+          }
+        },
+        "err": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:24.23-24.26"
+          }
+        },
+        "err_vec": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:25.23-25.30"
+          }
+        },
+        "g_conv.u_dp.ci": {
+          "hide_name": 0,
+          "bits": [ 187 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp ci",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:29.16-29.18"
+          }
+        },
+        "g_conv.u_dp.cout": {
+          "hide_name": 0,
+          "bits": [ 178 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp cout",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:43.16-43.20"
+          }
+        },
+        "g_conv.u_dp.ovf": {
+          "hide_name": 0,
+          "bits": [ 177 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp ovf",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:49.10-49.13"
+          }
+        },
+        "g_conv.u_dp.sum": {
+          "hide_name": 0,
+          "bits": [ 179, 180, 181, 182 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp sum",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/alu4_datapath.v:42.16-42.19"
+          }
+        },
+        "g_conv.u_dp.u_add.g_rca.u.c": {
+          "hide_name": 0,
+          "bits": [ 187, 217, 213, 209, 178 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp u_add g_rca.u c",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:23.16-23.17|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "g_conv.u_dp.u_add.g_rca.u.g_fa[0].p": {
+          "hide_name": 0,
+          "bits": [ 205 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp u_add g_rca.u g_fa[0].p",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.18-29.19|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "g_conv.u_dp.u_add.g_rca.u.g_fa[1].p": {
+          "hide_name": 0,
+          "bits": [ 216 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp u_add g_rca.u g_fa[1].p",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.18-29.19|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "g_conv.u_dp.u_add.g_rca.u.g_fa[2].p": {
+          "hide_name": 0,
+          "bits": [ 212 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp u_add g_rca.u g_fa[2].p",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.18-29.19|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "g_conv.u_dp.u_add.g_rca.u.g_fa[3].p": {
+          "hide_name": 0,
+          "bits": [ 208 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp u_add g_rca.u g_fa[3].p",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:29.18-29.19|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "g_conv.u_dp.u_add.g_rca.u.y": {
+          "hide_name": 0,
+          "bits": [ 183, 184, 185, 186 ],
+          "attributes": {
+            "hdlname": "g_conv.u_dp u_add g_rca.u y",
+            "src": "rtl/alu4_base_core.v:33.54-35.51|rtl/adder4.v:107.24-107.65|rtl/adder4.v:16.23-16.24|rtl/alu4_datapath.v:44.39-46.6"
+          }
+        },
+        "n": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:23.23-23.24"
+          }
+        },
+        "op": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:17.23-17.25"
+          }
+        },
+        "r": {
+          "hide_name": 0,
+          "bits": [ 15, 16, 17, 18 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:19.23-19.24"
+          }
+        },
+        "v": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:21.23-21.24"
+          }
+        },
+        "z": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "rtl/alu4_base_core.v:22.23-22.24"
+          }
+        }
+      }
+    }
+  }
+}

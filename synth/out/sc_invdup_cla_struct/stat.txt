@@ -1,0 +1,51 @@
+
+15. Printing statistics.
+
+=== alu4_sc_core ===
+
+   Number of wires:                253
+   Number of wire bits:            521
+   Number of public wires:          62
+   Number of public wire bits:     105
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                437
+     $_AND_                        102
+     $_MUX_                         21
+     $_NOT_                         77
+     $_OR_                         186
+     $_XNOR_                         2
+     $_XOR_                         49
+
+16. Executing LTP pass (find longest path).
+
+Longest topological path in alu4_sc_core (length=27):
+    0: \op [1]
+    1: $flatten\g_conv.u_dp.$auto$rtlil.cc:2600:NotGate$1536 (via $flatten\g_conv.u_dp.$auto$opt_expr.cc:607:replace_const_cells$1565)
+    2: $flatten\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$497 [0] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$685)
+    3: $flatten\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$652 (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$658)
+    4: $flatten\g_conv.u_dp.$procmux$371.S [1] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$660)
+    5: $flatten\g_conv.u_dp.$procmux$377.S [2] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$725)
+    6: $flatten\g_conv.u_dp.$procmux$377.B_AND_S [8] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$982)
+    7: $flatten\g_conv.u_dp.$procmux$377.Y_B [0] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$981)
+    8: \g_conv.u_dp.u_add.genblk1.g_cla.u.y [0] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$994)
+    9: \g_conv.u_dp.u_add.genblk1.g_cla.u.p [0] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$795)
+   10: $flatten\g_conv.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:49$23_Y (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$794)
+   11: \g_conv.u_dp.u_add.genblk1.g_cla.u.c1 (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$793)
+   12: \g_conv.u_dp.sum [1] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$766)
+   13: \r [1] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$938)
+   14: $flatten\u_chk.$auto$alumacc.cc:485:replace_alu$394.X [1] (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1421)
+   15: $flatten\u_chk.$techmap$auto$alumacc.cc:485:replace_alu$394.lcu.$and$/usr/bin/../share/yosys/techmap.v:240$1433_Y (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1459)
+   16: $flatten\u_chk.$auto$alumacc.cc:485:replace_alu$394.CO [1] (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1466)
+   17: $flatten\u_chk.$techmap$auto$alumacc.cc:485:replace_alu$394.lcu.$and$/usr/bin/../share/yosys/techmap.v:248$1442_Y (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1463)
+   18: $flatten\u_chk.$auto$alumacc.cc:485:replace_alu$394.CO [2] (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1469)
+   19: \u_chk.g_inv.inv [3] (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1417)
+   20: $flatten\u_chk.$auto$simplemap.cc:240:simplemap_eqne$1355 [3] (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1360)
+   21: $flatten\u_chk.$auto$simplemap.cc:117:simplemap_reduce$1363 [1] (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$1365)
+   22: $flatten\u_chk.$auto$simplemap.cc:117:simplemap_reduce$1366 (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$1367)
+   23: \u_chk.arith_bad (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$1369)
+   24: $flatten\u_chk.$or$rtl/alu4_checker.v:110$252_Y (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1275)
+   25: \u_chk.e_arith (via $flatten\u_chk.$auto$simplemap.cc:75:simplemap_bitop$1276)
+   26: $flatten\u_chk.$auto$simplemap.cc:117:simplemap_reduce$1344 [0] (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$1345)
+   27: \err (via $flatten\u_chk.$auto$simplemap.cc:126:simplemap_reduce$1348)

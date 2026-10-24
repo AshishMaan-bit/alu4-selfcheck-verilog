@@ -1,0 +1,7 @@
+phase1 fault-free : checked=269 mismatches=0 alarms=0 sticky=0 count=0
+PHASE1 PASS
+phase2 G1[2] SA1  : checked=40 corrupted=18 flagged=18 alarms=18 sticky=1 count=18
+PHASE2 PASS (every corrupted word flagged, sticky/count consistent)
+phase3 recovered  : checked=87 mismatches=0 alarms=0 sticky=0 count=0
+PHASE3 PASS
+tb/tb_alu4_top.v:111: $finish called at 4570000 (1ps)

@@ -1,0 +1,36 @@
+top=alu4_base_core -GADDER_ARCH=0 -GDP_STYLE=0 : rc=0 warnings=0
+top=alu4_base_core -GADDER_ARCH=0 -GDP_STYLE=1 : rc=0 warnings=0
+top=alu4_dmr_core -GADDER_ARCH=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=0 -GARITH_CHK=0 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=0 -GARITH_CHK=0 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=0 -GARITH_CHK=1 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=0 -GARITH_CHK=1 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=1 -GARITH_CHK=0 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=1 -GARITH_CHK=0 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=1 -GARITH_CHK=1 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=0 -GDP_STYLE=1 -GARITH_CHK=1 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_top -GADDER_ARCH=0 : rc=0 warnings=0
+top=alu4_base_core -GADDER_ARCH=1 -GDP_STYLE=0 : rc=0 warnings=0
+top=alu4_base_core -GADDER_ARCH=1 -GDP_STYLE=1 : rc=0 warnings=0
+top=alu4_dmr_core -GADDER_ARCH=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=0 -GARITH_CHK=0 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=0 -GARITH_CHK=0 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=0 -GARITH_CHK=1 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=0 -GARITH_CHK=1 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=1 -GARITH_CHK=0 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=1 -GARITH_CHK=0 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=1 -GARITH_CHK=1 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=1 -GDP_STYLE=1 -GARITH_CHK=1 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_top -GADDER_ARCH=1 : rc=0 warnings=0
+top=alu4_base_core -GADDER_ARCH=2 -GDP_STYLE=0 : rc=0 warnings=0
+top=alu4_base_core -GADDER_ARCH=2 -GDP_STYLE=1 : rc=0 warnings=0
+top=alu4_dmr_core -GADDER_ARCH=2 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=0 -GARITH_CHK=0 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=0 -GARITH_CHK=0 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=0 -GARITH_CHK=1 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=0 -GARITH_CHK=1 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=1 -GARITH_CHK=0 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=1 -GARITH_CHK=0 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=1 -GARITH_CHK=1 -GLOGIC_CHK=0 : rc=0 warnings=0
+top=alu4_sc_core -GADDER_ARCH=2 -GDP_STYLE=1 -GARITH_CHK=1 -GLOGIC_CHK=1 : rc=0 warnings=0
+top=alu4_sc_top -GADDER_ARCH=2 : rc=0 warnings=0

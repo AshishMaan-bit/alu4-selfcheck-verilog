@@ -1,0 +1,54 @@
+
+19. Printing statistics.
+
+=== alu4_sc_core ===
+
+   Number of wires:                279
+   Number of wire bits:            294
+   Number of public wires:          15
+   Number of public wire bits:      30
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                276
+     $_ANDNOT_                      10
+     $_AND_                         77
+     $_MUX_                         16
+     $_NAND_                        80
+     $_NOR_                         14
+     $_ORNOT_                       12
+     $_OR_                          33
+     $_XNOR_                        24
+     $_XOR_                         10
+
+20. Executing LTP pass (find longest path).
+
+Longest topological path in alu4_sc_core (length=27):
+    0: \op [3]
+    1: $flatten\g_conv.u_dp.$abc$2324$new_n23_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2327)
+    2: $flatten\g_conv.u_dp.$abc$2324$new_n24_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2328)
+    3: $flatten\g_conv.u_dp.$abc$2324$new_n35_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2339)
+    4: $flatten\g_conv.u_dp.$abc$2324$new_n36_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2340)
+    5: $flatten\g_conv.u_dp.$abc$2324$new_n38_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2342)
+    6: $flatten\g_conv.u_dp.$abc$2324$new_n44_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2348)
+    7: $flatten\g_conv.u_dp.$abc$2324$new_n69_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2373)
+    8: $flatten\g_conv.u_dp.$abc$2324$new_n74_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2378)
+    9: $flatten\g_conv.u_dp.$abc$2324$new_n94_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2398)
+   10: $flatten\g_conv.u_dp.$abc$2324$new_n117_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2421)
+   11: $flatten\g_conv.u_dp.$abc$2324$new_n118_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2422)
+   12: $flatten\g_conv.u_dp.$abc$2324$new_n124_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2428)
+   13: $flatten\g_conv.u_dp.$abc$2324$new_n126_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2430)
+   14: $flatten\g_conv.u_dp.$abc$2324$new_n127_ (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2431)
+   15: \n (via $flatten\g_conv.u_dp.$abc$2324$auto$blifparse.cc:386:parse_blif$2450)
+   16: $flatten\u_chk.$abc$2184$new_n65_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2223)
+   17: $flatten\u_chk.$abc$2184$new_n77_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2235)
+   18: $flatten\u_chk.$abc$2184$new_n78_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2236)
+   19: $flatten\u_chk.$abc$2184$new_n79_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2237)
+   20: $flatten\u_chk.$abc$2184$new_n80_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2238)
+   21: $flatten\u_chk.$abc$2184$new_n81_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2239)
+   22: $flatten\u_chk.$abc$2184$new_n82_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2240)
+   23: $flatten\u_chk.$abc$2184$new_n83_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2241)
+   24: $flatten\u_chk.$abc$2184$new_n84_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2242)
+   25: $flatten\u_chk.$abc$2184$new_n90_ (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2248)
+   26: \u_chk.e_arith (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2249)
+   27: \err (via $flatten\u_chk.$abc$2184$auto$blifparse.cc:386:parse_blif$2323)

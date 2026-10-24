@@ -1,0 +1,42 @@
+
+14. Printing statistics.
+
+=== alu4_base_core ===
+
+   Number of wires:                117
+   Number of wire bits:            310
+   Number of public wires:          21
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                233
+     $_AND_                         70
+     $_MUX_                         11
+     $_NOT_                         33
+     $_OR_                         105
+     $_XNOR_                         1
+     $_XOR_                         13
+
+15. Executing LTP pass (find longest path).
+
+Longest topological path in alu4_base_core (length=18):
+    0: \op [1]
+    1: $flatten\g_conv.u_dp.$auto$rtlil.cc:2600:NotGate$903 (via $flatten\g_conv.u_dp.$auto$opt_expr.cc:607:replace_const_cells$920)
+    2: $flatten\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$389 [0] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$577)
+    3: $flatten\g_conv.u_dp.$auto$simplemap.cc:246:simplemap_eqne$544 (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$550)
+    4: $flatten\g_conv.u_dp.$procmux$266.S [1] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$552)
+    5: $flatten\g_conv.u_dp.$procmux$272.S [2] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$617)
+    6: $flatten\g_conv.u_dp.$procmux$272.B_AND_S [10] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$876)
+    7: $flatten\g_conv.u_dp.$procmux$272.Y_B [2] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$865)
+    8: \g_conv.u_dp.u_add.genblk1.g_cla.u.y [2] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$888)
+    9: \g_conv.u_dp.u_add.genblk1.g_cla.u.p [2] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$665)
+   10: $flatten\g_conv.u_dp.\u_add.\genblk1.g_cla.u.$and$rtl/adder4.v:51$30_Y (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$655)
+   11: $flatten\g_conv.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:51$31_Y (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$654)
+   12: $flatten\g_conv.u_dp.\u_add.\genblk1.g_cla.u.$or$rtl/adder4.v:51$34_Y (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$689)
+   13: \g_conv.u_dp.u_add.genblk1.g_cla.u.c3 (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$686)
+   14: \g_conv.u_dp.sum [3] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:75:simplemap_bitop$674)
+   15: \n (via $flatten\g_conv.u_dp.$auto$simplemap.cc:267:simplemap_mux$832)
+   16: $flatten\g_conv.u_dp.$auto$simplemap.cc:117:simplemap_reduce$719 [1] (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$721)
+   17: $flatten\g_conv.u_dp.$reduce_or$rtl/alu4_datapath.v:77$226_Y (via $flatten\g_conv.u_dp.$auto$simplemap.cc:126:simplemap_reduce$723)
+   18: \z (via $flatten\g_conv.u_dp.$auto$simplemap.cc:196:simplemap_lognot$724)
